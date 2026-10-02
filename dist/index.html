@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d12">
+  <meta name="description" content="이환 글로벌 1.4 캐릭터, 스킬 계수, 전용 아크와 콘솔 데이터를 한곳에서 확인하세요.">
+  <title>이환 아카이브 · 캐릭터 DB</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="이환 아카이브 홈">
+        <span class="brand-mark">N</span>
+        <span class="brand-copy"><span class="brand-kicker">HETEROCITY / FIELD ARCHIVE</span><strong>이환 아카이브</strong></span>
+      </a>
+      <div class="topbar-meta">
+        <span class="snapshot"><span class="snapshot-mark"></span>GLOBAL SNAPSHOT <b>1.4</b></span>
+        <span class="topbar-divider"></span><span class="records-count"><b id="header-count">—</b> CHARACTERS</span>
+      </div>
+    </header>
+    <div class="workspace">
+      <aside class="roster-panel" aria-label="캐릭터 목록">
+        <div class="roster-heading"><div><p class="eyebrow">CHARACTER INDEX</p><h2>캐릭터</h2></div><span class="roster-count" id="roster-count">—</span></div>
+        <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">캐릭터 검색</span><input id="character-search" type="search" placeholder="이름 검색" autocomplete="off"><kbd>/</kbd></label>
+        <label class="filter-label" for="element-filter">속성으로 찾기</label>
+        <select id="element-filter" class="element-filter"><option value="">모든 속성</option></select>
+        <div class="roster-list" id="roster-list" role="listbox" aria-label="출시 캐릭터"></div>
+        <div class="roster-foot"><span class="foot-rule"></span><span>출시 캐릭터 기준 · 제로는 단일 항목</span></div>
+      </aside>
+      <main id="main-content" class="main-panel" aria-live="polite">
+        <div class="loading-state"><span class="loader"></span><p>아카이브를 불러오는 중</p></div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

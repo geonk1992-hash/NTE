@@ -1,0 +1,437 @@
+{
+  "dataset": "Neverness to Everness character roster",
+  "snapshotDate": "2026-10-02",
+  "gameVersion": "1.4",
+  "scope": "Unique playable characters released by the snapshot date; gender-selectable Esper Zero is one character record.",
+  "coverage": {
+    "releasedUniqueCharacters": 23,
+    "confirmedUpcomingCharacters": 1,
+    "plannedUniqueCharactersInGlobalVersion14": 24,
+    "deepSkillAndGrowthData": "see nte-character-details-v1.4.json for kit summaries and nte-character-mechanics-v1.4.json for community-source coefficients, level-80 stats, and awakening effects; breakthrough-stage stat tables and materials remain unverified",
+    "acquisitionDetails": "not included; availability varies by server, event, and version"
+  },
+  "taxonomy": {
+    "elements": {
+      "Anima": {
+        "ko": "령",
+        "zhHans": "灵"
+      },
+      "Chaos": {
+        "ko": "암",
+        "zhHans": "暗"
+      },
+      "Cosmos": {
+        "ko": "빛",
+        "zhHans": "光"
+      },
+      "Incantation": {
+        "ko": "주",
+        "zhHans": "咒"
+      },
+      "Lakshana": {
+        "ko": "상",
+        "zhHans": "相"
+      },
+      "Psyche": {
+        "ko": "혼",
+        "zhHans": "魂"
+      }
+    },
+    "arcTypes": {
+      "Condensate": {
+        "ko": "결합",
+        "zhHans": "聚合"
+      },
+      "Gas": {
+        "ko": "기체",
+        "zhHans": "气态"
+      },
+      "Liquid": {
+        "ko": "액체",
+        "zhHans": "液态"
+      },
+      "Plasma": {
+        "ko": "플라스마",
+        "zhHans": "等离子"
+      },
+      "Solid": {
+        "ko": "고체",
+        "zhHans": "固态"
+      }
+    }
+  },
+  "sources": {
+    "officialKoreanPatchNotes": "https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html",
+    "officialChineseSite": "https://yh.wanmei.com/main.html",
+    "englishRosterAndGuides": "https://www.prydwen.gg/neverness-to-everness/characters",
+    "koreanCommunityDatabase": "https://ntegame.net/ko/characters/",
+    "koreanSecondaryRoster": "https://alkapa.gg/neverness-to-everness/characters",
+    "chineseCommunityRoster": "https://wiki.mysqil.com/characters/",
+    "chineseBilibiliWikiRoster": "https://wiki.biligame.com/yh/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4"
+  },
+  "characters": [
+    {
+      "id": "adler",
+      "names": {
+        "ko": "아들러",
+        "en": "Adler",
+        "zhHans": "阿德勒"
+      },
+      "rarity": "A",
+      "element": "Incantation",
+      "arcType": "Condensate",
+      "communityRoleKo": "생존",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/adler"
+    },
+    {
+      "id": "aurelia",
+      "names": {
+        "ko": "우미츠키",
+        "en": "Aurelia",
+        "zhHans": "海月"
+      },
+      "rarity": "A",
+      "element": "Psyche",
+      "arcType": "Plasma",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "nameNote": "한국 커뮤니티 DB는 우미츠키, 중국 DB는 海月를 사용합니다. 영문 클라이언트 이름 Aurelia를 기본 키로 유지했습니다.",
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/aurelia"
+    },
+    {
+      "id": "baicang",
+      "names": {
+        "ko": "백장",
+        "en": "Baicang",
+        "zhHans": "白藏"
+      },
+      "rarity": "S",
+      "element": "Incantation",
+      "arcType": "Condensate",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/baicang"
+    },
+    {
+      "id": "blackbird",
+      "names": {
+        "ko": "레이븐",
+        "en": "Blackbird",
+        "zhHans": "黑羽"
+      },
+      "rarity": "S",
+      "element": "Psyche",
+      "arcType": "Gas",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "nameNote": "레이븐은 1.4 공식 한국어 공지의 표기입니다. 해외 DB의 Blackbird와 동일 인물입니다.",
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/blackbird"
+    },
+    {
+      "id": "chaos",
+      "names": {
+        "ko": "카오스",
+        "en": "Chaos",
+        "zhHans": "卡厄斯"
+      },
+      "rarity": "S",
+      "element": "Lakshana",
+      "arcType": "Condensate",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/chaos"
+    },
+    {
+      "id": "chiz",
+      "names": {
+        "ko": "치즈",
+        "en": "Chiz",
+        "zhHans": "小吱"
+      },
+      "rarity": "S",
+      "element": "Cosmos",
+      "arcType": "Gas",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/chiz"
+    },
+    {
+      "id": "daffodill",
+      "names": {
+        "ko": "다포딜",
+        "en": "Daffodill",
+        "zhHans": "达芙蒂尔"
+      },
+      "rarity": "S",
+      "element": "Chaos",
+      "arcType": "Liquid",
+      "communityRoleKo": "서브 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/daffodil"
+    },
+    {
+      "id": "edgar",
+      "names": {
+        "ko": "에드가",
+        "en": "Edgar",
+        "zhHans": "埃德嘉"
+      },
+      "rarity": "A",
+      "element": "Cosmos",
+      "arcType": "Liquid",
+      "communityRoleKo": "생존 / 힐러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/edgar"
+    },
+    {
+      "id": "fadia",
+      "names": {
+        "ko": "파디아",
+        "en": "Fadia",
+        "zhHans": "法帝娅"
+      },
+      "rarity": "S",
+      "element": "Psyche",
+      "arcType": "Condensate",
+      "communityRoleKo": "생존",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/fadia"
+    },
+    {
+      "id": "haniel",
+      "names": {
+        "ko": "하니엘",
+        "en": "Haniel",
+        "zhHans": "哈尼娅"
+      },
+      "rarity": "A",
+      "element": "Psyche",
+      "arcType": "Solid",
+      "communityRoleKo": "버퍼",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/haniel"
+    },
+    {
+      "id": "hathor",
+      "names": {
+        "ko": "하토르",
+        "en": "Hathor",
+        "zhHans": "哈索尔"
+      },
+      "rarity": "S",
+      "element": "Lakshana",
+      "arcType": "Plasma",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/hathor"
+    },
+    {
+      "id": "hotori",
+      "names": {
+        "ko": "호토리",
+        "en": "Hotori",
+        "zhHans": "浔"
+      },
+      "rarity": "S",
+      "element": "Cosmos",
+      "arcType": "Solid",
+      "communityRoleKo": "서브 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/hotori"
+    },
+    {
+      "id": "iroi",
+      "names": {
+        "ko": "일로이",
+        "en": "Iroi",
+        "zhHans": "伊洛伊"
+      },
+      "rarity": "S",
+      "element": "Anima",
+      "arcType": "Liquid",
+      "communityRoleKo": "버퍼",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/iroi"
+    },
+    {
+      "id": "jiuyuan",
+      "names": {
+        "ko": "구원",
+        "en": "Jiuyuan",
+        "zhHans": "九原"
+      },
+      "rarity": "S",
+      "element": "Anima",
+      "arcType": "Solid",
+      "communityRoleKo": "서브 딜러 / 몹몰이",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/jiuyuan"
+    },
+    {
+      "id": "lacrimosa",
+      "names": {
+        "ko": "라크리모사",
+        "en": "Lacrimosa",
+        "zhHans": "安魂曲"
+      },
+      "rarity": "S",
+      "element": "Chaos",
+      "arcType": "Liquid",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/lacrimosa"
+    },
+    {
+      "id": "linko",
+      "names": {
+        "ko": "링코",
+        "en": "Linko",
+        "zhHans": "灵可"
+      },
+      "rarity": "S",
+      "element": "Anima",
+      "arcType": "Plasma",
+      "communityRoleKo": "서브 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/linko"
+    },
+    {
+      "id": "mint",
+      "names": {
+        "ko": "민트",
+        "en": "Mint",
+        "zhHans": "薄荷"
+      },
+      "rarity": "A",
+      "element": "Anima",
+      "arcType": "Liquid",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/mint"
+    },
+    {
+      "id": "nanally",
+      "names": {
+        "ko": "나나리",
+        "en": "Nanally",
+        "zhHans": "娜娜莉"
+      },
+      "rarity": "S",
+      "element": "Anima",
+      "arcType": "Plasma",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/nanally"
+    },
+    {
+      "id": "sakiri",
+      "names": {
+        "ko": "사키리",
+        "en": "Sakiri",
+        "zhHans": "早雾"
+      },
+      "rarity": "S",
+      "element": "Incantation",
+      "arcType": "Gas",
+      "communityRoleKo": "버퍼 / 몹몰이",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/sakiri"
+    },
+    {
+      "id": "shinku",
+      "names": {
+        "ko": "신쿠",
+        "en": "Shinku",
+        "zhHans": "真红"
+      },
+      "rarity": "S",
+      "element": "Cosmos",
+      "arcType": "Condensate",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/shinku"
+    },
+    {
+      "id": "skia",
+      "names": {
+        "ko": "스키아",
+        "en": "Skia",
+        "zhHans": "翳"
+      },
+      "rarity": "A",
+      "element": "Lakshana",
+      "arcType": "Gas",
+      "communityRoleKo": "서브 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/skia"
+    },
+    {
+      "id": "zankou",
+      "names": {
+        "ko": "잔홍",
+        "en": "Zankou",
+        "zhHans": "残虹"
+      },
+      "rarity": "S",
+      "element": "Incantation",
+      "arcType": "Gas",
+      "communityRoleKo": "메인 딜러",
+      "released": true,
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/zankou"
+    },
+    {
+      "id": "zero",
+      "names": {
+        "ko": "이능력자·제로",
+        "en": "Esper Zero",
+        "zhHans": "异能者·零"
+      },
+      "rarity": "S",
+      "element": "Cosmos",
+      "arcType": "Solid",
+      "communityRoleKo": "서브 딜러",
+      "released": true,
+      "nameAliases": {
+        "ko": [
+          "제로",
+          "남성 제로",
+          "여성 제로"
+        ],
+        "en": [
+          "Zero"
+        ]
+      },
+      "nameNote": "남성·여성 선택형은 별도 캐릭터가 아니라 동일 캐릭터의 외형/성별 선택으로 통합했습니다.",
+      "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/zero"
+    }
+  ],
+  "confirmedUpcoming": [
+    {
+      "id": "akane-rin",
+      "names": {
+        "ko": "아카네 린",
+        "en": "Akane Rin",
+        "zhHans": "明音凛"
+      },
+      "rarity": "S",
+      "element": "Lakshana",
+      "arcType": "Liquid",
+      "releaseStatusAsOfSnapshot": "announced_not_yet_released_globally",
+      "plannedGlobalAvailability": "2026-10-21",
+      "source": "https://ntegame.net/ko/guides/upcoming-characters/",
+      "detailsSourceStatus": "pre-release previews only; excluded from released roster until global phase 2"
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "taygedo",
+      "names": {
+        "en": "Taygedo",
+        "zhHans": "塔吉多"
+      },
+      "releaseStatusAsOfSnapshot": "unclear",
+      "note": "Appears in a Chinese community roster but is absent from the current English and Korean released-character lists. Keep out of the playable roster until confirmed in the live client or an official announcement."
+    }
+  ]
+}

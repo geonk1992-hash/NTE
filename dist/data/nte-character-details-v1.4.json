@@ -1,0 +1,267 @@
+{
+  "dataset": "Neverness to Everness character kit and profile details",
+  "snapshotDate": "2026-10-02",
+  "gameVersion": "1.4 Global",
+  "scope": {
+    "releasedGlobalCharacters": 23,
+    "announcedLaterInVersion": 1,
+    "uniqueCharacterCountForVersion14": 24,
+    "zeroRule": "Esper Zero is a single character record; selectable male/female presentation and voice actors are stored as variants, not separate characters."
+  },
+  "translationAndVerification": {
+    "skillNames": "Kept in English as indexed by the English community database; not presented as official Korean client names.",
+    "koMechanicSummaries": "Short Korean paraphrases translated from the linked English guide, with Korean and Chinese community material used to compare roster identity and 1.4 timing.",
+    "coefficients": "Not copied into this summary file. See nte-character-mechanics-v1.4.json for community-source multipliers, Lv.80 stats, and awakenings. The source pages leave skill levels unresolved as Lv.[Select] and do not independently confirm per-character 1.4 status; breakthrough-stage tables/materials still need live-client verification.",
+    "versionCaveat": "Most English kit guides were last reviewed before 1.4. Their mechanics are useful reference data but are not individually certified against the 1.4 Korean client. Blackbird's English guide is marked Patch 1.4. Akane Rin is preview-only as of this snapshot.",
+    "voiceActorCaveat": "Voice actor credits follow the linked English character pages when present. Akane Rin's Korean and Chinese credits come from the Korean community preview and remain unverified in the global client; missing credits are null."
+  },
+  "characters": [
+    {
+      "id": "adler",
+      "globalStatus": "released",
+      "guideRoleEn": "Survival",
+      "coreMechanicKo": "기본 공격으로 카르마를 쌓아 스킬 피해를 높이고, 보호막과 지속 피해를 제공한다. 스코치 대상에게 무작위 약화 효과를 추가한다.",
+      "keySkillNamesEn": {"basic": "Deliverance", "skill": "Evil's Bane", "ultimate": "Tranquility", "support": "Pristine Reflection"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Jacob Craner", "ja": "森川智之", "zhHans": "王宇航", "ko": "심규혁"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/adler"
+    },
+    {
+      "id": "aurelia",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "해파리 동료와 함께 공격하며 카덴차 상태에서 공격을 강화한다. 궁극기는 주변 적을 모으고, 회피 반격으로 추가 해파리 공격을 낸다.",
+      "keySkillNamesEn": {"basic": "Cappella", "skill": "Cadenza Aria", "ultimate": "Canzon Chorus", "support": "Dissonance"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Kira Buckland", "ja": "高橋花林", "zhHans": "葛子瑞", "ko": "정해은"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/aurelia",
+      "comparisonNote": "기존 한국 커뮤니티 도감의 우미츠키와 영문 Aurelia를 같은 캐릭터로 연결했다."
+    },
+    {
+      "id": "baicang",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "공격으로 축복·침묵·질책 계열의 파워 워드를 쌓아 궁극기 영역에서 효과를 발동한다. 적 체력이 낮으면 처형 효과도 노릴 수 있다.",
+      "keySkillNamesEn": {"basic": "Walk the Talk", "skill": "Generous Guidance", "ultimate": "Judgment of Autumn", "support": "Break Time Over"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Griffin Burns", "ja": "中村悠一", "zhHans": "桑毓泽", "ko": "심규혁"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/baicang"
+    },
+    {
+      "id": "blackbird",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "적에게 깃털 표식을 남겨 대기 중인 협공 피해를 유도하고 사이클 게이지를 빠르게 채운다. 궁극기로 마녀 형태에 진입하며 말리스 자원을 소비해 연속 공격과 팀 공격력 증가를 얻는다.",
+      "keySkillNamesEn": {"basic": "Fleeting Shadow / Pyreflame", "skill": "Netherplume Rite / Flames of Deliverance", "ultimate": "Requies Animarum / Flammae in Unum", "support": "Judgment Upon Me / Naught but Mercy"},
+      "sourceReviewPatch": "1.4",
+      "voiceActors": {"en": "Xanthe Huynh", "ja": "能登麻美子", "zhHans": "井琉", "ko": "문유정"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/blackbird",
+      "koreanSources": ["https://ntegame.net/ko/characters/blackbird/", "https://ntegame.net/ko/guides/blackbird-build-guide/"],
+      "comparisonNote": "한국어 공략은 출시 전 중국 서버 데이터를 사용했다고 밝히며 일부 자원·기술명에 가칭을 표시한다. 레이븐은 공식 한국어 1.4 공지의 표기를 사용했다. 메인/서브 딜러 구분은 자료마다 달라 고정 분류로 저장하지 않았다."
+    },
+    {
+      "id": "chaos",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "워런트 표식을 부여하고 범죄 수치를 쌓는다. 궁극기 상태에서 수치를 빠르게 모아 강화된 최종 판결을 반복한다.",
+      "keySkillNamesEn": {"basic": "Pursuit", "skill": "Doubtmark", "ultimate": "Retribution", "support": "Onslaught"},
+      "sourceReviewPatch": "1.1",
+      "voiceActors": {"en": "Rick Kumazawa", "ja": "小西克幸", "zhHans": "淦子齐", "ko": "원종준"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/chaos"
+    },
+    {
+      "id": "chiz",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "공격과 기술로 곡물을 모으고 이를 대출·잉여 상태와 연결한다. 궁극기로 곡물 시장을 열어 강화 결산 피해를 터뜨리는 운영형 딜러다.",
+      "keySkillNamesEn": {"basic": "Exiled Swordplay", "skill": "Pink Paws Priority Principle", "ultimate": "Zero-Sum Game", "support": "Temporary Entry"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Alice Himora", "ja": "小原好美", "zhHans": "则灵", "ko": "권다예"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/chiz"
+    },
+    {
+      "id": "daffodill",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "아군의 지원 기술 사용으로 공명 중첩을 쌓아 강화 공격으로 바꾼다. 궁극기 뒤에는 회피 반격형 팬텀 스텝으로 적을 받아칠 수 있다.",
+      "keySkillNamesEn": {"basic": "Still Waters", "skill": "Resonance / Echoes", "ultimate": "Finale", "support": "Crossed Blades"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Natalie Van Sistine", "ja": "大原さやか", "zhHans": "陈彦亦", "ko": "이명호"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/daffodil"
+    },
+    {
+      "id": "edgar",
+      "globalStatus": "released",
+      "guideRoleEn": "Survival",
+      "coreMechanicKo": "스킬을 길게 눌러 지속 피해와 함께 체력이 가장 낮은 아군을 회복한다. 궁극기는 일정 시간 장판을 만들고 현재 캐릭터를 치유한다.",
+      "keySkillNamesEn": {"basic": "Combat Practice", "skill": "Wild Current", "ultimate": "Finnegan's Wake", "support": "Weight of Knowledge"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Casey Mongillo", "ja": "三瓶由布子", "zhHans": "四白", "ko": "장채연"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/edgar"
+    },
+    {
+      "id": "fadia",
+      "globalStatus": "released",
+      "guideRoleEn": "Survival",
+      "coreMechanicKo": "아군이 받을 피해 일부를 자신에게 돌려 생존을 돕고, 받은 피해를 적에게 되돌리는 표식을 건다. 궁극기는 체력 손실량에 따라 강화된다.",
+      "keySkillNamesEn": {"basic": "Wordless Rejection", "skill": "Existence", "ultimate": "Agony to Euphoria", "support": "Outsider"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Amber Lee Connors", "ja": "真堂圭", "zhHans": "裴致莹", "ko": "조현정"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/fadia"
+    },
+    {
+      "id": "haniel",
+      "globalStatus": "released",
+      "guideRoleEn": "Buff",
+      "coreMechanicKo": "호티를 설치해 필드 밖에서도 공격력 버프와 주기적인 범위 공격을 제공한다. 궁극기 강화 상태에서는 호티의 연주 효과를 강화한다.",
+      "keySkillNamesEn": {"basic": "Paranormal Entrance", "skill": "Silent Moonlit Forest Guardian", "ultimate": "A Melody Named Haniel", "support": "Easter Egg Time"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Alexis Tipton", "ja": "石見舞菜香", "zhHans": "苏子芜", "ko": "김가령"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/haniel"
+    },
+    {
+      "id": "hathor",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "전달력 자원을 모아 궁극기 강화 상태에 들어간다. 상태 중에는 가시 오토바이 공격인 사이클론 스트라이크를 연속 사용한다.",
+      "keySkillNamesEn": {"basic": "Rapid Delivery", "skill": "Aerial Command / Cyclone Strike", "ultimate": "Rider Express", "support": "Impact Point Designation"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Allegra Clark", "ja": "市ノ瀬加那", "zhHans": "洪海天", "ko": "이다은"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/hathor"
+    },
+    {
+      "id": "hotori",
+      "globalStatus": "released",
+      "guideRoleEn": "Buff",
+      "coreMechanicKo": "시간 에너지가 차면 아군의 지원·변궤 기술을 기록하고, 궁극기 시간 정지 중 기록된 기술과 자신의 연속 공격을 다시 실행한다.",
+      "keySkillNamesEn": {"basic": "Misty Moon Style", "skill": "Present Replay", "ultimate": "World's Tide", "support": "Shopkeeper's Authority"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Lindsay Sheppard", "ja": "伊藤静", "zhHans": "杜晴晴", "ko": "이지현"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/hotori"
+    },
+    {
+      "id": "iroi",
+      "globalStatus": "released",
+      "guideRoleEn": "Survival",
+      "coreMechanicKo": "상상력을 모아 회복형 꿈의 영역을 연다. 자원이 충분하면 피해를 추가하고 회귀 상태 아군 한 명을 잠시 부활시킬 수 있다.",
+      "keySkillNamesEn": {"basic": "Collaboration / Daydream", "skill": "Future Self Continuity", "ultimate": "3.8-Billion-Year Mirage", "support": "Bang!"},
+      "sourceReviewPatch": "1.2",
+      "voiceActors": {"en": null, "ja": null, "zhHans": null, "ko": null},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/iroi",
+      "comparisonNote": "영문 가이드 음성 출연진 칸은 네 언어 모두 미공개(-)로 표시한다."
+    },
+    {
+      "id": "jiuyuan",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "장미 계약 탄환으로 적을 표식하고, 궁극기에서 표식의 누적 결산 피해를 한꺼번에 발동한다. 스킬은 적을 끌어당기며 탄환을 보충한다.",
+      "keySkillNamesEn": {"basic": "When Secrets Take Shape", "skill": "Intel Hunter", "ultimate": "Final Reckoning", "support": "Intel Lock-On"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Baraka May", "ja": "田中理恵", "zhHans": "张安琪", "ko": "방시우"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/jiuyuan"
+    },
+    {
+      "id": "lacrimosa",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "프라이팬과 젤리 공격 형태를 바꾸며 악몽 중첩을 쌓아 지속 피해를 결산한다. 변궤 기술로 적의 기술을 복제할 수도 있다.",
+      "keySkillNamesEn": {"basic": "Sweet and Sour", "skill": "Morning Tomato / Devilish Gift", "ultimate": "Working Day Judgement", "support": "Microwake"},
+      "sourceReviewPatch": "1.1",
+      "voiceActors": {"en": "Baraka May", "ja": "長縄まりあ", "zhHans": "宴宁", "ko": "김보나"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/lacrimosa"
+    },
+    {
+      "id": "linko",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "변조 자원을 소비해 선택한 아군과 동기화 협공을 실행한다. 궁극기 영역에서는 최대 세 명의 동기화 공격을 연속 호출한다.",
+      "keySkillNamesEn": {"basic": "Poltergeist CQC", "skill": "Full-Frequency Pulse", "ultimate": "Oversync", "support": "Spectral Cross"},
+      "sourceReviewPatch": "1.3",
+      "voiceActors": {"en": "Emi Lo; Salli Saffioti", "ja": "小倉唯; 村瀬迪与", "zhHans": "胡影佳; 洪海天", "ko": "김서현; 김예림"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/linko"
+    },
+    {
+      "id": "mint",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "전장에 오래 남아 기본 공격과 회전 공격으로 피해를 누적하는 단순한 근접형 딜러다. 방어력과 경직 저항 패시브로 안정성을 얻는다.",
+      "keySkillNamesEn": {"basic": "Perfect Containment", "skill": "Super Claws", "ultimate": "Thunderous Whirlwind Slash", "support": "Invincible Tornado Slash"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Brianna Knickerbocker", "ja": "鬼頭明里", "zhHans": "陈雨", "ko": "성예원"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/mint"
+    },
+    {
+      "id": "nanally",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "기술로 이치다이메의 권위를 얻으면 에스퍼 사이클 피해에 맞춰 추격 공격이 발동한다. 궁극기는 언더보스를 불러 협공과 적 끌어당기기를 더한다.",
+      "keySkillNamesEn": {"basic": "Colucci Secret Skill", "skill": "Colucci Howling Technique", "ultimate": "Colucci Ultimate Technique", "support": "Justice from Above"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Brittany Lauda", "ja": "竹達彩奈", "zhHans": "宋媛媛", "ko": "강새봄"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/nanally"
+    },
+    {
+      "id": "sakiri",
+      "globalStatus": "released",
+      "guideRoleEn": "Buff",
+      "coreMechanicKo": "키루마루로 적을 모으거나 약한 적을 삼켜 제어한다. 궁극기는 팀 공격력을 높이고 스코치 상태의 지속 피해를 강화한다.",
+      "keySkillNamesEn": {"basic": "Kiroumaru Headbutt", "skill": "Devour Whole", "ultimate": "Feast of Gluttony", "support": "Squash!"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Brianna Knickerbocker", "ja": "伊藤美来", "zhHans": "蔡书瑾", "ko": "김나율"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/sakiri"
+    },
+    {
+      "id": "shinku",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "기본 공격과 기술로 투지를 쌓고 궁극기에서 쇄도하는 붉은 형상으로 변신한다. 변신 중에는 강화 기술을 연계해 큰 피해를 낸다.",
+      "keySkillNamesEn": {"basic": "Special Combat Arts / Tidal Assault", "skill": "High-Speed Breach / Scarlet Descent", "ultimate": "Crimson Fury", "support": "Breaching Tactics"},
+      "sourceReviewPatch": "1.2",
+      "voiceActors": {"en": "Anne Yatco", "ja": "田所あずさ", "zhHans": "唐夏芳", "ko": "차영희"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/shinku"
+    },
+    {
+      "id": "skia",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "적에게 송곳니 표식을 부착해 추적 그림자 피해를 쌓는다. 변궤 기술로 그림자 사냥 상태에 들어가 표식 대상에게 추가 공격을 이어간다.",
+      "keySkillNamesEn": {"basic": "Arresting Art", "skill": "Shadow Hound Chase", "ultimate": "The Pack", "support": "Arrest Warrant"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Bill Butts", "ja": "杉田智和", "zhHans": "刘雨轩", "ko": "이동훈"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/skia"
+    },
+    {
+      "id": "zankou",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "현실과 환영 형태를 오가며 스킬을 바꿔 쓰고, 환영 형태 공격으로 지속 피해를 주변 적에게 퍼뜨린다. 전투 시작 직후 사이클 게이지를 크게 채운다.",
+      "keySkillNamesEn": {"basic": "Wildfire / Nightmare Waltz", "skill": "Sanguine Dash / Soulcross", "ultimate": "Inferno Flamenco / Bloodfeast Reverie", "support": "Stoked Flame"},
+      "sourceReviewPatch": "1.3",
+      "voiceActors": {"en": "Stephanie Wong", "ja": "井上喜久子", "zhHans": "陈婷婷", "ko": "허예은"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/zankou"
+    },
+    {
+      "id": "zero",
+      "globalStatus": "released",
+      "guideRoleEn": "Damage",
+      "coreMechanicKo": "변궤 스킬이 사이클 에너지를 즉시 채워 에스퍼 사이클을 빠르게 발동시킨다. 성별 선택은 외형·음성 옵션으로 취급하며 전투 데이터는 한 레코드에 통합했다.",
+      "keySkillNamesEn": {"basic": "Appraisal", "skill": "Appraise and Engrave", "ultimate": "Divide by Zero", "support": "Rift Blossom"},
+      "sourceReviewPatch": "1",
+      "voiceActors": {"en": "Suzie Yeung; Hunter McCoy", "ja": "内田真礼; 内田雄馬", "zhHans": "曾彤; 马洋", "ko": "이은조; 박기욱"},
+      "source": "https://www.prydwen.gg/neverness-to-everness/characters/zero",
+      "comparisonNote": "한국어 목록에서 남성형·여성형 제로가 두 줄로 잡히지만 동일 ID로 병합했다. 성우는 선택된 표현형에 따라 다르므로 한 캐릭터의 복수 음성으로 보존했다."
+    },
+    {
+      "id": "akane-rin",
+      "globalStatus": "announced_phase_2_not_yet_released_globally",
+      "guideRoleEn": "Damage (preview)",
+      "coreMechanicKo": "기타와 음검을 번갈아 사용하는 상·액체형 주력 딜러로 사전 공개됐다. 현악 에너지를 모아 단일 표식형 또는 범위형 강화 공명을 쓰며, 궁극기는 2단 공격으로 소개됐다.",
+      "keySkillNamesEn": {"basic": "Stringblade", "skill": "Rhythm Wave / Synced Resonance", "ultimate": "Sonic Boom", "support": null},
+      "sourceReviewPatch": "pre-release preview; last updated 2026-09-16",
+      "voiceActors": {"en": "Cristina Vee", "ja": "長谷川育美 (Korean community preview)", "zhHans": "陳怡萱 (Korean community preview)", "ko": "김하루 (Korean community preview)"},
+      "source": "https://www.icy-veins.com/neverness-to-everness/akane-rin-profile-skills",
+      "comparisonSources": ["https://ntegame.net/ko/guides/upcoming-characters/", "https://www.mone.gg/tw/blog/nte/akane-rin-guide.html"],
+      "comparisonNote": "글로벌은 10월 21일 예정. Icy Veins는 공개 방송·데이터마이닝 기반이며 정식 출시 전 변경 가능성을 명시하고, 기술명·각성·성우 일부가 미정이다. Mone에는 더 많은 상세 정보가 있으나 사전 공략이라 수치와 세부 효과는 확정값으로 채택하지 않았다."
+    }
+  ]
+}
