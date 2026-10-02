@@ -1,8 +1,6 @@
 {
-  "title": "이환 아카이브",
-  "description": "글로벌 1.4 캐릭터, 스킬 계수, 전용 아크와 콘솔 데이터 아카이브.",
+  "project_id": "appgprj_6abf6c5734bc8191895d16be02013672",
   "static": {
     "directory": "dist"
-  },
-  "project_id": "appgprj_6abf6c5734bc8191895d16be02013672"
+  }
 }
