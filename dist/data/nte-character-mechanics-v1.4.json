@@ -65,7 +65,8 @@
         "6": "명오의 혜우 보호 중 파티의 주 속성 피해 +10%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/adeler",
-      "notes": "Lv.80 stats and coefficient values are community database values; skill level selector unresolved."
+      "notes": "Lv.80 stats and coefficient values are community database values; skill level selector unresolved.",
+      "awakeningNamesKo": {}
     },
     {
       "id": "aurelia",
@@ -97,7 +98,8 @@
         "6": "카덴차 진입·연장 시 파티 혼 속성 피해 +8%, 15초."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/haiyue",
-      "notes": "중국 海月와 한국 커뮤니티 우미츠키를 동일 캐릭터로 연결."
+      "notes": "중국 海月와 한국 커뮤니티 우미츠키를 동일 캐릭터로 연결.",
+      "awakeningNamesKo": {}
     },
     {
       "id": "baicang",
@@ -129,7 +131,8 @@
         "6": "궁극기 영역에서 파티 공격력 +20%, 아군도 즉시 처형 효과 발동 가능."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/baizang",
-      "notes": "상태/언령 조건에 따라 적용되는 계수를 분리해서 읽어야 함."
+      "notes": "상태/언령 조건에 따라 적용되는 계수를 분리해서 읽어야 함.",
+      "awakeningNamesKo": {}
     },
     {
       "id": "blackbird",
@@ -165,7 +168,8 @@
         "https://ntegame.net/ko/characters/blackbird/",
         "https://ntegame.net/ko/guides/blackbird-build-guide/"
       ],
-      "notes": "한국 공략은 출시 전 중국 서버 데이터라고 명시. Awakening A1 계수 충돌은 원자료 양쪽을 보존함."
+      "notes": "한국 공략은 출시 전 중국 서버 데이터라고 명시. Awakening A1 계수 충돌은 원자료 양쪽을 보존함.",
+      "awakeningNamesKo": {}
     },
     {
       "id": "chaos",
@@ -196,7 +200,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "수배 허가 대상의 상 속성 저항 -10%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/kaesi"
+      "sourceUrl": "https://wiki.mysqil.com/characters/kaesi",
+      "awakeningNamesKo": {}
     },
     {
       "id": "chiz",
@@ -227,7 +232,8 @@
         "3": "부채 상태의 금곡 획득 효율 +50%.",
         "6": "피해를 준 대상의 빛 속성 저항 -10%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/xiaozhi"
+      "sourceUrl": "https://wiki.mysqil.com/characters/xiaozhi",
+      "awakeningNamesKo": {}
     },
     {
       "id": "daffodill",
@@ -258,7 +264,8 @@
         "3": "기본 공격/동진/궁극기 레벨 +1.",
         "6": "경직된 대상의 암 속성 저항 -15%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/dafutier"
+      "sourceUrl": "https://wiki.mysqil.com/characters/dafutier",
+      "awakeningNamesKo": {}
     },
     {
       "id": "edgar",
@@ -289,7 +296,8 @@
         "3": "스킬/궁극기/지원 기술 레벨 +1.",
         "6": "아군 체력 손실량으로 궁극기 충전, 최대 20점."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/edjia"
+      "sourceUrl": "https://wiki.mysqil.com/characters/edjia",
+      "awakeningNamesKo": {}
     },
     {
       "id": "fadia",
@@ -320,7 +328,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "파티 최대 체력 +10%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/fadiya"
+      "sourceUrl": "https://wiki.mysqil.com/characters/fadiya",
+      "awakeningNamesKo": {}
     },
     {
       "id": "haniel",
@@ -351,7 +360,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "초이과 에이스 상태 파티 치명타 피해 +12%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/haniya"
+      "sourceUrl": "https://wiki.mysqil.com/characters/haniya",
+      "awakeningNamesKo": {}
     },
     {
       "id": "hathor",
@@ -382,7 +392,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "긴급 배송 중 적 방어력 10% 무시."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/hasuoer"
+      "sourceUrl": "https://wiki.mysqil.com/characters/hasuoer",
+      "awakeningNamesKo": {}
     },
     {
       "id": "hotori",
@@ -413,7 +424,8 @@
         "3": "기본 공격/변궤/궁극기 레벨 +1.",
         "6": "호토리가 생존해 편성 중이면 파티 공격력 +30%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/xun"
+      "sourceUrl": "https://wiki.mysqil.com/characters/xun",
+      "awakeningNamesKo": {}
     },
     {
       "id": "iroi",
@@ -444,7 +456,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1, 파티 방어력 +30%.",
         "6": "회귀 상태 아군 수에 따라 일로이 피해/치명타 증가; 원문 조건 기준."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/yiluoyi"
+      "sourceUrl": "https://wiki.mysqil.com/characters/yiluoyi",
+      "awakeningNamesKo": {}
     },
     {
       "id": "jiuyuan",
@@ -475,7 +488,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "장미 계약 대상의 령 속성 저항 -10%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/jiuyuan"
+      "sourceUrl": "https://wiki.mysqil.com/characters/jiuyuan",
+      "awakeningNamesKo": {}
     },
     {
       "id": "lacrimosa",
@@ -507,7 +521,8 @@
         "6": "원문 페이지의 공명 효과를 별도 클라이언트 확인 전 보류."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/anhunqu",
-      "notes": "A1에는 {0} 템플릿 잔여값이 있어 숫자 확정하지 않음."
+      "notes": "A1에는 {0} 템플릿 잔여값이 있어 숫자 확정하지 않음.",
+      "awakeningNamesKo": {}
     },
     {
       "id": "linko",
@@ -539,7 +554,8 @@
         "6": "공명 영역 +5초, 파티 령/주 속성 피해 +30%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/lingke",
-      "notes": "A4 계수는 page template placeholder라 수치 미확정."
+      "notes": "A4 계수는 page template placeholder라 수치 미확정.",
+      "awakeningNamesKo": {}
     },
     {
       "id": "mint",
@@ -570,7 +586,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "스킬 사용 후 사이클 에너지 +2."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/bohe"
+      "sourceUrl": "https://wiki.mysqil.com/characters/bohe",
+      "awakeningNamesKo": {}
     },
     {
       "id": "nanally",
@@ -601,7 +618,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "나나리 피해 +15%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/nanali"
+      "sourceUrl": "https://wiki.mysqil.com/characters/nanali",
+      "awakeningNamesKo": {}
     },
     {
       "id": "sakiri",
@@ -632,7 +650,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "적의 디버프 1개마다 피해 +3%, 최대 +12%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/zaowu"
+      "sourceUrl": "https://wiki.mysqil.com/characters/zaowu",
+      "awakeningNamesKo": {}
     },
     {
       "id": "shinku",
@@ -663,7 +682,8 @@
         "3": "공격/변궤/궁극기 레벨 +1; 적신홍 중 피해 +30%.",
         "6": "치명타 확률 +10%, 방어력 15% 무시."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/zhenhong"
+      "sourceUrl": "https://wiki.mysqil.com/characters/zhenhong",
+      "awakeningNamesKo": {}
     },
     {
       "id": "skia",
@@ -694,7 +714,8 @@
         "3": "기본 공격/스킬/궁극기 레벨 +1.",
         "6": "송곳니 그림자 하나마다 대상 상 속성 저항 -2%, 최대 -6%."
       },
-      "sourceUrl": "https://wiki.mysqil.com/characters/yi"
+      "sourceUrl": "https://wiki.mysqil.com/characters/yi",
+      "awakeningNamesKo": {}
     },
     {
       "id": "zankou",
@@ -726,7 +747,8 @@
         "6": "피해 후 공격력 +40%, 탁연 적 처치로 DoT 즉시 최대 중첩."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/canhong",
-      "notes": "원문은 hit-string가 긴 다형태 캐릭터. 이 파일에는 대표 계수만 요약하고 세부 레벨 테이블은 원문 검수 대상으로 남김."
+      "notes": "원문은 hit-string가 긴 다형태 캐릭터. 이 파일에는 대표 계수만 요약하고 세부 레벨 테이블은 원문 검수 대상으로 남김.",
+      "awakeningNamesKo": {}
     },
     {
       "id": "zero",
@@ -758,7 +780,8 @@
         "6": "빛 관련 반응 발동 시 파티 공격력 +12%, 20초."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/ling",
-      "notes": "남/여 제로의 전투 데이터는 단일 레코드로 통합."
+      "notes": "남/여 제로의 전투 데이터는 단일 레코드로 통합.",
+      "awakeningNamesKo": {}
     }
   ]
 }

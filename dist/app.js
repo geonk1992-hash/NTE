@@ -618,7 +618,7 @@ function renderSkills(p) {
   const m = p.mechanics;
   const awakenings = (m?.awakeningEffectsKo || []).map(text => {
     const match = text.match(/^A(\d+):\s*/);
-    return '<li class="awakening-item"><strong>' + esc(match ? "각성 "+match[1] : "각성") + '</strong><p>' + esc(translateArchiveText(match ? text.slice(match[0].length) : text)) + '</p></li>';
+    const stage = match?.[1];    const customName = stage ? m?.awakeningNamesKo?.[`A${stage}`] : "";    const label = typeof customName === "string" && customName.trim() ? customName.trim() : match ? "각성 " + stage : "각성";    return '<li class="awakening-item"><strong>' + esc(label) + '</strong><p>' + esc(translateArchiveText(match ? text.slice(match[0].length) : text)) + '</p></li>';
   }).join("");
   const resonance = Object.entries(m?.resonanceKo || {}).map(([level,text]) => '<article class="resonance-card"><span>공명 ' + esc(level) + '단계</span><p>' + esc(translateArchiveText(text)) + '</p></article>').join("");
   return '<div class="two-column"><article class="content-card"><div class="section-head"><div><h2>각성 효과</h2><p>각성 단계별 추가 효과</p></div></div>' +
