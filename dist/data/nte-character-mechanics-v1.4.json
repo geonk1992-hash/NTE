@@ -66,7 +66,14 @@
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/adeler",
       "notes": "Lv.80 stats and coefficient values are community database values; skill level selector unresolved.",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "aurelia",
@@ -99,7 +106,14 @@
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/haiyue",
       "notes": "중국 海月와 한국 커뮤니티 우미츠키를 동일 캐릭터로 연결.",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "baicang",
@@ -132,7 +146,14 @@
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/baizang",
       "notes": "상태/언령 조건에 따라 적용되는 계수를 분리해서 읽어야 함.",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "blackbird",
@@ -169,7 +190,14 @@
         "https://ntegame.net/ko/guides/blackbird-build-guide/"
       ],
       "notes": "한국 공략은 출시 전 중국 서버 데이터라고 명시. Awakening A1 계수 충돌은 원자료 양쪽을 보존함.",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "chaos",
@@ -201,7 +229,14 @@
         "6": "수배 허가 대상의 상 속성 저항 -10%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/kaesi",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "chiz",
@@ -233,7 +268,14 @@
         "6": "피해를 준 대상의 빛 속성 저항 -10%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/xiaozhi",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "daffodill",
@@ -265,7 +307,14 @@
         "6": "경직된 대상의 암 속성 저항 -15%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/dafutier",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "edgar",
@@ -297,7 +346,14 @@
         "6": "아군 체력 손실량으로 궁극기 충전, 최대 20점."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/edjia",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "fadia",
@@ -329,7 +385,14 @@
         "6": "파티 최대 체력 +10%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/fadiya",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "haniel",
@@ -361,7 +424,14 @@
         "6": "초이과 에이스 상태 파티 치명타 피해 +12%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/haniya",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "hathor",
@@ -393,7 +463,14 @@
         "6": "긴급 배송 중 적 방어력 10% 무시."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/hasuoer",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "hotori",
@@ -425,7 +502,14 @@
         "6": "호토리가 생존해 편성 중이면 파티 공격력 +30%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/xun",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "iroi",
@@ -457,7 +541,14 @@
         "6": "회귀 상태 아군 수에 따라 일로이 피해/치명타 증가; 원문 조건 기준."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/yiluoyi",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "jiuyuan",
@@ -489,7 +580,14 @@
         "6": "장미 계약 대상의 령 속성 저항 -10%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/jiuyuan",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "lacrimosa",
@@ -522,7 +620,14 @@
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/anhunqu",
       "notes": "A1에는 {0} 템플릿 잔여값이 있어 숫자 확정하지 않음.",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "linko",
@@ -555,7 +660,14 @@
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/lingke",
       "notes": "A4 계수는 page template placeholder라 수치 미확정.",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "mint",
@@ -587,7 +699,14 @@
         "6": "스킬 사용 후 사이클 에너지 +2."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/bohe",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "nanally",
@@ -619,7 +738,14 @@
         "6": "나나리 피해 +15%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/nanali",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "sakiri",
@@ -651,7 +777,14 @@
         "6": "적의 디버프 1개마다 피해 +3%, 최대 +12%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/zaowu",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "shinku",
@@ -683,7 +816,14 @@
         "6": "치명타 확률 +10%, 방어력 15% 무시."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/zhenhong",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "skia",
@@ -715,7 +855,14 @@
         "6": "송곳니 그림자 하나마다 대상 상 속성 저항 -2%, 최대 -6%."
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/yi",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "zankou",
@@ -748,7 +895,14 @@
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/canhong",
       "notes": "원문은 hit-string가 긴 다형태 캐릭터. 이 파일에는 대표 계수만 요약하고 세부 레벨 테이블은 원문 검수 대상으로 남김.",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     },
     {
       "id": "zero",
@@ -781,7 +935,14 @@
       },
       "sourceUrl": "https://wiki.mysqil.com/characters/ling",
       "notes": "남/여 제로의 전투 데이터는 단일 레코드로 통합.",
-      "awakeningNamesKo": {}
+      "awakeningNamesKo": {
+        "A1": "",
+        "A2": "",
+        "A3": "",
+        "A4": "",
+        "A5": "",
+        "A6": ""
+      }
     }
   ]
 }
