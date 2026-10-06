@@ -1,0 +1,61 @@
+{
+  "version": "1.4",
+  "snapshot": "2026-10-02",
+  "maxLevel": 80,
+  "breakthroughCoins": [25000, 50000, 75000, 100000, 125000, 150000],
+  "leveling": {
+    "characterExpTo80": 6492840,
+    "levelingCoinsTo80": 1623250,
+    "guideCountsTo80": { "elite": 324, "senior": 2, "rising": 3 },
+    "guides": { "elite": 20000, "senior": 5000, "rising": 1000 },
+    "estimateNoteKo": "레벨 1→80 경험치와 레벨업 코인은 커뮤니티 계산기 집계값입니다. 경험치 재료를 묶음으로 사용하면 남는 경험치가 생길 수 있습니다."
+  },
+  "phaseMaterialCounts": [5, 12, 6, 12, 6, 9],
+  "uniqueMaterialCounts": [0, 2, 8, 16, 24, 36],
+  "families": {
+    "whispers": ["잃어버린 속삭임", "모호한 속삭임", "모순된 속삭임"],
+    "silhouettes": ["빛바랜 실루엣", "초점 잃은 실루엣", "어두운 실루엣"],
+    "numerals": ["흐릿한 숫자 부호", "미해독 숫자 부호", "뒤틀린 숫자 부호"],
+    "delusions": ["허황된 망상", "간절한 망상", "초월적 망상"]
+  },
+  "uniqueMaterials": {
+    "water-moon-pick": "워터문 피크",
+    "nest-guard-fragment": "둥지 수호 조각",
+    "tear-of-the-sea": "바다의 눈물",
+    "colorful-ticket-stub": "알록달록 티켓 조각",
+    "charging-knight-spark-plug": "장전한 기사의 점화 플러그",
+    "confessional-flower-seed": "고백의 꽃씨",
+    "page-from-delusions-shore": "망상 저편의 한 페이지"
+  },
+  "characters": {
+    "adler": { "family": "numerals", "unique": "water-moon-pick", "slug": "adler" },
+    "aurelia": { "family": "delusions", "unique": "nest-guard-fragment", "slug": "mitsuki" },
+    "baicang": { "family": "numerals", "unique": "nest-guard-fragment", "slug": "cang" },
+    "blackbird": { "family": "numerals", "unique": "colorful-ticket-stub", "slug": "blackbird" },
+    "chaos": { "family": "delusions", "unique": "tear-of-the-sea", "slug": "chaos" },
+    "chiz": { "family": "whispers", "unique": "tear-of-the-sea", "slug": "chiichan" },
+    "daffodill": { "family": "delusions", "unique": "charging-knight-spark-plug", "slug": "daffodill" },
+    "edgar": { "family": "whispers", "unique": "colorful-ticket-stub", "slug": "edgar" },
+    "fadia": { "family": "silhouettes", "unique": "water-moon-pick", "slug": "fadia" },
+    "haniel": { "family": "numerals", "unique": "nest-guard-fragment", "slug": "haniel" },
+    "hathor": { "family": "delusions", "unique": "colorful-ticket-stub", "slug": "hathor" },
+    "hotori": { "family": "whispers", "unique": "confessional-flower-seed", "slug": "jin" },
+    "iroi": { "family": "silhouettes", "unique": "page-from-delusions-shore", "slug": "oneiroi" },
+    "jiuyuan": { "family": "silhouettes", "unique": "tear-of-the-sea", "slug": "kuhara" },
+    "lacrimosa": { "family": "whispers", "unique": "confessional-flower-seed", "slug": "lacrimosa" },
+    "linko": { "family": "whispers", "unique": "water-moon-pick", "slug": "linko" },
+    "mint": { "family": "silhouettes", "unique": "page-from-delusions-shore", "slug": "mint" },
+    "nanally": { "family": "silhouettes", "unique": "page-from-delusions-shore", "slug": "nanally" },
+    "sakiri": { "family": "numerals", "unique": "charging-knight-spark-plug", "slug": "sagiri" },
+    "shinku": { "family": "whispers", "unique": "charging-knight-spark-plug", "slug": "shinku" },
+    "skia": { "family": "delusions", "unique": "confessional-flower-seed", "slug": "skia" },
+    "zankou": { "family": "numerals", "unique": "nest-guard-fragment", "slug": "zankou" },
+    "zero": { "family": "whispers", "unique": "charging-knight-spark-plug", "slug": "zero" }
+  },
+  "sources": [
+    "https://neverness.app/characters/",
+    "https://gigle.kr/nte/materials",
+    "https://www.ntebuild.com/planner?add=jiuyuan",
+    "https://alkapa.gg/en/neverness-to-everness/characters/cang"
+  ]
+}

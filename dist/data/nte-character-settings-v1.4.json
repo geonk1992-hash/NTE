@@ -1,0 +1,135 @@
+{
+  "dataset": "Neverness to Everness character settings",
+  "snapshotDate": "2026-10-05",
+  "gameVersion": "1.4 Global",
+  "sourceFile": "캐릭터 설정.txt",
+  "noteKo": "캐릭터 설정 문구는 사용자가 제공한 파일을 캐릭터 이름별로 연결했습니다. 원문 날짜와 표기를 그대로 유지합니다.",
+  "characters": {
+    "zankou": {
+      "summary": "비밀조직 「주홍글씨」의 전 조직원, 코드네임 「붉은 접시꽃」, 현재 게흐로스 섬 수감자.",
+      "birthday": "11월 13일",
+      "faction": "소속 없음",
+      "ability": "「혹란의 눈」"
+    },
+    "linko": {
+      "summary": "만물의 「전파」 를 들을 수 있는 소녀, 줄여서 전파계 소녀다.",
+      "birthday": "2월 14일",
+      "faction": "E.T.D 6팀 대원",
+      "ability": "「텔레파시」"
+    },
+    "blackbird": {
+      "summary": "「마녀의 집」 주인. 신비롭고 우아한 마녀 아가씨로 알려져 있다.",
+      "birthday": "1월 120일",
+      "faction": "우카슈 홀",
+      "ability": "「재앙을 되뇌는 새」"
+    },
+    "daffodill": {
+      "summary": "말수 적고 무뚝뚝한 「에이본」 전속 보디가드",
+      "birthday": "1월 19일",
+      "faction": "에이본 골동품 가게",
+      "ability": "「천 개의 날과 눈」"
+    },
+    "iroi": {
+      "summary": "오그네스 일로이는 모범적인 아이예요.",
+      "birthday": "12월 21일",
+      "faction": "이상관리국 수용2팀",
+      "ability": "「태아의 꿈」"
+    },
+    "shinku": {
+      "summary": "남들과 거리를 두는 무뚝뚝한 행동파",
+      "birthday": "8월 13일",
+      "faction": "이상 관리국 수용2팀",
+      "ability": "「달밤의 적룡」"
+    },
+    "lacrimosa": {
+      "summary": "이상 관리국 직원 중 시설 보수 요청 최다 기록 보유자",
+      "birthday": "6월 26일",
+      "faction": "이상 관리국 E.T.D 4팀",
+      "ability": "「안혼 미사」"
+    },
+    "nanally": {
+      "summary": "가문 멤버를 모집 중인 「콜린스 가문」 의 초대 가주",
+      "birthday": "8월 20일",
+      "faction": "에이본 골동품 가게",
+      "ability": "「천재 초대 가주: 세상을 뒤집자」"
+    },
+    "zero": {
+      "summary": "베르트하이머 수치가 측정되지 않는 유일한 이능력자",
+      "birthday": "알 수 없음",
+      "faction": "에이본 골동품 가게",
+      "ability": "「제로 센스」"
+    },
+    "jiuyuan": {
+      "summary": "다재다능하고 예측 불가한 스테리 엘리트 배송원 겸 「점장대리」",
+      "birthday": "7월 24일",
+      "faction": "스테리 익스프레스",
+      "ability": "「쇠락과 번영의 조례」"
+    },
+    "hotori": {
+      "summary": "안목이 그리 뛰어나진 않은 것 같은, 하루 종일 술에 젖어 있는 「에이본」 점주",
+      "birthday": "12월 20일",
+      "faction": "에이본 골동품 가게",
+      "ability": "「두이노의 비가」"
+    },
+    "sakiri": {
+      "summary": "겉보기에도 실제로도 만만치 않은 「에이본」의 독보적 존재",
+      "birthday": "11월 7일",
+      "faction": "에이본 골동품 가게",
+      "ability": "「유령 잡기 게임」"
+    },
+    "baicang": {
+      "summary": "「가장 대장 같지 않은 대장」 순위 상위권에 있는 E.T.D 4팀 대장",
+      "birthday": "11월 23일",
+      "faction": "이상 관리국 E.T.D 4팀",
+      "ability": "「판견과 가을」"
+    },
+    "chiz": {
+      "summary": "살짝 소심해 보이지만, 핑크퍼스 은행의 믿음직한 매니저다.",
+      "birthday": "2월 28일",
+      "faction": "드보르자크 가문",
+      "ability": "「이슬의 세계」"
+    },
+    "haniel": {
+      "summary": "세상을 구하는 미소녀가 되고 싶은 고등학생",
+      "birthday": "3월 27일",
+      "faction": "스테리 익스프레스",
+      "ability": "「기이한 은전」"
+    },
+    "adler": {
+      "summary": "「에이본」 사람들과 이웃의 신회를 한 몸에 받는 완벽한 집사",
+      "birthday": "9월 25일",
+      "faction": "에이본 골동품 가게",
+      "ability": "「아야타나」"
+    },
+    "hathor": {
+      "summary": "임무 일정표를 작성하고 철저하게 실행에 옮기는 높은 효율성의 배송원",
+      "birthday": "8월 29일",
+      "faction": "스테리 익스프레스",
+      "ability": "「얽매인 방랑자」"
+    },
+    "mint": {
+      "summary": "평가를 매일 수 있다면, 수용팀 내에서 「이상에게 가장 많이 속은」 사람",
+      "birthday": "6월 1일",
+      "faction": "이상 관리국 수용2팀",
+      "ability": "「고양이 재채기」"
+    },
+    "aurelia": {
+      "summary": "우미츠키를 만난 뒤 알게 된 헤테로 시티의 흥미로운 사실 : 도로에서 해파리를 타고 다니는 건 교통 위반이 아니다.",
+      "birthday": "3월 9일",
+      "faction": "비취 거리 주민 협회",
+      "ability": "「청춘 콤플렉스」"
+    },
+    "edgar": {
+      "summary": "머리가 비상하며 어린아이처럼 보인다. 실제로도 아직 어리다.",
+      "birthday": "10월 7일",
+      "faction": "에이본 골동품 가게",
+      "ability": "「피네간의 경야」"
+    },
+    "skia": {
+      "summary": "항상 E.T.D 4팀의 대장으로 오해받는 부대장",
+      "birthday": "1월 10일",
+      "faction": "이상관리국 E.T.D 4팀",
+      "ability": "「파우스트」"
+    }
+  }
+}

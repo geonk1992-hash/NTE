@@ -51,7 +51,7 @@
       "id": "blackbird",
       "globalStatus": "released",
       "guideRoleEn": "Damage",
-      "coreMechanicKo": "적에게 깃털 표식을 남겨 대기 중인 협공 피해를 유도하고 사이클 게이지를 빠르게 채운다. 궁극기로 마녀 형태에 진입하며 말리스 자원을 소비해 연속 공격과 팀 공격력 증가를 얻는다.",
+      "coreMechanicKo": "적에게 깃털 표식을 남겨 대기 중인 협공 피해를 유도하고 사이클 게이지를 빠르게 채운다. 궁극기로 마녀 형태에 진입하며 악의 자원을 소비해 연속 공격과 팀 공격력 증가를 얻는다.",
       "keySkillNamesEn": {"basic": "Fleeting Shadow / Pyreflame", "skill": "Netherplume Rite / Flames of Deliverance", "ultimate": "Requies Animarum / Flammae in Unum", "support": "Judgment Upon Me / Naught but Mercy"},
       "sourceReviewPatch": "1.4",
       "voiceActors": {"en": "Xanthe Huynh", "ja": "能登麻美子", "zhHans": "井琉", "ko": "문유정"},
