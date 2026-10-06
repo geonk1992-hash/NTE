@@ -1,13 +1,8 @@
-const FILES = {
-  roster: "nte-characters-v1.json",
-  details: "nte-character-details-v1.4.json",
-  settings: "nte-character-settings-v1.4.json",
-  mechanics: "nte-character-mechanics-v1.4.json",
-  level11: "nte-character-r3-level11-v1.4.json",
-  arcs: "nte-character-signature-arcs-v1.4.json",
-  crosscheck: "nte-skill-level-crosscheck-v1.4.json",
-  consoles: "nte-character-console-cartridges-v1.4.json",  growth: "nte-character-growth-v1.4.json",  fieldSkills: "nte-character-field-skills-v1.4.json",
-  coefficients: "nte-skill-coefficients-v1.4.lzw"
+const FILES = {
+  index: "characters/index.json",
+  arcs: "nte-character-signature-arcs-v1.4.json",
+  consoles: "nte-cartridge-sets-v1.4.json",
+  growth: "nte-character-growth-v1.4.json"
 };
 const ELEMENTS = {
   Anima: { name: "령", color: "#9fe6aa" }, Chaos: { name: "암", color: "#c797ff" },
@@ -399,21 +394,41 @@ function renderCoefficientTable(table, group, level, heading) {
   return '<div class="coeff-table-block"><h4 class="coeff-table-heading">' + esc(heading) + '</h4><div class="coeff-value">' + rows + '</div></div>';
 }
 
-async function start() {
-  try {
-    const pairs = await Promise.all(Object.entries(FILES).map(async ([key, file]) => {
-      const response = await fetch("./data/" + file);
-      if (!response.ok) throw new Error("자료 파일을 불러오지 못했습니다.");
-      if (key === "coefficients") return [key, decodeCoefficientArchive(await response.text())];
-      return [key, await response.json()];
-    }));
-    db = Object.fromEntries(pairs);
-    init();
-  } catch (error) {
-    $("#main-content").innerHTML = '<div class="error-state"><div><p class="eyebrow">자료를 열 수 없습니다</p><h2>자료를 불러오지 못했습니다</h2><p>' + esc(error.message) + '</p><p class="source-note">사이트 주소로 다시 열어 주세요.</p></div></div>';
-  }
-}
-
+async function start() {
+  try {
+    const pairs = await Promise.all(Object.entries(FILES).map(async ([key, file]) => {
+      const response = await fetch("./data/" + file);
+      if (!response.ok) throw new Error("자료 파일을 불러오지 못했습니다: " + file);
+      return [key, await response.json()];
+    }));
+    const shared = Object.fromEntries(pairs);
+    const index = shared.index;
+    const ids = [...index.releasedCharacterIds, ...index.upcomingCharacterIds];
+    if (new Set(ids).size !== ids.length) throw new Error("캐릭터 목록에 중복 ID가 있습니다.");
+    const characterEntries = await Promise.all(ids.map(async id => {
+      const response = await fetch("./data/characters/" + encodeURIComponent(id) + ".json");
+      if (!response.ok) throw new Error("캐릭터 자료를 불러오지 못했습니다: " + id);
+      const character = await response.json();
+      if (character.id !== id || character.roster?.id !== id) throw new Error("캐릭터 파일의 ID가 목록과 일치하지 않습니다: " + id);
+      return [id, character];
+    }));
+    const characters = Object.fromEntries(characterEntries);
+    db = {
+      ...shared,
+      characters,
+      roster: {
+        ...index.rosterMetadata,
+        characters: index.releasedCharacterIds.map(id => characters[id].roster),
+        confirmedUpcoming: index.upcomingCharacterIds.map(id => characters[id].roster),
+        watchlist: index.watchlist || []
+      }
+    };
+    init();
+  } catch (error) {
+    $("#main-content").innerHTML = '<div class="error-state"><div><p class="eyebrow">자료를 열 수 없습니다</p><h2>자료를 불러오지 못했습니다</h2><p>' + esc(error.message) + '</p><p class="source-note">사이트 주소로 다시 열어 주세요.</p></div></div>';
+  }
+}
+
 function init() {
   const released = db.roster.characters.filter(c => c.released);
   $("#header-count").textContent = fmt(released.length);
@@ -485,17 +500,21 @@ function renderRoster() {
 }
 
 function getProfile(id) {
+  const character = db.characters[id];
+  if (!character) return null;
   return {
-    roster: db.roster.characters.find(x => x.id === id),
-    detail: db.details.characters.find(x => x.id === id),
-
-    setting: db.settings.characters[id] || null,
-    mechanics: db.mechanics.characters.find(x => x.id === id),
-    console: db.consoles.characters.find(x => x.characterId === id),
+    roster: character.roster,
+    detail: character.detail,
+    setting: character.setting || null,
+    mechanics: character.mechanics,
+    console: character.console,
     signature: db.arcs.characters.find(x => x.characterId === id),
-    r3: db.level11.characters[id] || null,
-    coefficients: db.coefficients.characters[id] || null,
-    crosscheck: db.crosscheck.characters[id] || null,    fieldSkills: db.fieldSkills.characters[id] || null  };
+    growth: db.growth.characters[id] || null,
+    r3: character.r3 || null,
+    coefficients: character.coefficients || null,
+    crosscheck: character.crosscheck?.progression || null,
+    fieldSkills: character.fieldSkills || null
+  };
 }
 function refreshSkillLevel() {
   const panel = $("#tab-panel");

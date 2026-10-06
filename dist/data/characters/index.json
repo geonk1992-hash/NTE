@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "rosterMetadata": {
+    "dataset": "Neverness to Everness character roster",
+    "snapshotDate": "2026-10-02",
+    "gameVersion": "1.4",
+    "scope": "Unique playable characters released by the snapshot date; gender-selectable Esper Zero is one character record.",
+    "coverage": {
+      "releasedUniqueCharacters": 23,
+      "confirmedUpcomingCharacters": 1,
+      "plannedUniqueCharactersInGlobalVersion14": 24,
+      "deepSkillAndGrowthData": "see nte-character-details-v1.4.json for kit summaries and nte-character-mechanics-v1.4.json for community-source coefficients, level-80 stats, and awakening effects; breakthrough-stage stat tables and materials remain unverified",
+      "acquisitionDetails": "not included; availability varies by server, event, and version"
+    },
+    "taxonomy": {
+      "elements": {
+        "Anima": {
+          "ko": "령",
+          "zhHans": "灵"
+        },
+        "Chaos": {
+          "ko": "암",
+          "zhHans": "暗"
+        },
+        "Cosmos": {
+          "ko": "빛",
+          "zhHans": "光"
+        },
+        "Incantation": {
+          "ko": "주",
+          "zhHans": "咒"
+        },
+        "Lakshana": {
+          "ko": "상",
+          "zhHans": "相"
+        },
+        "Psyche": {
+          "ko": "혼",
+          "zhHans": "魂"
+        }
+      },
+      "arcTypes": {
+        "Condensate": {
+          "ko": "결합",
+          "zhHans": "聚合"
+        },
+        "Gas": {
+          "ko": "기체",
+          "zhHans": "气态"
+        },
+        "Liquid": {
+          "ko": "액체",
+          "zhHans": "液态"
+        },
+        "Plasma": {
+          "ko": "플라스마",
+          "zhHans": "等离子"
+        },
+        "Solid": {
+          "ko": "고체",
+          "zhHans": "固态"
+        }
+      }
+    },
+    "sources": {
+      "officialKoreanPatchNotes": "https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html",
+      "officialChineseSite": "https://yh.wanmei.com/main.html",
+      "englishRosterAndGuides": "https://www.prydwen.gg/neverness-to-everness/characters",
+      "koreanCommunityDatabase": "https://ntegame.net/ko/characters/",
+      "koreanSecondaryRoster": "https://alkapa.gg/neverness-to-everness/characters",
+      "chineseCommunityRoster": "https://wiki.mysqil.com/characters/",
+      "chineseBilibiliWikiRoster": "https://wiki.biligame.com/yh/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4"
+    }
+  },
+  "releasedCharacterIds": [
+    "adler",
+    "aurelia",
+    "baicang",
+    "blackbird",
+    "chaos",
+    "chiz",
+    "daffodill",
+    "edgar",
+    "fadia",
+    "haniel",
+    "hathor",
+    "hotori",
+    "iroi",
+    "jiuyuan",
+    "lacrimosa",
+    "linko",
+    "mint",
+    "nanally",
+    "sakiri",
+    "shinku",
+    "skia",
+    "zankou",
+    "zero"
+  ],
+  "upcomingCharacterIds": [
+    "akane-rin"
+  ],
+  "watchlist": [
+    {
+      "id": "taygedo",
+      "names": {
+        "en": "Taygedo",
+        "zhHans": "塔吉多"
+      },
+      "releaseStatusAsOfSnapshot": "unclear",
+      "note": "Appears in a Chinese community roster but is absent from the current English and Korean released-character lists. Keep out of the playable roster until confirmed in the live client or an official announcement."
+    }
+  ]
+}

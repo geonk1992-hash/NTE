@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "id": "aurelia",
+  "roster": {
+    "id": "aurelia",
+    "names": {
+      "ko": "우미츠키",
+      "en": "Aurelia",
+      "zhHans": "海月"
+    },
+    "rarity": "A",
+    "element": "Psyche",
+    "arcType": "Plasma",
+    "communityRoleKo": "메인 딜러",
+    "released": true,
+    "nameNote": "한국 커뮤니티 DB는 우미츠키, 중국 DB는 海月를 사용합니다. 영문 클라이언트 이름 Aurelia를 기본 키로 유지했습니다.",
+    "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/aurelia"
+  },
+  "detail": {
+    "id": "aurelia",
+    "globalStatus": "released",
+    "guideRoleEn": "Damage",
+    "coreMechanicKo": "해파리 동료와 함께 공격하며 카덴차 상태에서 공격을 강화한다. 궁극기는 주변 적을 모으고, 회피 반격으로 추가 해파리 공격을 낸다.",
+    "keySkillNamesEn": {
+      "basic": "Cappella",
+      "skill": "Cadenza Aria",
+      "ultimate": "Canzon Chorus",
+      "support": "Dissonance"
+    },
+    "sourceReviewPatch": "1",
+    "voiceActors": {
+      "en": "Kira Buckland",
+      "ja": "高橋花林",
+      "zhHans": "葛子瑞",
+      "ko": "정해은"
+    },
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/aurelia",
+    "comparisonNote": "기존 한국 커뮤니티 도감의 우미츠키와 영문 Aurelia를 같은 캐릭터로 연결했다."
+  },
+  "setting": {
+    "summary": "우미츠키를 만난 뒤 알게 된 헤테로 시티의 흥미로운 사실 : 도로에서 해파리를 타고 다니는 건 교통 위반이 아니다.",
+    "birthday": "3월 9일",
+    "faction": "비취 거리 주민 협회",
+    "ability": "「청춘 콤플렉스」"
+  },
+  "introduction": {
+    "introKo": "우미츠키와 함께라면 해파리를 타고 헤테로 거리를 달려도 교통 위반은 아니라는, 그녀를 만나 알게 된 도시의 엉뚱한 상식.",
+    "sourceUrl": "https://nte.hq1.pro/en/characters/aurelia-1070"
+  },
+  "mechanics": {
+    "id": "aurelia",
+    "nameKo": "우미츠키",
+    "nameZhHans": "海月",
+    "level80BaseStats": {
+      "hp": 11878,
+      "atk": 604,
+      "def": 727,
+      "critRatePct": 5,
+      "critDamagePct": 50
+    },
+    "skillCoefficients": {
+      "basic": "34.7%; 63%; jelly projectile 30%*3; 9.9%*4; plunge 130%; dodge projectile 25.8%; parry 195%; special parry 40%*4; cycle 24.",
+      "skill": "Cadenza Aria 100%; cycle 11.",
+      "ultimate": "89%*5+55.2%; energy 120.",
+      "support": "200%; end-of-Night Star passive: 50% ATK*3 Psyche hits."
+    },
+    "awakeningEffectsKo": [
+      "A1: 카덴차 상태 치명타 확률 +15%.",
+      "A2: 극한 회피 또는 지원 기술 사용 시 카덴차 5초 진입; 이미 진입한 상태면 5초 연장, 최대 12초.",
+      "A3: 카덴차 중 궁극기 피해 +20%.",
+      "A4: 스태카토 사용 중 방어력 +20%.",
+      "A5: 궁극기 치명타 확률 +15%.",
+      "A6: 점점 강하게의 최대 중첩을 20으로 높이고 카덴차 사용 후 10중첩 획득."
+    ],
+    "resonanceKo": {
+      "3": "기본 공격/카덴차 아리아/궁극기 레벨 +1.",
+      "6": "카덴차 진입·연장 시 파티 혼 속성 피해 +8%, 15초."
+    },
+    "sourceUrl": "https://wiki.mysqil.com/characters/haiyue",
+    "notes": "중국 海月와 한국 커뮤니티 우미츠키를 동일 캐릭터로 연결.",
+    "awakeningNamesKo": {
+      "A1": "",
+      "A2": "",
+      "A3": "",
+      "A4": "",
+      "A5": "",
+      "A6": ""
+    }
+  },
+  "r3": {
+    "nameKo": "우미츠키",
+    "sourceUrl": "https://www.ntestation.com/%E6%B5%B7%E6%9C%88",
+    "r3Raises": [
+      "기본 공격",
+      "변궤 스킬(华彩唱段)",
+      "궁극기"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=74.9%",
+        "普通攻击2=136%",
+        "普通攻击3=64.8%*3",
+        "普通攻击4=21.4%*4",
+        "下落伤害=280.7%",
+        "长按闪避射弹伤害=55.7%",
+        "极限反击=421%",
+        "特殊极限反击射弹伤害=86.4%*4"
+      ],
+      "redirectSkill": [
+        "伤害倍率=215.9%"
+      ],
+      "ultimate": [
+        "伤害倍率=192.1%*5+119.2%"
+      ]
+    }
+  },
+  "coefficients": {
+    "url": "https://www.ntestation.com/%E6%B5%B7%E6%9C%88",
+    "tables": [
+      {
+        "g": "basic",
+        "h": [
+          "普通攻击1",
+          "普通攻击2",
+          "普通攻击3",
+          "普通攻击4",
+          "下落伤害",
+          "长按闪避射弹伤害",
+          "极限反击",
+          "特殊极限反击射弹伤害"
+        ],
+        "r": [
+          [
+            0.347,
+            0.63,
+            0.3,
+            0.099,
+            1.3,
+            0.258,
+            1.95,
+            0.4
+          ],
+          [
+            0.375,
+            0.68,
+            0.324,
+            0.107,
+            1.404,
+            0.279,
+            2.106,
+            0.432
+          ],
+          [
+            0.405,
+            0.735,
+            0.35,
+            0.115,
+            1.516,
+            0.301,
+            2.274,
+            0.467
+          ],
+          [
+            0.437,
+            0.794,
+            0.378,
+            0.125,
+            1.638,
+            0.325,
+            2.456,
+            0.504
+          ],
+          [
+            0.472,
+            0.857,
+            0.408,
+            0.135,
+            1.769,
+            0.351,
+            2.653,
+            0.544
+          ],
+          [
+            0.51,
+            0.926,
+            0.441,
+            0.145,
+            1.91,
+            0.379,
+            2.865,
+            0.588
+          ],
+          [
+            0.551,
+            1,
+            0.476,
+            0.157,
+            2.063,
+            0.409,
+            3.094,
+            0.635
+          ],
+          [
+            0.595,
+            1.08,
+            0.514,
+            0.17,
+            2.228,
+            0.442,
+            3.342,
+            0.686
+          ],
+          [
+            0.642,
+            1.166,
+            0.555,
+            0.183,
+            2.406,
+            0.478,
+            3.609,
+            0.74
+          ],
+          [
+            0.694,
+            1.259,
+            0.6,
+            0.198,
+            2.599,
+            0.516,
+            3.898,
+            0.8
+          ],
+          [
+            0.749,
+            1.36,
+            0.648,
+            0.214,
+            2.807,
+            0.557,
+            4.21,
+            0.864
+          ]
+        ],
+        "m": {
+          "普通攻击3": 3,
+          "普通攻击4": 4,
+          "特殊极限反击射弹伤害": 4
+        },
+        "f": {}
+      },
+      {
+        "g": "skill",
+        "h": [
+          "伤害倍率"
+        ],
+        "r": [
+          [
+            1
+          ],
+          [
+            1.08
+          ],
+          [
+            1.166
+          ],
+          [
+            1.26
+          ],
+          [
+            1.36
+          ],
+          [
+            1.469
+          ],
+          [
+            1.587
+          ],
+          [
+            1.714
+          ],
+          [
+            1.851
+          ],
+          [
+            1.999
+          ],
+          [
+            2.159
+          ]
+        ],
+        "m": {},
+        "f": {}
+      },
+      {
+        "g": "ultimate",
+        "h": [
+          "极轨终结",
+          "极轨终结2"
+        ],
+        "r": [
+          [
+            0.89,
+            0.552
+          ],
+          [
+            0.961,
+            0.596
+          ],
+          [
+            1.038,
+            0.644
+          ],
+          [
+            1.121,
+            0.695
+          ],
+          [
+            1.211,
+            0.751
+          ],
+          [
+            1.308,
+            0.811
+          ],
+          [
+            1.412,
+            0.876
+          ],
+          [
+            1.525,
+            0.946
+          ],
+          [
+            1.647,
+            1.022
+          ],
+          [
+            1.779,
+            1.103
+          ],
+          [
+            1.921,
+            1.192
+          ]
+        ],
+        "m": {
+          "极轨终结": 5
+        },
+        "f": {}
+      },
+      {
+        "g": "support",
+        "h": [
+          "援护技"
+        ],
+        "r": [
+          [
+            2
+          ],
+          [
+            2.16
+          ],
+          [
+            2.333
+          ],
+          [
+            2.519
+          ],
+          [
+            2.721
+          ],
+          [
+            2.939
+          ],
+          [
+            3.174
+          ],
+          [
+            3.428
+          ],
+          [
+            3.702
+          ],
+          [
+            3.998
+          ],
+          [
+            4.318
+          ]
+        ],
+        "m": {},
+        "f": {}
+      }
+    ]
+  },
+  "crosscheck": {
+    "progression": {
+      "nameKo": "우미츠키",
+      "nameJa": "海月",
+      "sourceUrl": "https://wikiwiki.jp/nte/%E6%B5%B7%E6%9C%88",
+      "coverage": "Japanese wiki exposes LV1 and LV2 for the basic/skill/ultimate rows below, with most higher-level cells blank. Prydwen independently labels its coefficients Level 1 but rounds some values to whole percentages.",
+      "records": [
+        {
+          "skill": "basic.hit1",
+          "levels": {
+            "1": "34.7%",
+            "2": "37.5%"
+          }
+        },
+        {
+          "skill": "basic.hit2",
+          "levels": {
+            "1": "63%",
+            "2": "68%"
+          }
+        },
+        {
+          "skill": "basic.hit3Projectile",
+          "levels": {
+            "1": "30%×3",
+            "2": "32.4%×3"
+          }
+        },
+        {
+          "skill": "basic.hit4",
+          "levels": {
+            "1": "9.9%×4",
+            "2": "10.7%×4"
+          }
+        },
+        {
+          "skill": "basic.plunge",
+          "levels": {
+            "1": "130%",
+            "2": "140.4%"
+          }
+        },
+        {
+          "skill": "basic.dodgeProjectile",
+          "levels": {
+            "1": "25.8%",
+            "2": "27.9%"
+          }
+        },
+        {
+          "skill": "basic.counter",
+          "levels": {
+            "1": "195%",
+            "2": "210.6%"
+          }
+        },
+        {
+          "skill": "basic.specialCounterProjectile",
+          "levels": {
+            "1": "40%×4",
+            "2": "43.2%×4"
+          }
+        },
+        {
+          "skill": "skill.cadenzaAria",
+          "levels": {
+            "1": "100%",
+            "2": "108%"
+          }
+        },
+        {
+          "skill": "ultimate.canon",
+          "levels": {
+            "1": "89%×5+55.2%",
+            "2": "96.1%×5+59.6%"
+          }
+        },
+        {
+          "skill": "support.dissonance",
+          "levels": {
+            "1": "200%"
+          }
+        }
+      ],
+      "crossSourceConflict": {
+        "skill": "basic.hit1",
+        "wikiwikiLv1": "34.7%",
+        "prydwenLv1": "34%",
+        "assessment": "Likely a precision/rounding difference, but the source values are retained separately until the live Korean client or official data resolves it.",
+        "prydwenUrl": "https://d2ankz0m1a0dsp.cloudfront.net/neverness-to-everness/characters/aurelia/"
+      }
+    },
+    "isolatedLevelChecks": [],
+    "additionalRegionalChecks": []
+  },
+  "console": {
+    "characterId": "aurelia",
+    "nameKo": "우미츠키",
+    "nameEn": "Aurelia",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 공격력 +10%",
+      "recommendedLayout": [
+        "II",
+        "III",
+        "III",
+        "IV"
+      ]
+    },
+    "cartridge": {
+      "recommendedSetId": "devils-blood-curse",
+      "alternativeSetIds": [
+        "lost-radiance",
+        "shadow-creed"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "치명 확률%",
+      "공격력%"
+    ],
+    "substatPriorityKo": [
+      "치명 피해%",
+      "치명 확률%",
+      "공격력",
+      "통상 피해%"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/18",
+      "https://www.ntebuild.com/characters/aurelia"
+    ]
+  },
+  "fieldSkills": {
+    "passives": [
+      {
+        "nameKo": "화음",
+        "unlock": "2단계",
+        "effectKo": "「노바」 종료 시 공격력의 50%에 해당하는 혼속성 피해를 3회 입힌다."
+      },
+      {
+        "nameKo": "점점 커지는 선율",
+        "unlock": "4단계",
+        "effectKo": "해파리 폭발이 적중하면 공격력이 5초 동안 1% 증가한다. 최대 10회 중첩된다."
+      }
+    ],
+    "citySkills": [
+      {
+        "nameKo": "완벽한 호흡",
+        "categoryKo": "상점",
+        "effectKo": "1단계에서 판매 가격이 0.12퐁스 오른다. 음료 태그 수에 따라 손님 유입이 늘고, 점주의 선택에서 팁을 얻는다. 4단계에서 재료 소모가 1% 줄며 5단계에서 태그에 따른 손님 유입 효과가 강화된다."
+      }
+    ],
+    "sourceUrl": "https://neverness.app/characters/mitsuki"
+  }
+}

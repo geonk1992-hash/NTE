@@ -1,0 +1,487 @@
+{
+  "schemaVersion": 1,
+  "id": "edgar",
+  "roster": {
+    "id": "edgar",
+    "names": {
+      "ko": "에드가",
+      "en": "Edgar",
+      "zhHans": "埃德嘉"
+    },
+    "rarity": "A",
+    "element": "Cosmos",
+    "arcType": "Liquid",
+    "communityRoleKo": "생존 / 힐러",
+    "released": true,
+    "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/edgar"
+  },
+  "detail": {
+    "id": "edgar",
+    "globalStatus": "released",
+    "guideRoleEn": "Survival",
+    "coreMechanicKo": "스킬을 길게 눌러 지속 피해와 함께 체력이 가장 낮은 아군을 회복한다. 궁극기는 일정 시간 장판을 만들고 현재 캐릭터를 치유한다.",
+    "keySkillNamesEn": {
+      "basic": "Combat Practice",
+      "skill": "Wild Current",
+      "ultimate": "Finnegan's Wake",
+      "support": "Weight of Knowledge"
+    },
+    "sourceReviewPatch": "1",
+    "voiceActors": {
+      "en": "Casey Mongillo",
+      "ja": "三瓶由布子",
+      "zhHans": "四白",
+      "ko": "장채연"
+    },
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/edgar"
+  },
+  "setting": {
+    "summary": "머리가 비상하며 어린아이처럼 보인다. 실제로도 아직 어리다.",
+    "birthday": "10월 7일",
+    "faction": "에이본 골동품 가게",
+    "ability": "「피네간의 경야」"
+  },
+  "introduction": {
+    "introKo": "에이본의 영리한 꼬마 에드가. 어른스러워 보이지만 실제로도 어린아이다.",
+    "sourceUrl": "https://nte.hq1.pro/en/characters/edgar-1021"
+  },
+  "mechanics": {
+    "id": "edgar",
+    "nameKo": "에드가",
+    "nameZhHans": "埃德嘉",
+    "level80BaseStats": {
+      "hp": 16362,
+      "atk": 421,
+      "def": 824,
+      "critRatePct": 5,
+      "critDamagePct": 50
+    },
+    "skillCoefficients": {
+      "basic": "30.9%; 62.7%; 39%*2; 83.3%; 69.8%; plunge 31.2%; parry 104%; cycle 34.",
+      "skill": "Wild Current 80%*7; each heal 300+1.4% Max HP; each sustained hit adds 1s cooldown; cycle 37.",
+      "ultimate": "400%; heal 350+1.1% Max HP every 1s for 10s; energy 100.",
+      "support": "200%."
+    },
+    "awakeningEffectsKo": [
+      "A1: 아군 지원 기술 사용 시 진리의 열쇠 1개 획득.",
+      "A2: Wild Current 사용으로 늘어나는 쿨다운을 최대 3초로 제한.",
+      "A3: 현재 체력 30% 미만 아군에게 Wild Current 치유량 +15%.",
+      "A4: Wild Current 피해 +50%.",
+      "A5: 최대 체력 +20%.",
+      "A6: 궁극기 영역의 파티 방어력 +15%."
+    ],
+    "resonanceKo": {
+      "3": "스킬/궁극기/지원 기술 레벨 +1.",
+      "6": "아군 체력 손실량으로 궁극기 충전, 최대 20점."
+    },
+    "sourceUrl": "https://wiki.mysqil.com/characters/edjia",
+    "awakeningNamesKo": {
+      "A1": "",
+      "A2": "",
+      "A3": "",
+      "A4": "",
+      "A5": "",
+      "A6": ""
+    }
+  },
+  "r3": {
+    "nameKo": "에드가",
+    "sourceUrl": "https://www.ntestation.com/%E5%9F%83%E5%BE%B7%E5%98%89",
+    "r3Raises": [
+      "변궤 스킬",
+      "궁극기",
+      "지원기"
+    ],
+    "tables": {
+      "redirectSkill": [
+        "伤害倍率=172.7%*7",
+        "每段治疗量=648+3.02%最大生命值"
+      ],
+      "ultimate": [
+        "伤害倍率=863.6%",
+        "持续治疗量=756+2.37%最大生命值"
+      ],
+      "support": [
+        "伤害倍率=431.8%"
+      ]
+    }
+  },
+  "coefficients": {
+    "url": "https://www.ntestation.com/%E5%9F%83%E5%BE%B7%E5%98%89",
+    "tables": [
+      {
+        "g": "basic",
+        "h": [
+          "普通攻击1",
+          "普通攻击2",
+          "普通攻击3",
+          "普通攻击4",
+          "普通攻击5",
+          "下落伤害",
+          "极限反击"
+        ],
+        "r": [
+          [
+            0.309,
+            0.627,
+            0.39,
+            0.833,
+            0.698,
+            0.312,
+            1.04
+          ],
+          [
+            0.334,
+            0.677,
+            0.421,
+            0.9,
+            0.754,
+            0.337,
+            1.123
+          ],
+          [
+            0.36,
+            0.731,
+            0.455,
+            0.972,
+            0.814,
+            0.364,
+            1.213
+          ],
+          [
+            0.389,
+            0.79,
+            0.491,
+            1.049,
+            0.879,
+            0.393,
+            1.31
+          ],
+          [
+            0.42,
+            0.853,
+            0.531,
+            1.133,
+            0.95,
+            0.424,
+            1.415
+          ],
+          [
+            0.454,
+            0.921,
+            0.573,
+            1.224,
+            1.026,
+            0.458,
+            1.528
+          ],
+          [
+            0.49,
+            0.995,
+            0.619,
+            1.322,
+            1.108,
+            0.495,
+            1.65
+          ],
+          [
+            0.53,
+            1.075,
+            0.668,
+            1.428,
+            1.196,
+            0.535,
+            1.782
+          ],
+          [
+            0.572,
+            1.161,
+            0.722,
+            1.542,
+            1.292,
+            0.577,
+            1.925
+          ],
+          [
+            0.618,
+            1.253,
+            0.78,
+            1.665,
+            1.395,
+            0.624,
+            2.079
+          ],
+          [
+            0.667,
+            1.354,
+            0.842,
+            1.798,
+            1.507,
+            0.674,
+            2.245
+          ]
+        ],
+        "m": {
+          "普通攻击3": 2
+        },
+        "f": {}
+      },
+      {
+        "g": "skill",
+        "h": [
+          "伤害倍率",
+          "每段治疗固定值",
+          "每段治疗基于生命值"
+        ],
+        "r": [
+          [
+            0.8,
+            300,
+            0.014
+          ],
+          [
+            0.864,
+            324,
+            0.0151
+          ],
+          [
+            0.933,
+            350,
+            0.0163
+          ],
+          [
+            1.008,
+            378,
+            0.0176
+          ],
+          [
+            1.088,
+            408,
+            0.019
+          ],
+          [
+            1.175,
+            441,
+            0.0205
+          ],
+          [
+            1.269,
+            476,
+            0.0222
+          ],
+          [
+            1.371,
+            514,
+            0.0239
+          ],
+          [
+            1.481,
+            555,
+            0.0259
+          ],
+          [
+            1.599,
+            600,
+            0.0279
+          ],
+          [
+            1.727,
+            648,
+            0.0302
+          ]
+        ],
+        "m": {
+          "伤害倍率": 7
+        },
+        "f": {
+          "每段治疗基于生命值": {
+            "suffix": "最大生命值"
+          },
+          "每段治疗固定值": {
+            "type": "integer"
+          }
+        }
+      },
+      {
+        "g": "ultimate",
+        "h": [
+          "伤害倍率",
+          "每段治疗固定值",
+          "每段治疗基于生命值"
+        ],
+        "r": [
+          [
+            4,
+            350,
+            0.011
+          ],
+          [
+            4.32,
+            378,
+            0.0118
+          ],
+          [
+            4.666,
+            408,
+            0.0128
+          ],
+          [
+            5.039,
+            441,
+            0.0138
+          ],
+          [
+            5.442,
+            476,
+            0.0149
+          ],
+          [
+            5.877,
+            514,
+            0.0161
+          ],
+          [
+            6.347,
+            555,
+            0.0174
+          ],
+          [
+            6.855,
+            600,
+            0.0188
+          ],
+          [
+            7.404,
+            648,
+            0.0203
+          ],
+          [
+            7.996,
+            700,
+            0.0219
+          ],
+          [
+            8.636,
+            756,
+            0.0237
+          ]
+        ],
+        "m": {},
+        "f": {
+          "每段治疗基于生命值": {
+            "suffix": "最大生命值"
+          },
+          "每段治疗固定值": {
+            "type": "integer"
+          }
+        }
+      },
+      {
+        "g": "support",
+        "h": [
+          "伤害倍率"
+        ],
+        "r": [
+          [
+            2
+          ],
+          [
+            2.16
+          ],
+          [
+            2.333
+          ],
+          [
+            2.519
+          ],
+          [
+            2.721
+          ],
+          [
+            2.939
+          ],
+          [
+            3.174
+          ],
+          [
+            3.428
+          ],
+          [
+            3.702
+          ],
+          [
+            3.998
+          ],
+          [
+            4.318
+          ]
+        ],
+        "m": {},
+        "f": {}
+      }
+    ]
+  },
+  "crosscheck": {
+    "progression": null,
+    "isolatedLevelChecks": [],
+    "additionalRegionalChecks": []
+  },
+  "console": {
+    "characterId": "edgar",
+    "nameKo": "에드가",
+    "nameEn": "Edgar",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 HP +10%",
+      "recommendedLayout": [
+        "III",
+        "III",
+        "III",
+        "III"
+      ]
+    },
+    "cartridge": {
+      "recommendedSetId": "theas-night-tavern",
+      "alternativeSetIds": [
+        "speedy-hedgehog"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "치유 보너스%",
+      "HP%"
+    ],
+    "substatPriorityKo": [
+      "HP%",
+      "HP",
+      "사이클 강도",
+      "브레이크 강도"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/15",
+      "https://www.ntebuild.com/characters/edgar"
+    ],
+    "conflictNoteKo": "한국 인벤은 티아의 심야 선술집, NTEBuild는 음속 블루 고슴도치를 우선 추천합니다. 치유량과 파티 공격 버프의 빌드 목적 차이를 고려해 양쪽을 보존했습니다."
+  },
+  "fieldSkills": {
+    "passives": [
+      {
+        "nameKo": "부드러운 날",
+        "unlock": "2단계",
+        "effectKo": "지원 스킬로 「차지」를 발동하면 울티메이트 에너지를 즉시 120 회복한다. 재발동 대기 시간은 30초이며, 이후 감속 상태 적중 시 「창조의 꽃」로 울티메이트 에너지를 얻지 못한다."
+      },
+      {
+        "nameKo": "변치 않는 온기",
+        "unlock": "4단계",
+        "effectKo": "거친 흐름 또는 연계 공격 발동 시 진리의 열쇠를 얻는다. 최대 3개까지 보유하며, 하나당 울티메이트 지속 시간이 1초 늘어난다."
+      }
+    ],
+    "citySkills": [
+      {
+        "nameKo": "행동으로 옮기는 지식",
+        "categoryKo": "상점",
+        "effectKo": "1·3단계에서 손님 유입이 각각 18 증가하고, 2·4단계에서 재료 소모가 각각 1% 줄어든다. 5단계에서 손님 유입이 27 증가한다."
+      }
+    ],
+    "sourceUrl": "https://neverness.app/characters/edgar"
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "id": "haniel",
+  "roster": {
+    "id": "haniel",
+    "names": {
+      "ko": "하니엘",
+      "en": "Haniel",
+      "zhHans": "哈尼娅"
+    },
+    "rarity": "A",
+    "element": "Psyche",
+    "arcType": "Solid",
+    "communityRoleKo": "버퍼",
+    "released": true,
+    "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/haniel"
+  },
+  "detail": {
+    "id": "haniel",
+    "globalStatus": "released",
+    "guideRoleEn": "Buff",
+    "coreMechanicKo": "호티를 설치해 필드 밖에서도 공격력 버프와 주기적인 범위 공격을 제공한다. 궁극기 강화 상태에서는 호티의 연주 효과를 강화한다.",
+    "keySkillNamesEn": {
+      "basic": "Paranormal Entrance",
+      "skill": "Silent Moonlit Forest Guardian",
+      "ultimate": "A Melody Named Haniel",
+      "support": "Easter Egg Time"
+    },
+    "sourceReviewPatch": "1",
+    "voiceActors": {
+      "en": "Alexis Tipton",
+      "ja": "石見舞菜香",
+      "zhHans": "苏子芜",
+      "ko": "김가령"
+    },
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/haniel"
+  },
+  "setting": {
+    "summary": "세상을 구하는 미소녀가 되고 싶은 고등학생",
+    "birthday": "3월 27일",
+    "faction": "스테리 익스프레스",
+    "ability": "「기이한 은전」"
+  },
+  "introduction": {
+    "introKo": "스테리 익스프레스의 하니엘은 세상을 구하는 아름다운 여고생이 되는 것을 꿈꾼다.",
+    "sourceUrl": "https://nte.hq1.pro/en/characters/haniel-1020"
+  },
+  "mechanics": {
+    "id": "haniel",
+    "nameKo": "하니엘",
+    "nameZhHans": "哈尼娅",
+    "level80BaseStats": {
+      "hp": 13696,
+      "atk": 493,
+      "def": 848,
+      "critRatePct": 5,
+      "critDamagePct": 50
+    },
+    "skillCoefficients": {
+      "basic": "41.9%; 11.2%*2; 58.2%; 15.6%*4; 52.8%; plunge 82%; charged branch 36%; parry 105.2%; cycle 25.",
+      "skill": "100%*2; ensemble 20%; team ATK +10% base ATK for 8s; cycle 6.",
+      "ultimate": "300%; ensemble 30%; enhanced attack 30%; team ATK +10% base ATK for 10s; energy 120.",
+      "support": "200%."
+    },
+    "awakeningEffectsKo": [
+      "A1: 주인공 아우라 최대 6중첩, 마법포 최대 6회 튕김.",
+      "A2: 구구자 지속시간 +4초.",
+      "A3: 초이과 에이스 상태 치명타 확률 +20%.",
+      "A4: 해당 상태에서 하니엘이 합주 발동 시 다음 공격 추가 피해 +100%.",
+      "A5: 초이과 에이스 상태 혼 속성 피해 +30%.",
+      "A6: 구구자 쿨다운 4초 감소."
+    ],
+    "resonanceKo": {
+      "3": "기본 공격/스킬/궁극기 레벨 +1.",
+      "6": "초이과 에이스 상태 파티 치명타 피해 +12%."
+    },
+    "sourceUrl": "https://wiki.mysqil.com/characters/haniya",
+    "awakeningNamesKo": {
+      "A1": "",
+      "A2": "",
+      "A3": "",
+      "A4": "",
+      "A5": "",
+      "A6": ""
+    }
+  },
+  "r3": {
+    "nameKo": "하니엘",
+    "sourceUrl": "https://www.ntestation.com/%E5%93%88%E5%B0%BC%E5%A8%85",
+    "r3Raises": [
+      "기본 공격",
+      "변궤 스킬",
+      "궁극기"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=90.5%",
+        "普通攻击2=24.2%*2",
+        "普通攻击3=125.6%",
+        "普通攻击4=33.7%*4",
+        "普通攻击5=114%",
+        "下落伤害=177%",
+        "长按普攻分支伤害=77.7%",
+        "极限反击=227.1%"
+      ],
+      "redirectSkill": [
+        "伤害倍率=215.9%*2",
+        "扩散伤害倍率=43.2%",
+        "攻击力加成比例=20%"
+      ],
+      "ultimate": [
+        "伤害倍率=647.7%",
+        "扩散伤害倍率=64.8%",
+        "强化攻击伤害倍率=64.8%",
+        "攻击力加成比例=20%"
+      ]
+    }
+  },
+  "coefficients": {
+    "url": "https://www.ntestation.com/%E5%93%88%E5%B0%BC%E5%A8%85",
+    "tables": [
+      {
+        "g": "basic",
+        "h": [
+          "普通攻击1",
+          "普通攻击2",
+          "普通攻击3",
+          "普通攻击4",
+          "普通攻击5",
+          "下落伤害",
+          "长按普攻分支伤害",
+          "极限反击"
+        ],
+        "r": [
+          [
+            0.419,
+            0.112,
+            0.582,
+            0.156,
+            0.528,
+            0.82,
+            0.36,
+            1.052
+          ],
+          [
+            0.453,
+            0.121,
+            0.629,
+            0.168,
+            0.57,
+            0.886,
+            0.389,
+            1.136
+          ],
+          [
+            0.489,
+            0.131,
+            0.679,
+            0.182,
+            0.616,
+            0.956,
+            0.42,
+            1.227
+          ],
+          [
+            0.528,
+            0.141,
+            0.733,
+            0.197,
+            0.665,
+            1.033,
+            0.453,
+            1.325
+          ],
+          [
+            0.57,
+            0.152,
+            0.792,
+            0.212,
+            0.718,
+            1.116,
+            0.49,
+            1.431
+          ],
+          [
+            0.616,
+            0.165,
+            0.855,
+            0.229,
+            0.776,
+            1.205,
+            0.529,
+            1.546
+          ],
+          [
+            0.665,
+            0.178,
+            0.924,
+            0.248,
+            0.838,
+            1.301,
+            0.571,
+            1.669
+          ],
+          [
+            0.718,
+            0.192,
+            0.997,
+            0.267,
+            0.905,
+            1.405,
+            0.617,
+            1.803
+          ],
+          [
+            0.776,
+            0.207,
+            1.077,
+            0.289,
+            0.977,
+            1.518,
+            0.666,
+            1.947
+          ],
+          [
+            0.838,
+            0.224,
+            1.163,
+            0.312,
+            1.055,
+            1.639,
+            0.72,
+            2.103
+          ],
+          [
+            0.905,
+            0.242,
+            1.256,
+            0.337,
+            1.14,
+            1.77,
+            0.777,
+            2.271
+          ]
+        ],
+        "m": {
+          "普通攻击2": 2,
+          "普通攻击4": 4
+        },
+        "f": {}
+      },
+      {
+        "g": "skill",
+        "h": [
+          "伤害倍率",
+          "扩散伤害倍率",
+          "攻击力加成比例"
+        ],
+        "r": [
+          [
+            1,
+            0.2,
+            0.1
+          ],
+          [
+            1.08,
+            0.216,
+            0.11
+          ],
+          [
+            1.166,
+            0.233,
+            0.12
+          ],
+          [
+            1.26,
+            0.252,
+            0.13
+          ],
+          [
+            1.36,
+            0.272,
+            0.14
+          ],
+          [
+            1.469,
+            0.294,
+            0.15
+          ],
+          [
+            1.587,
+            0.317,
+            0.16
+          ],
+          [
+            1.714,
+            0.343,
+            0.17
+          ],
+          [
+            1.851,
+            0.37,
+            0.18
+          ],
+          [
+            1.999,
+            0.4,
+            0.19
+          ],
+          [
+            2.159,
+            0.432,
+            0.2
+          ]
+        ],
+        "m": {
+          "伤害倍率": 2
+        },
+        "f": {}
+      },
+      {
+        "g": "ultimate",
+        "h": [
+          "伤害倍率",
+          "扩散伤害倍率",
+          "强化攻击伤害倍率",
+          "攻击力加成比例"
+        ],
+        "r": [
+          [
+            3,
+            0.3,
+            0.3,
+            0.1
+          ],
+          [
+            3.24,
+            0.324,
+            0.324,
+            0.11
+          ],
+          [
+            3.499,
+            0.35,
+            0.35,
+            0.12
+          ],
+          [
+            3.779,
+            0.378,
+            0.378,
+            0.13
+          ],
+          [
+            4.081,
+            0.408,
+            0.408,
+            0.14
+          ],
+          [
+            4.408,
+            0.441,
+            0.441,
+            0.15
+          ],
+          [
+            4.761,
+            0.476,
+            0.476,
+            0.16
+          ],
+          [
+            5.141,
+            0.514,
+            0.514,
+            0.17
+          ],
+          [
+            5.553,
+            0.555,
+            0.555,
+            0.18
+          ],
+          [
+            5.997,
+            0.6,
+            0.6,
+            0.19
+          ],
+          [
+            6.477,
+            0.648,
+            0.648,
+            0.2
+          ]
+        ],
+        "m": {},
+        "f": {}
+      },
+      {
+        "g": "support",
+        "h": [
+          "援护技"
+        ],
+        "r": [
+          [
+            2
+          ],
+          [
+            2.16
+          ],
+          [
+            2.333
+          ],
+          [
+            2.519
+          ],
+          [
+            2.721
+          ],
+          [
+            2.939
+          ],
+          [
+            3.174
+          ],
+          [
+            3.428
+          ],
+          [
+            3.702
+          ],
+          [
+            3.998
+          ],
+          [
+            4.318
+          ]
+        ],
+        "m": {},
+        "f": {}
+      }
+    ]
+  },
+  "crosscheck": {
+    "progression": null,
+    "isolatedLevelChecks": [],
+    "additionalRegionalChecks": []
+  },
+  "console": {
+    "characterId": "haniel",
+    "nameKo": "하니엘",
+    "nameEn": "Haniel",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 공격력 +10%",
+      "recommendedLayout": [
+        "III",
+        "III",
+        "III",
+        "III"
+      ]
+    },
+    "cartridge": {
+      "recommendedSetId": "speedy-hedgehog",
+      "alternativeSetIds": [
+        "fireflies-and-the-forest",
+        "devils-blood-curse"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "치명 확률%",
+      "혼속성 피해%"
+    ],
+    "substatPriorityKo": [
+      "치명 피해%",
+      "통상 피해%",
+      "치명 확률%",
+      "공격력%"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/14",
+      "https://www.ntebuild.com/characters/haniel"
+    ]
+  },
+  "fieldSkills": {
+    "passives": [
+      {
+        "nameKo": "이건 우정이야!",
+        "unlock": "2단계",
+        "effectKo": "「노바」 종료 시 대상 공격력을 하니엘 기본 공격력의 4%만큼 낮추고, 팀원 공격력을 각각 8% 높인다. 총 흡수량은 하니엘 기본 공격력의 16%까지이며, 대상 공격력은 처음 수치의 20%보다 더 낮아지지 않는다."
+      },
+      {
+        "nameKo": "이건 인연이야!",
+        "unlock": "4단계",
+        "effectKo": "합주 발동 시 줄거리 갑옷을 얻어 초자연 대포의 도탄 한도를 높인다. 권위 상태에서는 합주 한 번에 2중첩을 얻고, 최대 4중첩까지 쌓인다."
+      }
+    ],
+    "citySkills": [
+      {
+        "nameKo": "능숙한 일 처리",
+        "categoryKo": "상점",
+        "effectKo": "1·3단계에서 요리 가격이 각각 0.12퐁스 오르고, 2·4단계에서 재료 소모가 각각 1% 줄어든다. 5단계에서 가격이 0.18퐁스 더 오른다."
+      }
+    ],
+    "sourceUrl": "https://neverness.app/characters/haniel"
+  }
+}

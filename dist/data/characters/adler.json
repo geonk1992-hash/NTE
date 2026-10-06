@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "id": "adler",
+  "roster": {
+    "id": "adler",
+    "names": {
+      "ko": "아들러",
+      "en": "Adler",
+      "zhHans": "阿德勒"
+    },
+    "rarity": "A",
+    "element": "Incantation",
+    "arcType": "Condensate",
+    "communityRoleKo": "생존",
+    "released": true,
+    "englishProfile": "https://www.prydwen.gg/neverness-to-everness/characters/adler"
+  },
+  "detail": {
+    "id": "adler",
+    "globalStatus": "released",
+    "guideRoleEn": "Survival",
+    "coreMechanicKo": "기본 공격으로 카르마를 쌓아 스킬 피해를 높이고, 보호막과 지속 피해를 제공한다. 스코치 대상에게 무작위 약화 효과를 추가한다.",
+    "keySkillNamesEn": {
+      "basic": "Deliverance",
+      "skill": "Evil's Bane",
+      "ultimate": "Tranquility",
+      "support": "Pristine Reflection"
+    },
+    "sourceReviewPatch": "1",
+    "voiceActors": {
+      "en": "Jacob Craner",
+      "ja": "森川智之",
+      "zhHans": "王宇航",
+      "ko": "심규혁"
+    },
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/adler"
+  },
+  "setting": {
+    "summary": "「에이본」 사람들과 이웃의 신회를 한 몸에 받는 완벽한 집사",
+    "birthday": "9월 25일",
+    "faction": "에이본 골동품 가게",
+    "ability": "「아야타나」"
+  },
+  "introduction": {
+    "introKo": "에이본의 집사 아들러는 빈틈없는 솜씨로 가게 식구와 이웃을 안심시킨다.",
+    "sourceUrl": "https://nte.hq1.pro/en/characters/adler-1033"
+  },
+  "mechanics": {
+    "id": "adler",
+    "nameKo": "아들러",
+    "nameZhHans": "阿德勒",
+    "level80BaseStats": {
+      "hp": 14302,
+      "atk": 437,
+      "def": 994,
+      "critRatePct": 5,
+      "critDamagePct": 50
+    },
+    "skillCoefficients": {
+      "basic": "20.1%; 57.7%; 15.4%*2; 21.9%+23.1%+74.6%; 87.5%; aim 10.4%; plunge 36%; parry 176%; cycle 33.",
+      "skill": "70% DEF*3; DoT 20% DEF each second for 10s; shield 1000+80% DEF for 8s; cycle 7.",
+      "ultimate": "100% DEF per hit, 5 hits per target (10 hits on a lone target); energy 120.",
+      "support": "200%."
+    },
+    "awakeningEffectsKo": [
+      "A1: 궁극기 사용 후 업(業) 20중첩 획득.",
+      "A2: 업 중첩당 피해 증가량을 3%로 높임.",
+      "A3: 명오의 혜우 보호막 흡수량 20% 증가.",
+      "A4: 보호막이 깨질 때 아들러 방어력의 50%에 해당하는 초과 피해를 흡수.",
+      "A5: 궁극기 사용 후 궁극기 에너지 20 회복.",
+      "A6: 명오의 혜우 지속시간을 12초로 연장."
+    ],
+    "resonanceKo": {
+      "3": "기본 공격/변궤 스킬/궁극기 레벨 +1.",
+      "6": "명오의 혜우 보호 중 파티의 주 속성 피해 +10%."
+    },
+    "sourceUrl": "https://wiki.mysqil.com/characters/adeler",
+    "notes": "Lv.80 stats and coefficient values are community database values; skill level selector unresolved.",
+    "awakeningNamesKo": {
+      "A1": "",
+      "A2": "",
+      "A3": "",
+      "A4": "",
+      "A5": "",
+      "A6": ""
+    }
+  },
+  "r3": {
+    "nameKo": "아들러",
+    "sourceUrl": "https://www.ntestation.com/%E9%98%BF%E5%BE%B7%E5%8B%92",
+    "r3Raises": [
+      "기본 공격",
+      "변궤 스킬",
+      "궁극기"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=43.4%",
+        "普通攻击2=124.6%",
+        "普通攻击3=33.2%*2",
+        "普通攻击4=47.3%+49.9%+161.1%",
+        "普通攻击5=188.9%",
+        "瞄准攻击=22.5%",
+        "下落伤害=77.7%",
+        "极限反击=380%"
+      ],
+      "redirectSkill": [
+        "直接伤害倍率=151.1%*3防御力",
+        "持续伤害倍率=43.2%防御力",
+        "提供护盾倍率=2160+172%防御力"
+      ],
+      "ultimate": [
+        "单次伤害倍率=215.9%防御力"
+      ]
+    }
+  },
+  "coefficients": {
+    "url": "https://www.ntestation.com/%E9%98%BF%E5%BE%B7%E5%8B%92",
+    "tables": [
+      {
+        "g": "basic",
+        "h": [
+          "普通攻击1",
+          "普通攻击2",
+          "普通攻击3",
+          "普通攻击4_1",
+          "普通攻击4_2",
+          "普通攻击4_3",
+          "普通攻击5",
+          "瞄准攻击",
+          "下落伤害",
+          "极限反击"
+        ],
+        "r": [
+          [
+            0.201,
+            0.577,
+            0.154,
+            0.219,
+            0.231,
+            0.746,
+            0.875,
+            0.104,
+            0.36,
+            1.76
+          ],
+          [
+            0.217,
+            0.623,
+            0.166,
+            0.237,
+            0.249,
+            0.806,
+            0.945,
+            0.112,
+            0.389,
+            1.901
+          ],
+          [
+            0.234,
+            0.673,
+            0.18,
+            0.255,
+            0.269,
+            0.87,
+            1.021,
+            0.121,
+            0.42,
+            2.053
+          ],
+          [
+            0.253,
+            0.727,
+            0.194,
+            0.276,
+            0.291,
+            0.94,
+            1.102,
+            0.131,
+            0.453,
+            2.217
+          ],
+          [
+            0.273,
+            0.785,
+            0.21,
+            0.298,
+            0.314,
+            1.015,
+            1.19,
+            0.141,
+            0.49,
+            2.394
+          ],
+          [
+            0.295,
+            0.848,
+            0.226,
+            0.322,
+            0.339,
+            1.096,
+            1.286,
+            0.153,
+            0.529,
+            2.586
+          ],
+          [
+            0.319,
+            0.916,
+            0.244,
+            0.348,
+            0.367,
+            1.184,
+            1.389,
+            0.165,
+            0.571,
+            2.793
+          ],
+          [
+            0.344,
+            0.989,
+            0.264,
+            0.375,
+            0.396,
+            1.279,
+            1.5,
+            0.178,
+            0.617,
+            3.016
+          ],
+          [
+            0.372,
+            1.068,
+            0.285,
+            0.405,
+            0.428,
+            1.381,
+            1.62,
+            0.192,
+            0.666,
+            3.258
+          ],
+          [
+            0.402,
+            1.153,
+            0.308,
+            0.438,
+            0.462,
+            1.491,
+            1.749,
+            0.208,
+            0.72,
+            3.518
+          ],
+          [
+            0.434,
+            1.246,
+            0.332,
+            0.473,
+            0.499,
+            1.611,
+            1.889,
+            0.225,
+            0.777,
+            3.8
+          ]
+        ],
+        "m": {
+          "普通攻击3": 2
+        },
+        "f": {}
+      },
+      {
+        "g": "skill",
+        "h": [
+          "直接伤害倍率",
+          "持续伤害倍率",
+          "护盾固定值",
+          "护盾基于防御值"
+        ],
+        "r": [
+          [
+            0.7,
+            0.2,
+            1000,
+            0.8
+          ],
+          [
+            0.756,
+            0.216,
+            1080,
+            0.86
+          ],
+          [
+            0.816,
+            0.233,
+            1166,
+            0.93
+          ],
+          [
+            0.882,
+            0.252,
+            1260,
+            1
+          ],
+          [
+            0.952,
+            0.272,
+            1361,
+            1.08
+          ],
+          [
+            1.029,
+            0.294,
+            1470,
+            1.17
+          ],
+          [
+            1.111,
+            0.317,
+            1587,
+            1.26
+          ],
+          [
+            1.2,
+            0.343,
+            1714,
+            1.37
+          ],
+          [
+            1.296,
+            0.37,
+            1851,
+            1.48
+          ],
+          [
+            1.399,
+            0.4,
+            2000,
+            1.59
+          ],
+          [
+            1.511,
+            0.432,
+            2160,
+            1.72
+          ]
+        ],
+        "m": {
+          "直接伤害倍率": 3
+        },
+        "f": {
+          "直接伤害倍率": {
+            "suffix": "防御力"
+          },
+          "持续伤害倍率": {
+            "suffix": "防御力"
+          },
+          "护盾基于防御值": {
+            "suffix": "防御力"
+          },
+          "护盾固定值": {
+            "type": "integer"
+          }
+        }
+      },
+      {
+        "g": "ultimate",
+        "h": [
+          "单次伤害倍率"
+        ],
+        "r": [
+          [
+            1
+          ],
+          [
+            1.08
+          ],
+          [
+            1.166
+          ],
+          [
+            1.26
+          ],
+          [
+            1.36
+          ],
+          [
+            1.469
+          ],
+          [
+            1.587
+          ],
+          [
+            1.714
+          ],
+          [
+            1.851
+          ],
+          [
+            1.999
+          ],
+          [
+            2.159
+          ]
+        ],
+        "m": {},
+        "f": {
+          "单次伤害倍率": {
+            "suffix": "防御力"
+          }
+        }
+      },
+      {
+        "g": "support",
+        "h": [
+          "援护技"
+        ],
+        "r": [
+          [
+            2
+          ],
+          [
+            2.16
+          ],
+          [
+            2.333
+          ],
+          [
+            2.519
+          ],
+          [
+            2.721
+          ],
+          [
+            2.939
+          ],
+          [
+            3.174
+          ],
+          [
+            3.428
+          ],
+          [
+            3.702
+          ],
+          [
+            3.998
+          ],
+          [
+            4.318
+          ]
+        ],
+        "m": {},
+        "f": {}
+      }
+    ]
+  },
+  "crosscheck": {
+    "progression": null,
+    "isolatedLevelChecks": [],
+    "additionalRegionalChecks": []
+  },
+  "console": {
+    "characterId": "adler",
+    "nameKo": "아들러",
+    "nameEn": "Adler",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 방어력 +12%",
+      "recommendedLayout": [
+        "III",
+        "III",
+        "III",
+        "III"
+      ]
+    },
+    "cartridge": {
+      "recommendedSetId": "kingdoms-guard",
+      "alternativeSetIds": [
+        "speedy-hedgehog"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "방어력%",
+      "방어력"
+    ],
+    "substatPriorityKo": [
+      "방어력%",
+      "방어력",
+      "브레이크 강도",
+      "사이클 강도"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/16",
+      "https://www.ntebuild.com/characters/adler"
+    ]
+  },
+  "fieldSkills": {
+    "passives": [
+      {
+        "nameKo": "절제",
+        "unlock": "2단계",
+        "effectKo": "작열을 부여하면 공격력 20% 감소, 이능 저항 10% 감소, 브레이크 효율 10% 증가 중 무작위 효과 하나를 15초 동안 부여한다."
+      },
+      {
+        "nameKo": "올곧은 마음",
+        "unlock": "4단계",
+        "effectKo": "방어력이 20% 증가한다."
+      }
+    ],
+    "citySkills": [
+      {
+        "nameKo": "커피 장인",
+        "categoryKo": "상점",
+        "effectKo": "1단계에서 판매 가격이 0.12퐁스 오르고, 2·4단계에서 재료 소모가 각각 1% 줄어든다. 3단계에서는 점주의 선택 중 커피를 자동 제공하며, 5단계에서 가격이 0.18퐁스 더 오른다."
+      }
+    ],
+    "sourceUrl": "https://neverness.app/characters/adler"
+  }
+}
