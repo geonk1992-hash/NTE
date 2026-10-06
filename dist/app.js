@@ -219,7 +219,7 @@ function translateR3Row(value) {
   const translatedLabel = /[A-Za-z\u3400-\u9fff]/.test(label) ? "기술 계수" : label;
   return translatedLabel + " " + translateArchiveText(parts.join("="));
 }
-let db, selectedId = "blackbird", activeTab = "overview", skillLevel = 1, activeSkillGroup = "basic", growthTargetLevel = 80;
+let db, selectedId = "blackbird", activeTab = "overview", skillLevel = 1, activeSkillGroup = "basic", growthTargetLevel = 80, arcRank = 1;
 const $ = selector => document.querySelector(selector);
 const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
 const elem = id => ELEMENTS[id] || { name: id || "—", color: "#aab5bf" };
@@ -444,7 +444,7 @@ function init() {
   $("#roster-list").addEventListener("click", event => {
     const row = event.target.closest("[data-id]");
     if (!row) return;
-    selectedId = row.dataset.id; activeTab = "overview"; skillLevel = 1; activeSkillGroup = "basic"; renderRoster(); renderProfile();
+    selectedId = row.dataset.id; activeTab = "overview"; skillLevel = 1; arcRank = 1; activeSkillGroup = "basic"; renderRoster(); renderProfile();
     if (matchMedia("(max-width: 700px)").matches) $("#main-content").scrollIntoView({ behavior: "smooth", block: "start" });
   });
   $("#main-content").addEventListener("click", event => {
@@ -456,13 +456,25 @@ function init() {
       refreshSkillLevel();
       return;
     }
+    const arcRankButton = event.target.closest("[data-arc-rank-step]");
+    if (arcRankButton) {
+      arcRank = Math.max(1, Math.min(5, arcRank + Number(arcRankButton.dataset.arcRankStep)));
+      refreshActiveTab();
+      return;
+    }
     const tab = event.target.closest("[data-tab]");
     if (!tab) return;
     activeTab = tab.dataset.tab;
     refreshActiveTab();
   });
   $("#main-content").addEventListener("change", event => {
-    const growthTarget = event.target.closest("[data-growth-target]");    if (growthTarget) {      growthTargetLevel = Math.max(20, Math.min(80, Number(growthTarget.value) || 80));      refreshActiveTab();      return;    }    const levelRange = event.target.closest("[data-skill-level]");    if (!levelRange) return;
+    const growthTarget = event.target.closest("[data-growth-target]");    if (growthTarget) {      growthTargetLevel = Math.max(20, Math.min(80, Number(growthTarget.value) || 80));      refreshActiveTab();      return;    }    const arcRankRange = event.target.closest("[data-arc-rank]");
+    if (arcRankRange) {
+      arcRank = Math.max(1, Math.min(5, Number(arcRankRange.value) || 1));
+      refreshActiveTab();
+      return;
+    }
+    const levelRange = event.target.closest("[data-skill-level]");    if (!levelRange) return;
     skillLevel = Math.max(1, Math.min(11, Number(levelRange.value) || 1));
     refreshSkillLevel();
   });
@@ -544,6 +556,8 @@ function refreshActiveTab() {
   let focusSelector = "";
   if (focused?.dataset.skillGroup) focusSelector = '[data-skill-group="' + focused.dataset.skillGroup + '"]';
   else if (focused?.dataset.skillLevelStep) focusSelector = '[data-skill-level-step="' + focused.dataset.skillLevelStep + '"]';
+  else if (focused?.dataset.arcRankStep) focusSelector = '[data-arc-rank-step="' + focused.dataset.arcRankStep + '"]';
+  else if (focused?.hasAttribute("data-arc-rank")) focusSelector = "[data-arc-rank]";
   else if (focused?.hasAttribute("data-skill-level")) focusSelector = "[data-skill-level]";  else if (focused?.hasAttribute("data-growth-target")) focusSelector = "[data-growth-target]";  panel.innerHTML = renderTab(getProfile(selectedId));
   $("#main-content").querySelectorAll(".tab-button").forEach(button => {
     button.setAttribute("aria-selected", String(button.dataset.tab === activeTab));
@@ -612,7 +626,53 @@ function sourceLinks(p) {
     Array.from(urls).map((url,i) => '<a class="source-link" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + (url === coefficientUrl ? '레벨별 계수 원자료' : '자료 ' + (i+1)) + '</a>').join("") +
     '</div><p class="source-note">레벨별 계수는 NTE Station 기술표의 단계별 원자료를 반영했습니다. 출처에서 11레벨을 제공하지 않는 항목은 수치를 추정하지 않습니다.</p></details>';
 }
-function renderOverview(p) {  const data = p.fieldSkills;  const passiveRows = (data?.passives || []).map(item => '<article class="profile-skill-row">' +    '<div class="profile-skill-heading"><strong>' + esc(item.nameKo) + '</strong><span class="profile-skill-tag">돌파 ' + esc(item.unlock) + '</span></div>' +    '<p>' + esc(item.effectKo) + '</p></article>').join("");  const cityRows = (data?.citySkills || []).map(item => '<article class="profile-skill-row">' +    '<div class="profile-skill-heading"><strong>' + esc(item.nameKo) + '</strong><span class="profile-skill-tag">' + esc(item.categoryKo) + '</span></div>' +    '<p>' + esc(item.effectKo) + '</p></article>').join("");  const fieldSource = data?.sourceUrl ? '<a class="source-link" href="' + esc(data.sourceUrl) + '" target="_blank" rel="noopener noreferrer">패시브·생활 스킬 원자료</a>' : '';  return '<div class="panel-grid"><article class="content-card"><h3>핵심 메커니즘</h3><p class="mechanic-copy">' +    esc(translateArchiveText(p.detail?.coreMechanicKo || "요약 자료를 수집 중입니다.")) + '</p>' +    (p.mechanics?.notes ? '<p class="source-note">' + esc(translateArchiveText(p.mechanics.notes)) + '</p>' : '') +    '</article><article class="content-card"><h3>고유 패시브</h3>' +    (passiveRows ? '<div class="profile-skill-list">' + passiveRows + '</div>' : '<p class="source-note">패시브 자료를 찾을 수 없습니다.</p>') +    '</article><article class="content-card"><h3>도시 스킬</h3>' +    (cityRows ? '<div class="profile-skill-list">' + cityRows + '</div>' : '<p class="source-note">도시 스킬 자료를 찾을 수 없습니다.</p>') +    '<p class="source-note">스킬명과 효과는 공개 원문을 한국어로 옮겨 요약했습니다. 공식 한국어 표기와 다를 수 있습니다.</p>' + fieldSource +    '</article></div>' + sourceLinks(p);
+function splitCitySkillEffect(value) {
+  const stageEffects = new Map();
+  const commonEffects = [];
+  const sentences = String(value ?? "").split(/(?<=[.!?])\s+/u).filter(Boolean);
+  const marker = /([1-5](?:\s*[·,]\s*[1-5])*)\s*단계(?:에서는|에서|에)/gu;
+  sentences.forEach(sentence => {
+    const matches = Array.from(sentence.matchAll(marker));
+    if (!matches.length) { commonEffects.push(sentence.trim()); return; }
+    const prefix = sentence.slice(0, matches[0].index).replace(/^[,;:\s]+|[,;:\s]+$/g, "").trim();
+    if (prefix) commonEffects.push(prefix);
+    matches.forEach((match, index) => {
+      const from = match.index + match[0].length;
+      const to = index + 1 < matches.length ? matches[index + 1].index : sentence.length;
+      const effect = sentence.slice(from, to).replace(/^[,;:\s]+|[,;:\s]+$/g, "").trim();
+      (match[1].match(/[1-5]/g) || []).map(Number).forEach(stage => {
+        if (!stageEffects.has(stage)) stageEffects.set(stage, []);
+        if (effect) stageEffects.get(stage).push(effect);
+      });
+    });
+  });
+  return {
+    commonEffects,
+    stages: Array.from(stageEffects, ([stage, effects]) => ({ stage, effectKo: effects.join(" ") })).sort((a, b) => a.stage - b.stage)
+  };
+}
+
+function renderOverview(p) {
+  const data = p.fieldSkills;
+  const passiveRows = (data?.passives || []).map(item => '<article class="profile-skill-row"><div class="profile-skill-heading"><strong>' + esc(item.nameKo) + '</strong><span class="profile-skill-tag">돌파 ' + esc(item.unlock) + '</span></div><p>' + esc(item.effectKo) + '</p></article>').join("");
+  const cityRows = (data?.citySkills || []).map(item => {
+    const split = splitCitySkillEffect(item.effectKo);
+    const commonLabel = split.stages.length ? "공통 효과" : "효과";
+    const common = split.commonEffects.map(effect => '<div class="city-skill-effect city-skill-effect-common"><strong>' + commonLabel + '</strong><p>' + esc(effect) + '</p></div>').join("");
+    const stages = split.stages.map(row => '<div class="city-skill-effect"><strong>' + row.stage + '단계</strong><p>' + esc(row.effectKo) + '</p></div>').join("");
+    const fallback = !common && !stages ? '<div class="city-skill-effect"><strong>효과</strong><p>' + esc(item.effectKo) + '</p></div>' : '';
+    return '<article class="profile-skill-row city-skill-row"><div class="profile-skill-heading"><strong>' + esc(item.nameKo) + '</strong><span class="profile-skill-tag">' + esc(item.categoryKo) + '</span></div><div class="city-skill-effects">' + common + stages + fallback + '</div></article>';
+  }).join("");
+  const fieldSource = data?.sourceUrl ? '<a class="source-link" href="' + esc(data.sourceUrl) + '" target="_blank" rel="noopener noreferrer">패시브·생활 스킬 원자료</a>' : '';
+  return '<div class="panel-grid"><article class="content-card"><h3>핵심 메커니즘</h3><p class="mechanic-copy">' +
+    esc(translateArchiveText(p.detail?.coreMechanicKo || "요약 자료를 수집 중입니다.")) + '</p>' +
+    (p.mechanics?.notes ? '<p class="source-note">' + esc(translateArchiveText(p.mechanics.notes)) + '</p>' : '') +
+    '</article><article class="content-card"><h3>고유 패시브</h3>' +
+    (passiveRows ? '<div class="profile-skill-list">' + passiveRows + '</div>' : '<p class="source-note">패시브 자료를 찾을 수 없습니다.</p>') +
+    '</article><article class="content-card"><h3>도시 스킬</h3>' +
+    (cityRows ? '<div class="profile-skill-list">' + cityRows + '</div>' : '<p class="source-note">도시 스킬 자료를 찾을 수 없습니다.</p>') +
+    '<p class="source-note">원문에 단계가 명시된 효과는 해당 단계별로 나눠 표시합니다. 단계가 특정되지 않은 내용은 일반 효과로 표시했습니다.</p>' + fieldSource +
+    '</article></div>' + sourceLinks(p);
 }
 function renderSkills(p) {
   const selected = SKILLS.find(([,key]) => key === activeSkillGroup) || SKILLS[0];
@@ -646,25 +706,30 @@ function renderSkills(p) {
     (resonance ? '<div class="resonance-grid">' + resonance + '</div>' : '<p class="source-note">공명 자료가 없습니다.</p>') + '</article></div>' + sourceLinks(p);
 }
 
-function renderArcs(p) {
-  const character = db.arcs.characters.find(x => x.characterId === p.roster.id);
-  const arcIds = character?.signatureArcIds || [];
-  const arcs = arcIds.map(id => db.arcs.arcs.find(a => a.id === id)).filter(Boolean);
-  if (!arcs.length) return '<article class="content-card"><h3>전용 아크</h3><p class="source-note">' +
-    (character?.status === "unconfirmed" ? "전용 아크 연결이 아직 확정되지 않았습니다." : "전용 아크 자료가 확인되지 않았습니다.") + '</p>' + sourceLinks(p) + '</article>';
-  const cards = arcs.map(a => {
-    const s = a.level80 || {};
-    const effects = Object.entries(a.rankEffects || {}).map(([rank,text]) => '<div class="arc-effect"><strong>' + esc(rank.replace(/^R(\d+)$/i, "$1단계")) + '</strong><p>' + esc(translateArchiveText(text)) + '</p></div>').join("");
-    const links = Object.values(a.sources || {}).filter(url => typeof url === "string").map((url,i) => '<a class="source-link" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">아크 출처 ' + (i+1) + '</a>').join("");
-    return '<article class="arc-card"><div class="arc-card-head"><div><h3>' + esc(a.nameKo || "전용 아크") + '</h3><p>80레벨 능력치</p></div><span class="arc-rarity">' + esc(a.rarity ? a.rarity + "급" : "—") + '</span></div>' +
-      '<div class="arc-stats"><span class="arc-stat">공격력 ' + esc(s.attack ?? "—") + '</span><span class="arc-stat">' + esc(translateArchiveText(s.secondaryStat || "부옵션")) + ' ' + esc(s.secondaryValue || "—") + '</span></div>' +
-      '<div class="arc-effects">' + (effects || '<p class="source-note">랭크 효과 자료 없음</p>') + '</div>' +
-      (a.verification?.note ? '<p class="notice" style="margin-top:13px">' + esc(translateArchiveText(a.verification.note)) + '</p>' : '') +
-      '<div class="source-links">' + links + '</div></article>';
-  }).join("");
-  return '<div class="section-head"><div><h2>시그니처 아크</h2><p>전용 연결, 80레벨 능력치와 확인된 랭크 효과</p></div></div><div class="arc-list">' + cards + '</div>';
-}
-
+function renderArcs(p) {
+  const character = db.arcs.characters.find(x => x.characterId === p.roster.id);
+  const arcIds = character?.signatureArcIds || [];
+  const arcs = arcIds.map(id => db.arcs.arcs.find(a => a.id === id)).filter(Boolean);
+  if (!arcs.length) return '<article class="content-card"><h3>전용 아크</h3><p class="source-note">' +
+    (character?.status === "unconfirmed" ? "전용 아크 연결이 아직 확정되지 않았습니다." : "전용 아크 자료가 확인되지 않았습니다.") + '</p>' + sourceLinks(p) + '</article>';
+  const rankControl = '<section class="skill-level-box arc-rank-control" aria-label="전용 아크 단계 조절"><div class="skill-level-box-head"><span>아크 단계</span><strong>' + arcRank + '단계</strong></div>' +
+    '<input class="skill-level-range" type="range" min="1" max="5" step="1" value="' + arcRank + '" data-arc-rank aria-label="아크 단계 1부터 5까지">' +
+    '<div class="skill-level-stepper"><span>1단계</span><div><button type="button" data-arc-rank-step="-1" aria-label="아크 단계 낮추기"' + (arcRank <= 1 ? ' disabled' : '') + '>−</button><button type="button" data-arc-rank-step="1" aria-label="아크 단계 높이기"' + (arcRank >= 5 ? ' disabled' : '') + '>+</button></div><span>5단계</span></div></section>';
+  const cards = arcs.map(a => {
+    const s = a.level80 || {};
+    const effectText = a.rankEffects?.["R" + arcRank];
+    const effect = typeof effectText === "string" && effectText.trim()
+      ? '<div class="arc-effect"><strong>' + arcRank + '단계 효과</strong><p>' + esc(translateArchiveText(effectText)) + '</p></div>'
+      : '<div class="arc-effect arc-effect-missing"><strong>' + arcRank + '단계 효과</strong><p>이 단계의 효과 자료가 아직 없습니다. 현재 수집 자료에서는 1단계와 5단계 효과만 확인됩니다.</p></div>';
+    const links = Object.values(a.sources || {}).filter(url => typeof url === "string").map((url,i) => '<a class="source-link" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">아크 출처 ' + (i+1) + '</a>').join("");
+    return '<article class="arc-card"><div class="arc-card-head"><div><h3>' + esc(a.nameKo || "전용 아크") + '</h3><p>80레벨 능력치</p></div><span class="arc-rarity">' + esc(a.rarity ? a.rarity + "급" : "—") + '</span></div>' +
+      '<div class="arc-stats"><span class="arc-stat">공격력 ' + esc(s.attack ?? "—") + '</span><span class="arc-stat">' + esc(translateArchiveText(s.secondaryStat || "부옵션")) + ' ' + esc(s.secondaryValue || "—") + '</span></div>' +
+      '<div class="arc-effects">' + effect + '</div>' +
+      (a.verification?.note ? '<p class="notice" style="margin-top:13px">' + esc(translateArchiveText(a.verification.note)) + '</p>' : '') +
+      '<div class="source-links">' + links + '</div></article>';
+  }).join("");
+  return '<div class="section-head"><div><h2>시그니처 아크</h2><p>전용 연결, 80레벨 능력치와 단계별 효과</p></div></div>' + rankControl + '<div class="arc-list">' + cards + '</div>';
+}
 function renderGrowth(p) {  const data = db.growth;  const character = data.characters[p.roster.id];  if (!character) return '<article class="content-card"><h3>성장 자료 없음</h3><p class="source-note">이 캐릭터의 돌파 재료가 아직 확인되지 않았습니다.</p></article>';  const target = Math.max(20, Math.min(80, growthTargetLevel));  const caps = [30, 40, 50, 60, 70, 80];  const family = data.families[character.family];  const uniqueName = data.uniqueMaterials[character.unique];  const totals = new Map();  let breakthroughCoins = 0;  const stages = caps.map((cap, index) => {    if (cap > target) return null;    const tier = Math.floor(index / 2);    const items = [{ name: family[tier], count: data.phaseMaterialCounts[index], kind: "field" }];    const uniqueCount = data.uniqueMaterialCounts[index];    if (uniqueCount) items.push({ name: uniqueName, count: uniqueCount, kind: "boss" });    items.forEach(item => totals.set(item.name, (totals.get(item.name) || 0) + item.count));    breakthroughCoins += data.breakthroughCoins[index];    return { from: index ? caps[index - 1] : 20, to: cap, index, coins: data.breakthroughCoins[index], items };  }).filter(Boolean);  const rows = stages.map(stage => '<article class="growth-phase-row"><div class="growth-phase-level"><span>돌파 ' + (stage.index + 1) + '단계</span><strong>Lv. ' + stage.from + ' → ' + stage.to + '</strong></div>' +    '<div class="growth-phase-cost"><span>비틀 코인</span><strong>' + fmt(stage.coins) + '</strong></div>' +    '<div class="growth-phase-items">' + stage.items.map(item => '<span class="growth-material-chip" data-material-kind="' + item.kind + '"><span>' + esc(item.name) + '</span><b>×' + item.count + '</b></span>').join("") + '</div></article>').join("");  const totalItems = Array.from(totals, ([name,count]) => '<span class="growth-material-chip" data-material-kind="' + (name === uniqueName ? 'boss' : 'field') + '"><span>' + esc(name) + '</span><b>×' + count + '</b></span>').join("");  const level = data.leveling;  const guides = [    ["특급 헌터 가이드", level.guideCountsTo80.elite, level.guides.elite],    ["숙련 헌터 가이드", level.guideCountsTo80.senior, level.guides.senior],    ["신예 헌터 가이드", level.guideCountsTo80.rising, level.guides.rising]  ];  const targetOptions = [20, 30, 40, 50, 60, 70, 80].map(cap => '<option value="' + cap + '"' + (cap === target ? ' selected' : '') + '>Lv. ' + cap + '</option>').join("");  const sourceLinks = [    ['캐릭터별 돌파 원자료', 'https://neverness.app/characters/' + encodeURIComponent(character.slug)],    ['한국어 재료·획득처 도감', 'https://gigle.kr/nte/materials'],    ['경험치 계산기', 'https://www.ntebuild.com/planner?add=' + encodeURIComponent(p.roster.id)]  ].map(([label,url]) => '<a class="source-link" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(label) + '</a>').join("");  const allCoins = level.levelingCoinsTo80 + data.breakthroughCoins.reduce((sum, value) => sum + value, 0);  return '<div class="section-head growth-heading"><div><h2>레벨·돌파 성장 재료</h2><p>' + esc(p.roster.names.ko) + '의 80레벨까지 필요한 성장 자원과 돌파 단계를 정리했습니다.</p></div>' +    '<label class="growth-target-control"><span>목표 레벨</span><select data-growth-target aria-label="목표 레벨 선택">' + targetOptions + '</select></label></div>' +    '<div class="growth-summary-grid"><article class="growth-summary-card"><span>선택 목표</span><strong>Lv. ' + target + '</strong><small>' + (target === 20 ? '기본 상한' : (stages.length + '회 돌파 포함')) + '</small></article>' +    '<article class="growth-summary-card"><span>돌파 비틀 코인</span><strong>' + fmt(breakthroughCoins) + '</strong><small>목표 레벨까지의 합계</small></article>' +    '<article class="growth-summary-card"><span>레벨 1 → 80 EXP</span><strong>약 ' + fmt(level.characterExpTo80) + '</strong><small>경험치 가이드 ' + guides.reduce((sum, [,count]) => sum + count, 0) + '개 예상</small></article>' +    '<article class="growth-summary-card"><span>레벨업 + 전체 돌파 코인</span><strong>약 ' + fmt(allCoins) + '</strong><small>Lv.1 → 80 커뮤니티 계산값</small></article></div>' +    '<div class="growth-content-grid"><article class="content-card growth-level-card"><div class="section-head"><div><h3>레벨업 재료</h3><p>헌터 가이드로 캐릭터 경험치를 올립니다.</p></div></div>' +    '<div class="growth-guide-list">' + guides.map(([name,count,xp]) => '<div class="growth-guide-row"><span>' + esc(name) + '<small>' + fmt(xp) + ' EXP / 개</small></span><strong>×' + count + '</strong></div>').join("") + '</div>' +    '<div class="growth-exp-total"><span>레벨업 비틀 코인 · Lv.1 → 80</span><strong>약 ' + fmt(level.levelingCoinsTo80) + '</strong></div><p class="source-note">' + esc(level.estimateNoteKo) + '</p></article>' +    '<article class="content-card growth-total-card"><div class="section-head"><div><h3>돌파 재료 합계</h3><p>Lv.20에서 선택한 목표까지</p></div></div>' +    (totalItems ? '<div class="growth-material-list">' + totalItems + '</div>' : '<p class="source-note">기본 Lv.20 상한에는 돌파 재료가 필요하지 않습니다.</p>') +    '<div class="growth-exp-total"><span>돌파 단계</span><strong>' + stages.length + ' / 6</strong></div></article></div>' +    '<div class="section-head growth-phase-heading"><div><h2>단계별 돌파 비용</h2><p>각 단계에서 상한 레벨을 열 때 필요한 재료입니다.</p></div></div>' +    (rows ? '<div class="growth-phase-list"><div class="growth-phase-labels"><span>돌파 구간</span><span>비틀 코인</span><span>필요 재료</span></div>' + rows + '</div>' : '<article class="content-card"><p class="source-note">Lv.20까지는 돌파가 필요하지 않습니다.</p></article>') +    '<details class="source-block"><summary>자료 출처와 계산 기준</summary><div class="source-links">' + sourceLinks + '</div>' +    '<p class="source-note">돌파 단계와 캐릭터별 재료는 커뮤니티 도감 및 한국어 재료 도감을 대조했습니다. 캐릭터 페이지의 갱신 시점은 서로 다를 수 있습니다. 레벨 경험치와 레벨업 코인 합계는 커뮤니티 계산기 집계값이며, 게임 내 소비량과 차이가 날 수 있습니다.</p></details>';}function renderConsole(p) {
   const build = p.console;
   if (!build) return '<article class="content-card"><h3>콘솔 자료 없음</h3></article>';
