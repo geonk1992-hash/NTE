@@ -18,8 +18,7 @@
   "detail": {
     "id": "sakiri",
     "globalStatus": "released",
-    "guideRoleEn": "Buff",
-    "coreMechanicKo": "키루마루로 적을 모으거나 약한 적을 삼켜 제어한다. 궁극기는 팀 공격력을 높이고 스코치 상태의 지속 피해를 강화한다.",
+    "coreMechanicKo": "적을 모으고 약한 적을 삼키며 아군을 강화하는 서포터입니다. 인벤 데이터베이스는 울티메이트와 바이레일 스킬을 우선 육성하도록 안내합니다.",
     "keySkillNamesEn": {
       "basic": "Kiroumaru Headbutt",
       "skill": "Devour Whole",
@@ -33,7 +32,13 @@
       "zhHans": "蔡书瑾",
       "ko": "김나율"
     },
-    "source": "https://www.prydwen.gg/neverness-to-everness/characters/sakiri"
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/sakiri",
+    "skillDescriptionsKo": {
+      "basic": "연속 공격으로 적을 공격합니다. 길게 눌러 「섭식 모드」에 들어가 키로마루를 타고 싸우며, 공중 낙하 공격과 극한 회피 반격도 사용합니다.",
+      "skill": "짧게 누르면 적을 끌어당기고 넘어뜨리는 공격을 합니다. 길게 누르면 적을 빨아들인 뒤 중력으로 들어 올립니다. 강한 적은 들어 올릴 수 없습니다.",
+      "ultimate": "거대한 식사를 통해 적에게 피해를 주고, 사키리의 기본 공격력에 비례해 공격력을 높입니다.",
+      "support": "키로마루가 발을 굴러 적을 공격합니다."
+    }
   },
   "setting": {
     "summary": "겉보기에도 실제로도 만만치 않은 「에이본」의 독보적 존재",
@@ -48,7 +53,6 @@
   "mechanics": {
     "id": "sakiri",
     "nameKo": "사키리",
-    "nameZhHans": "早雾",
     "level80BaseStats": {
       "hp": 16483,
       "atk": 620,
@@ -56,77 +60,107 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "40.3%; 13.8%+75.7%; 1.6%+71.6%; 33.1%*3; 3.5%+106.2%; plunge 50%; parry 214%; cycle 34.",
-      "skill": "tap 167.8%+232.2%; hold 90.3%+118.8%+190.9%; cycles 16/23.",
-      "ultimate": "120%*5+300%; immobilize 3s; party ATK +30% Sakiri base ATK for 20s; energy 120.",
-      "support": "200%."
-    },
     "awakeningEffectsKo": [
-      "A1: 궁극기 속박을 6초로 연장.",
-      "A2: 공중 부양 적에게 추가 피해, 적 질량에 비례해 최대 600% 공격력.",
-      "A3: 파티 처치 수에 따라 스킬/궁극기 피해가 적당 +6%씩, 최대 +60%, 15초.",
-      "A4: 궁극기 후 자신을 제외한 파티 공격력에 사키리 기본 공격력의 30% 추가, 20초.",
-      "A5: 스킬로 적을 띄우면 궁극기 에너지 즉시 충전 및 쿨다운 초기화.",
-      "A6: 식사 모드 최대 포식/소화 대상 3명."
+      "A1: 울티메이트의 적 속박 지속시간이 6초로 연장된다.",
+      "A2: 공중에 뜬 적에게 주는 추가 피해가 적의 질량에 비례해 증가하며, 최대 공격력의 600%까지 오른다.",
+      "A3: 파티가 적을 처치할 때마다 바이레일 스킬과 울티메이트 피해가 15초 동안 6% 증가한다. 최대 10중첩이며 전투 이탈 시 사라진다.",
+      "A4: 울티메이트 사용 시 자신을 제외한 파티원에게 사키리 기본 공격력의 30%만큼 공격력을 20초 동안 부여한다.",
+      "A5: 바이레일 스킬로 적을 띄우면 울티메이트 에너지를 즉시 최대로 회복하고 쿨타임을 초기화한다.",
+      "A6: 키로마루가 최대 3명의 적을 동시에 삼켜 소화할 수 있다."
     ],
     "resonanceKo": {
-      "3": "기본 공격/스킬/궁극기 레벨 +1.",
-      "6": "적의 디버프 1개마다 피해 +3%, 최대 +12%."
+      "3": "일반 공격, 바이레일 스킬, 울티메이트 레벨이 1 상승한다.",
+      "6": "대상에게 걸린 디버프 1개마다 사키리가 주는 피해가 3% 증가한다. 최대 12%."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/zaowu",
+    "sourceUrl": "https://nte.inven.co.kr/db/esper/1",
     "awakeningNamesKo": {
-      "A1": "",
-      "A2": "",
-      "A3": "",
-      "A4": "",
-      "A5": "",
-      "A6": ""
-    }
+      "A1": "확산형 뭉게뭉게",
+      "A2": "분리형 나풀나풀",
+      "A3": "부착형 야금야금",
+      "A4": "축복형 으쌰으쌰",
+      "A5": "마비형 우당탕탕",
+      "A6": "용해형 우걱우걱"
+    },
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다."
   },
-  "r3": {
+  "console": {
+    "characterId": "sakiri",
     "nameKo": "사키리",
-    "sourceUrl": "https://www.ntestation.com/%E6%97%A9%E9%9B%BE",
-    "r3Raises": [
-      "기본 공격",
-      "변궤 스킬",
-      "궁극기"
-    ],
-    "tables": {
-      "basic": [
-        "普通攻击1=87%",
-        "普通攻击2=29.8%+163.4%",
-        "普通攻击3=3.5%+154.6%",
-        "普通攻击4=71.5%*3",
-        "普通攻击5=7.6%+229.3%",
-        "下落伤害=107.9%",
-        "极限反击=462%"
-      ],
-      "redirectSkill": [
-        "短按伤害倍率=362.3%+501.3%",
-        "长按伤害倍率=195%+256.5%+412.1%"
-      ],
-      "ultimate": [
-        "伤害倍率=259.1%*5+647.7%"
+    "nameEn": "Sakiri",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 주속성 피해 +9%",
+      "recommendedLayout": [
+        "III",
+        "III",
+        "III",
+        "III"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "speedy-hedgehog",
+      "alternativeSetIds": [
+        "crimson-twin-butterflies"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "공격력%",
+      "치명 피해%"
+    ],
+    "substatPriorityKo": [
+      "공격력%",
+      "치명 확률%",
+      "치명 피해%",
+      "공격력"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/1",
+      "https://www.ntebuild.com/characters/sakiri"
+    ]
   },
+  "fieldSkills": {
+    "passives": [],
+    "citySkills": [
+      {
+        "nameKo": "노력 없이는 보상도 없다",
+        "categoryKo": "상점",
+        "effectKo": {
+          "Lv.1": "요리 가격이 0.12폰즈 오른다.",
+          "Lv.2": "재료 소모가 1% 줄어든다.",
+          "Lv.3": "「점장 특제」 중 키로마루가 단자부로를 운전한다.",
+          "Lv.4": "재료 소모가 1% 줄어든다.",
+          "Lv.5": "같은 태그 3개 요리의 가격이 0.3폰즈 오른다."
+        },
+        "maxLevel": 5
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 이능력자 DB",
+      "url": "https://nte.inven.co.kr/db/esper/1"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/sagiri"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E6%97%A9%E9%9B%BE",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击2_1",
-          "普通攻击2_2",
-          "普通攻击3_1",
-          "普通攻击3_2",
-          "普通攻击4",
-          "普通攻击5_1",
-          "普通攻击5_2",
-          "下落伤害",
-          "极限反击"
+          "일반 공격 · 1타",
+          "일반 공격 · 2타 · 세부 1단",
+          "일반 공격 · 2타 · 세부 2단",
+          "일반 공격 · 3타 · 세부 1단",
+          "일반 공격 · 3타 · 세부 2단",
+          "일반 공격 · 4타",
+          "일반 공격 · 5타 · 세부 1단",
+          "일반 공격 · 5타 · 세부 2단",
+          "낙하 공격",
+          "회피반격"
         ],
         "r": [
           [
@@ -263,18 +297,18 @@
           ]
         ],
         "m": {
-          "普通攻击4": 3
+          "일반 공격 · 4타": 3
         },
         "f": {}
       },
       {
         "g": "skill",
         "h": [
-          "Skill1",
-          "Skill2",
-          "Skill3",
-          "Skill4",
-          "Skill5"
+          "바이레일 스킬 · 1타",
+          "바이레일 스킬 · 2타",
+          "바이레일 스킬 · 3타",
+          "바이레일 스킬 · 4타",
+          "바이레일 스킬 · 5타"
         ],
         "r": [
           [
@@ -361,8 +395,8 @@
       {
         "g": "ultimate",
         "h": [
-          "极轨终结1",
-          "极轨终结2"
+          "극궤 종결 · 1타",
+          "극궤 종결 · 2타"
         ],
         "r": [
           [
@@ -411,14 +445,14 @@
           ]
         ],
         "m": {
-          "极轨终结1": 5
+          "극궤 종결 · 1타": 5
         },
         "f": {}
       },
       {
         "g": "support",
         "h": [
-          "援护技"
+          "지원 스킬"
         ],
         "r": [
           [
@@ -460,66 +494,31 @@
       }
     ]
   },
-  "crosscheck": {
-    "progression": null,
-    "isolatedLevelChecks": [],
-    "additionalRegionalChecks": []
-  },
-  "console": {
-    "characterId": "sakiri",
+  "r3": {
     "nameKo": "사키리",
-    "nameEn": "Sakiri",
-    "console": {
-      "preferredModuleShape": "III",
-      "perDriveBonusKo": "III형 드라이브 1개당 주속성 피해 +9%",
-      "recommendedLayout": [
-        "III",
-        "III",
-        "III",
-        "III"
+    "sourceUrl": "https://www.ntestation.com/%E6%97%A9%E9%9B%BE",
+    "r3Raises": [
+      "기본 공격",
+      "바이레일 스킬",
+      "울티메이트"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=87%",
+        "普通攻击2=29.8%+163.4%",
+        "普通攻击3=3.5%+154.6%",
+        "普通攻击4=71.5%*3",
+        "普通攻击5=7.6%+229.3%",
+        "下落伤害=107.9%",
+        "极限反击=462%"
+      ],
+      "redirectSkill": [
+        "短按伤害倍率=362.3%+501.3%",
+        "长按伤害倍率=195%+256.5%+412.1%"
+      ],
+      "ultimate": [
+        "伤害倍率=259.1%*5+647.7%"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "speedy-hedgehog",
-      "alternativeSetIds": [
-        "crimson-twin-butterflies"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "공격력%",
-      "치명 피해%"
-    ],
-    "substatPriorityKo": [
-      "공격력%",
-      "치명 확률%",
-      "치명 피해%",
-      "공격력"
-    ],
-    "sourceUrls": [
-      "https://nte.inven.co.kr/db/esper/1",
-      "https://www.ntebuild.com/characters/sakiri"
-    ]
-  },
-  "fieldSkills": {
-    "passives": [
-      {
-        "nameKo": "이거 먹어도 돼?",
-        "unlock": "2단계",
-        "effectKo": "작열 상태의 적이 받는 지속 피해가 작열 종류마다 25% 증가한다. 최대 100%까지 증가한다."
-      },
-      {
-        "nameKo": "장난기 어린 속임수",
-        "unlock": "4단계",
-        "effectKo": "적을 공중에 띄우거나 제압하면 방어력을 10% 낮춘다. 20초 동안 지속된다."
-      }
-    ],
-    "citySkills": [
-      {
-        "nameKo": "노력 없이는 보상도 없다",
-        "categoryKo": "상점",
-        "effectKo": "1단계에서 요리 가격이 0.12퐁스 오르고, 2·4단계에서 재료 소모가 각각 1% 줄어든다. 점주의 선택 중 키로마루가 단자부로를 몰며, 5단계에서 같은 태그 3개 요리의 가격이 0.3퐁스 오른다."
-      }
-    ],
-    "sourceUrl": "https://neverness.app/characters/sagiri"
+    }
   }
 }

@@ -35,7 +35,7 @@
       "nameEn": "Devil’s Blood: Curse",
       "nameKo": "악마의 피: 저주",
       "twoPieceKo": "혼속성 피해 +10%.",
-      "fourPieceKo": "주는 피해 +18%; Nova 또는 Stain 상태의 적에게는 보너스가 +36%로 증가.",
+      "fourPieceKo": "주는 피해 +18%; 노바 또는 스테인 상태의 적에게는 보너스가 +36%로 증가.",
       "sourceUrls": [
         "https://neverness.app/console",
         "https://nte.inven.co.kr/db/esper/18"
@@ -46,7 +46,7 @@
       "nameEn": "Diabolos",
       "nameKo": "디아볼로스",
       "twoPieceKo": "암속성 피해 +10%.",
-      "fourPieceKo": "암속성 저항 12% 무시. 착용자가 Nova 또는 Scorch 발동 시 20초 동안 24% 무시.",
+      "fourPieceKo": "암속성 저항 12% 무시. 착용자가 노바 또는 「스코치」 발동 시 20초 동안 24% 무시.",
       "sourceUrls": [
         "https://neverness.app/console",
         "https://nte.inven.co.kr/db/esper/2"
@@ -123,7 +123,7 @@
       "nameEn": "Street Boxer",
       "nameKo": "스트리트 복서",
       "twoPieceKo": "상속성 피해 +10%.",
-      "fourPieceKo": "치명 확률 +14%. 파티가 Remora 또는 Stain 발동 시 추가 +14%, 20초.",
+      "fourPieceKo": "치명 확률 +14%. 파티가 레모라 또는 스테인 발동 시 추가 +14%, 20초.",
       "sourceUrls": [
         "https://neverness.app/console",
         "https://nte.inven.co.kr/db/esper/19"
@@ -133,7 +133,7 @@
       "id": "theas-night-tavern",
       "nameEn": "Thea’s Night Tavern",
       "nameKo": "티아의 심야 선술집",
-      "twoPieceKo": "HP +10%.",
+      "twoPieceKo": "체력 +10%.",
       "fourPieceKo": "치유 효과 +20%.",
       "sourceUrls": [
         "https://neverness.app/console",
@@ -144,8 +144,8 @@
       "id": "tiny-big-adventure",
       "nameEn": "Tiny Big Adventure",
       "nameKo": "작은 대모험",
-      "twoPieceKo": "HP +10%.",
-      "fourPieceKo": "HP를 잃을 때 최대 HP +4%, 최대 10중첩. 울티메이트 사용 시 중첩 10회 획득.",
+      "twoPieceKo": "체력 +10%.",
+      "fourPieceKo": "체력을 잃을 때 최대 체력 +4%, 최대 10중첩. 울티메이트 사용 시 중첩 10회 획득.",
       "sourceUrls": [
         "https://neverness.app/console",
         "https://nte.inven.co.kr/db/esper/6"

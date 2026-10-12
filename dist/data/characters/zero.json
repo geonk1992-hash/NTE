@@ -29,8 +29,7 @@
   "detail": {
     "id": "zero",
     "globalStatus": "released",
-    "guideRoleEn": "Damage",
-    "coreMechanicKo": "변궤 스킬이 사이클 에너지를 즉시 채워 에스퍼 사이클을 빠르게 발동시킨다. 성별 선택은 외형·음성 옵션으로 취급하며 전투 데이터는 한 레코드에 통합했다.",
+    "coreMechanicKo": "바이레일 스킬로 사이클 수치를 빠르게 채워 파티의 사이클 반응을 돕는 캐릭터입니다. 인벤 데이터베이스는 울티메이트와 바이레일 스킬을 먼저 육성하도록 안내합니다.",
     "keySkillNamesEn": {
       "basic": "Appraisal",
       "skill": "Appraise and Engrave",
@@ -45,7 +44,13 @@
       "ko": "이은조; 박기욱"
     },
     "source": "https://www.prydwen.gg/neverness-to-everness/characters/zero",
-    "comparisonNote": "한국어 목록에서 남성형·여성형 제로가 두 줄로 잡히지만 동일 ID로 병합했다. 성우는 선택된 표현형에 따라 다르므로 한 캐릭터의 복수 음성으로 보존했다."
+    "comparisonNote": "한국어 목록에서 남성형·여성형 제로가 두 줄로 잡히지만 동일 ID로 병합했다. 성우는 선택된 표현형에 따라 다르므로 한 캐릭터의 복수 음성으로 보존했다.",
+    "skillDescriptionsKo": {
+      "basic": "연속 공격으로 적을 공격하며 에너지를 모읍니다. 공중 낙하 공격과 극한 회피 반격도 사용할 수 있습니다.",
+      "skill": "세 차례 공격한 뒤 이능력 포를 발사합니다. 첫 번째 표적의 레벨이 제로보다 낮으면 추가 피해를 줍니다.",
+      "ultimate": "전방을 휩쓰는 다단 공격을 펼쳐 범위 안의 적을 연속으로 공격합니다.",
+      "support": "「파열」 공격을 두 차례 발동해 범위 안의 적을 공격합니다."
+    }
   },
   "setting": {
     "summary": "베르트하이머 수치가 측정되지 않는 유일한 이능력자",
@@ -61,7 +66,6 @@
   "mechanics": {
     "id": "zero",
     "nameKo": "이능력자·제로",
-    "nameZhHans": "异能者·零",
     "level80BaseStats": {
       "hp": 15150,
       "atk": 676,
@@ -69,79 +73,112 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "19.2%; 22.4%+16.8%*2; 14.3%+17.6%; 32.5%+39.6%+39.1%; 69.4%; plunge 65%; parry 150%; cycle 24.",
-      "skill": "Appraise and Engrave 20%+20%+125.6%+134.4%; extra 200% ATK vs equal/lower-level target; cycle 100.",
-      "ultimate": "132.7%+5.3%*4+177.5%+168.6%; energy 100.",
-      "support": "83.7%+116.3%."
-    },
     "awakeningEffectsKo": [
-      "A1: 스킬 첫 적중 대상이 제로 이하 레벨이면 공격력 200% 추가 피해, 방어력 75% 무시.",
-      "A2: 스킬 성공 후 궁극기 에너지 +8.",
-      "A3: 궁극기 치명타 확률 +50%.",
-      "A4: 기본 공격력 1마다 궁극기 피해 +0.1%, 최대 +25%.",
-      "A5: 지원 기술 발동 후 자신 공격력 +10%, 20초.",
-      "A6: 스킬 추가 피해 계수를 공격력 300%로 높임."
+      "A1: 바이레일 스킬에 처음 명중한 적의 레벨이 제로 이하라면 공격력의 200% 추가 피해를 준다. 이 추가 피해는 대상 방어력의 75%를 무시한다.",
+      "A2: 바이레일 스킬 발동 시 울티메이트 에너지를 8 회복한다.",
+      "A3: 울티메이트 치명 확률이 50% 증가한다.",
+      "A4: 제로의 기본 공격력 1당 울티메이트 피해가 0.1% 증가한다. 최대 25%.",
+      "A5: 서포트 스킬 발동 시 제로의 공격력이 20초 동안 10% 증가한다.",
+      "A6: 바이레일 스킬의 추가 피해 배율이 공격력의 300%까지 증가한다."
     ],
     "resonanceKo": {
-      "3": "기본 공격/변궤/궁극기 레벨 +1.",
-      "6": "빛 관련 반응 발동 시 파티 공격력 +12%, 20초."
+      "3": "「흔적 감정」, 「틈새 감정」, 「완벽 제거」 레벨이 1 상승한다.",
+      "6": "빛 속성 사이클 발동 시 파티 전체의 공격력이 20초 동안 10% 증가한다."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/ling",
-    "notes": "남/여 제로의 전투 데이터는 단일 레코드로 통합.",
+    "sourceUrl": "https://nte.inven.co.kr/db/esper/7",
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다.",
     "awakeningNamesKo": {
-      "A1": "",
-      "A2": "",
-      "A3": "",
-      "A4": "",
-      "A5": "",
-      "A6": ""
+      "A1": "시선 관통",
+      "A2": "천직 발경",
+      "A3": "기이한 이야기",
+      "A4": "미해결 코드",
+      "A5": "운명 암시",
+      "A6": "거짓 해방"
     }
   },
-  "r3": {
+  "console": {
+    "characterId": "zero",
     "nameKo": "이능력자·제로",
-    "sourceUrl": "https://www.ntestation.com/%E5%BC%82%E8%83%BD%E8%80%85%C2%B7%E9%9B%B6",
-    "r3Raises": [
-      "기본 공격",
-      "변궤 스킬",
-      "궁극기"
-    ],
-    "tables": {
-      "basic": [
-        "普通攻击1=41.5%",
-        "普通攻击2=48.4%+36.3%",
-        "普通攻击3=30.9%+38%",
-        "普通攻击4=70.2%+85.5%+84.4%",
-        "普通攻击5=149.8%",
-        "下落攻击=140.3%",
-        "极限反击=323.8%"
-      ],
-      "redirectSkill": [
-        "伤害倍率=43.2%+43.2%+271.2%+290.2%",
-        "对低于自身等级的敌人造成的额外伤害=200%"
-      ],
-      "ultimate": [
-        "伤害倍率=286.5%+11.4%*4+383.2%+364%"
+    "nameEn": "Esper Zero",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 공격력 +10%",
+      "recommendedLayout": [
+        "II",
+        "III",
+        "III",
+        "IV"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "lost-radiance",
+      "alternativeSetIds": [
+        "speedy-hedgehog",
+        "fireflies-and-the-forest",
+        "shadow-creed"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%",
+      "공격력%"
+    ],
+    "substatPriorityKo": [
+      "치명 피해%",
+      "치명 확률%",
+      "통상 피해%",
+      "공격력%"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/7",
+      "https://www.ntebuild.com/characters/zero"
+    ],
+    "buildNoteKo": "「세상을 뒤흔든 비」 아크를 장착하면 사이클 강도 옵션의 우선도가 올라가는 별도 운용이 있습니다."
   },
+  "fieldSkills": {
+    "passives": [],
+    "citySkills": [
+      {
+        "nameKo": "별 다섯 개의 모범",
+        "categoryKo": "친화도",
+        "effectKo": {
+          "Lv.1": "",
+          "Lv.2": "",
+          "Lv.3": "친밀도 레벨 4~8에서 단계별로 선물 친밀도 획득량이 각각 5% 증가한다.",
+          "Lv.4": "",
+          "Lv.5": ""
+        },
+        "maxLevel": 5
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 이능력자 DB",
+      "url": "https://nte.inven.co.kr/db/esper/7"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/female"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E5%BC%82%E8%83%BD%E8%80%85%C2%B7%E9%9B%B6",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击2",
-          "普通攻击3",
-          "普通攻击4",
-          "普通攻击5",
-          "普通攻击6",
-          "普通攻击7",
-          "普通攻击8",
-          "普通攻击9",
-          "下落攻击",
-          "极限反击"
+          "일반 공격 · 1타",
+          "일반 공격 · 2타",
+          "일반 공격 · 3타",
+          "일반 공격 · 4타",
+          "일반 공격 · 5타",
+          "일반 공격 · 6타",
+          "일반 공격 · 7타",
+          "일반 공격 · 8타",
+          "일반 공격 · 9타",
+          "낙하 공격",
+          "회피반격"
         ],
         "r": [
           [
@@ -289,18 +326,18 @@
           ]
         ],
         "m": {
-          "普通攻击1": 2
+          "일반 공격 · 1타": 2
         },
         "f": {}
       },
       {
         "g": "skill",
         "h": [
-          "变轨技能1",
-          "变轨技能2",
-          "变轨技能3",
-          "变轨技能4",
-          "对低于自身等级的敌人造成的额外伤害"
+          "바이레일 스킬 · 1타",
+          "바이레일 스킬 · 2타",
+          "바이레일 스킬 · 3타",
+          "바이레일 스킬 · 4타",
+          "자신보다 레벨이 낮은 적에게 주는 추가 피해"
         ],
         "r": [
           [
@@ -387,10 +424,10 @@
       {
         "g": "ultimate",
         "h": [
-          "极轨终结1",
-          "极轨终结2",
-          "极轨终结3",
-          "极轨终结4"
+          "극궤 종결 · 1타",
+          "극궤 종결 · 2타",
+          "극궤 종결 · 3타",
+          "극궤 종결 · 4타"
         ],
         "r": [
           [
@@ -461,15 +498,15 @@
           ]
         ],
         "m": {
-          "极轨终结2": 4
+          "극궤 종결 · 2타": 4
         },
         "f": {}
       },
       {
         "g": "support",
         "h": [
-          "援护技1",
-          "援护技2"
+          "지원 스킬 · 1타",
+          "지원 스킬 · 2타"
         ],
         "r": [
           [
@@ -518,70 +555,31 @@
       }
     ]
   },
-  "crosscheck": {
-    "progression": null,
-    "isolatedLevelChecks": [],
-    "additionalRegionalChecks": []
-  },
-  "console": {
-    "characterId": "zero",
+  "r3": {
     "nameKo": "이능력자·제로",
-    "nameEn": "Esper Zero",
-    "console": {
-      "preferredModuleShape": "III",
-      "perDriveBonusKo": "III형 드라이브 1개당 공격력 +10%",
-      "recommendedLayout": [
-        "II",
-        "III",
-        "III",
-        "IV"
+    "sourceUrl": "https://www.ntestation.com/%E5%BC%82%E8%83%BD%E8%80%85%C2%B7%E9%9B%B6",
+    "r3Raises": [
+      "기본 공격",
+      "바이레일 스킬",
+      "울티메이트"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=41.5%",
+        "普通攻击2=48.4%+36.3%",
+        "普通攻击3=30.9%+38%",
+        "普通攻击4=70.2%+85.5%+84.4%",
+        "普通攻击5=149.8%",
+        "下落攻击=140.3%",
+        "极限反击=323.8%"
+      ],
+      "redirectSkill": [
+        "伤害倍率=43.2%+43.2%+271.2%+290.2%",
+        "对低于自身等级的敌人造成的额外伤害=200%"
+      ],
+      "ultimate": [
+        "伤害倍率=286.5%+11.4%*4+383.2%+364%"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "lost-radiance",
-      "alternativeSetIds": [
-        "speedy-hedgehog",
-        "fireflies-and-the-forest",
-        "shadow-creed"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%",
-      "공격력%"
-    ],
-    "substatPriorityKo": [
-      "치명 피해%",
-      "치명 확률%",
-      "통상 피해%",
-      "공격력%"
-    ],
-    "sourceUrls": [
-      "https://nte.inven.co.kr/db/esper/7",
-      "https://www.ntebuild.com/characters/zero"
-    ],
-    "buildNoteKo": "「세상을 뒤흔든 비」 아크를 장착하면 사이클 강도 옵션의 우선도가 올라가는 별도 운용이 있습니다."
-  },
-  "fieldSkills": {
-    "passives": [
-      {
-        "nameKo": "감정사",
-        "unlock": "2단계",
-        "effectKo": "창조의 꽃이 둘로 나뉘어 함께 적을 추적한 뒤 폭발한다."
-      },
-      {
-        "nameKo": "이상 감지",
-        "unlock": "4단계",
-        "effectKo": "제로 나누기 피해가 30% 증가한다."
-      }
-    ],
-    "citySkills": [
-      {
-        "nameKo": "별 다섯 개의 모범",
-        "categoryKo": "친화도",
-        "effectKo": "친밀도 레벨 4~8 이하에서 단계별로 선물 친밀도 획득량이 각각 5% 증가한다."
-      }
-    ],
-    "sourceUrl": "https://neverness.app/characters/zero"
+    }
   }
 }

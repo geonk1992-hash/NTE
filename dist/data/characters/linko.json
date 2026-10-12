@@ -18,8 +18,7 @@
   "detail": {
     "id": "linko",
     "globalStatus": "released",
-    "guideRoleEn": "Damage",
-    "coreMechanicKo": "변조 자원을 소비해 선택한 아군과 동기화 협공을 실행한다. 궁극기 영역에서는 최대 세 명의 동기화 공격을 연속 호출한다.",
+    "coreMechanicKo": "파티원의 바이레일 스킬에 반응하는 동기화 협공과 공명 영역으로 파티 피해를 지원하는 령 속성 서브 딜러입니다.",
     "keySkillNamesEn": {
       "basic": "Poltergeist CQC",
       "skill": "Full-Frequency Pulse",
@@ -33,7 +32,13 @@
       "zhHans": "胡影佳; 洪海天",
       "ko": "김서현; 김예림"
     },
-    "source": "https://www.prydwen.gg/neverness-to-everness/characters/linko"
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/linko",
+    "skillDescriptionsKo": {
+      "basic": "연속 공격과 극한 회피 반격으로 공명 자원을 쌓습니다. 사다의 공격 표식이 남은 적을 공격하거나 사다의 공격이 적중해도 전투 흐름에 공명 자원이 더해집니다.",
+      "skill": "「전대역 공진」으로 여러 차례 공격하고, 지정한 팀원 한 명 또는 사다를 연계 공격에 참여시킵니다. 축적한 공명 자원이 많을수록 아군에게 제공하는 강화 효과가 커지며, 사다의 위치에 따라서도 강화 단계가 달라집니다.",
+      "ultimate": "「과부하 공명」 영역을 만들고 연결된 팀원들의 스킬 사용 흐름에 맞춰 연계 공격을 실행합니다. 영역 안에서 발생한 연계 공격은 링코의 추가 공격을 동반하며, 영역이 끝날 때 축적된 소음을 방출합니다.",
+      "support": "「악령 레프트 잽!」으로 공격합니다. 표식 제거, 바이레일 스킬 또는 울티메이트 사용으로 연계 공격을 발동할 수 있습니다."
+    }
   },
   "setting": {
     "summary": "만물의 「전파」 를 들을 수 있는 소녀, 줄여서 전파계 소녀다.",
@@ -48,7 +53,6 @@
   "mechanics": {
     "id": "linko",
     "nameKo": "링코",
-    "nameZhHans": "灵可",
     "level80BaseStats": {
       "hp": 15514,
       "atk": 652,
@@ -56,79 +60,129 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "49.6%; 17%*2; 40.4%; 13.3%+29.8%+13.9%*5+34.4%; 74%; palm 100%; plunge 55%; off-field ghost 50%; parry 25.5%*3+121.5%.",
-      "skill": "17.8%+13.8%+23.8%+44.6%; calls one ally/ghost synchronized strike.",
-      "ultimate": "field 73.5%; 57.6%*6; burst 735.3%; energy 100.",
-      "support": "Linko synchronized strike 500%; ghost 33.3%*3+100%; QTE 200%."
-    },
     "awakeningEffectsKo": [
-      "A1: 대기 중 기본 공격 유령 기습 주기 25% 단축.",
-      "A2: 궁극기 빛 속성 폭발 계수 +30%.",
-      "A3: 궁극기 사용 시 변궤 스킬 쿨다운 초기화.",
-      "A4: 공명 영역에서 동조 협공마다 범위 피해 추가; 현재 스킬 레벨 계수는 원문 {0}%로 누락.",
-      "A5: 변궤 스킬의 동조 협공으로 속성 반응 발동; 반응 불가 조합이면 해당 공격 피해 +50%.",
-      "A6: 파티 동조 협공 치명타 확률 +25%, 협공에 충전 효과 부여."
+      "A1: 링코가 필드 밖에 있을 때 「악령 섬격!」 발생 간격이 25% 짧아진다.",
+      "A2: 「울티메이트: 과부하 공명」의 령속성 폭발 피해 배율이 30% 증가한다.",
+      "A3: 울티메이트 사용 시 「전대역 공진」의 쿨타임을 초기화한다.",
+      "A4: 「공명 영역」에서 「동기화 협공」이 발동할 때마다 광역 령속성 피해를 추가로 준다. 현재 울티메이트 레벨 기준 배율은 199%다.",
+      "A5: 「전대역 공진」으로 발동한 「동기화 협공」으로 사이클을 발동할 수 있다. 링코와 선택한 팀원이 사이클을 발동할 수 없는 경우 해당 협공 피해가 50% 증가한다.",
+      "A6: 파티원의 「동기화 협공」 치명 확률이 25% 증가한다. 협공 후 링코와 해당 팀원이 울티메이트 에너지를 획득한다."
     ],
     "resonanceKo": {
-      "3": "지원 기술/변궤 스킬/궁극기 레벨 +1, 공격력 +20%.",
-      "6": "공명 영역 +5초, 파티 령/주 속성 피해 +30%."
+      "3": "서포트 스킬, 바이레일 스킬, 울티메이트 레벨이 1 상승하고 링코의 공격력이 20% 증가한다.",
+      "6": "「공명 영역」 지속시간이 5초 늘어난다. 지속시간 동안 파티 전체의 령 속성 및 주 속성 피해가 30% 증가한다."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/lingke",
-    "notes": "A4 계수는 page template placeholder라 수치 미확정.",
+    "sourceUrl": "https://nte.inven.co.kr/db/esper/23",
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다.",
     "awakeningNamesKo": {
-      "A1": "",
-      "A2": "",
-      "A3": "",
-      "A4": "",
-      "A5": "",
-      "A6": ""
+      "A1": "만물의 채널 수신 중!",
+      "A2": "유령이 얼마나 귀여운데!",
+      "A3": "고립된 섬들을 이어줘!",
+      "A4": "별들도 소곤소곤 속삭여!",
+      "A5": "전 대역을 향해 사랑을 외쳐!",
+      "A6": "온 세상의 메아리를 받아라!"
     }
   },
-  "r3": {
+  "console": {
+    "characterId": "linko",
     "nameKo": "링코",
-    "sourceUrl": "https://www.ntestation.com/%E7%81%B5%E5%8F%AF",
-    "r3Raises": [
-      "변궤 스킬",
-      "궁극기",
-      "지원기"
-    ],
-    "tables": {
-      "redirectSkill": [
-        "轰击伤害倍率=38.4%+29.8%+51.4%+96.3%"
-      ],
-      "ultimate": [
-        "范围伤害倍率=158.7%",
-        "多段伤害倍率=124.4%*6",
-        "爆发伤害倍率=1587.5%",
-        "觉醒4造成的额外范围伤害倍率=215.9%"
-      ],
-      "support": [
-        "援护技恶灵左直拳伤害倍率=431.8%",
-        "灵可同频合击伤害倍率=1079.5%",
-        "小贞同频合击伤害倍率=71.9%*3+215.9%"
+    "nameEn": "Linko",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 치명 확률 +8%",
+      "recommendedLayout": [
+        "II",
+        "III",
+        "III",
+        "IV"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "fireflies-and-the-forest",
+      "alternativeSetIds": [
+        "lost-radiance",
+        "speedy-hedgehog"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%",
+      "령속성 피해%"
+    ],
+    "substatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%",
+      "공격력%",
+      "공격력",
+      "통상 피해%"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/23",
+      "https://www.ntebuild.com/characters/linko"
+    ]
   },
+  "fieldSkills": {
+    "passives": [],
+    "citySkills": [
+      {
+        "nameKo": "주방의 마법",
+        "categoryKo": "상점",
+        "effectKo": {
+          "Lv.1": "손님 유입이 18 증가한다.",
+          "Lv.2": "재료 소모가 1% 줄어든다.",
+          "Lv.3": "손님 유입이 18 증가한다.",
+          "Lv.4": "재료 소모가 1% 줄어든다.",
+          "Lv.5": "손님 유입이 27 증가한다."
+        },
+        "maxLevel": 5
+      },
+      {
+        "nameKo": "전시와 설명",
+        "categoryKo": "도시 활동",
+        "effectKo": {
+          "Lv.1": "경매에서 전시품을 판매해 얻는 폰즈가 10% 증가한다.",
+          "Lv.2": "전시품 판매 폰즈 증가량이 5% 더 늘어난다.",
+          "Lv.3": "",
+          "Lv.4": "",
+          "Lv.5": ""
+        },
+        "maxLevel": 2
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 이능력자 DB",
+      "url": "https://nte.inven.co.kr/db/esper/23"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/linko"
+    },
+    {
+      "name": "링코 스킬 설명 대조 · GhostWeb",
+      "url": "https://ghostweb.tistory.com/2455"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E7%81%B5%E5%8F%AF",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击2",
-          "普通攻击3",
-          "Melee4_1_Damage",
-          "Melee4_2_Damage",
-          "Melee4_3_Damage",
-          "Melee4_Damage",
-          "普通攻击5",
-          "分支攻击",
-          "下落伤害",
-          "小贞攻击伤害",
-          "PerfectEvadeAttack_Damage",
-          "PerfectEvadeAttack_1_Damage"
+          "일반 공격 · 1타",
+          "일반 공격 · 2타",
+          "일반 공격 · 3타",
+          "근접 공격 · 4타 · 세부 1단",
+          "근접 공격 · 4타 · 세부 2단",
+          "근접 공격 · 4타 · 세부 3단",
+          "근접 공격 · 4타",
+          "일반 공격 · 5타",
+          "강공격",
+          "낙하 공격",
+          "샤오전 공격 피해",
+          "회피반격",
+          "회피반격 · 세부 1단"
         ],
         "r": [
           [
@@ -283,19 +337,19 @@
           ]
         ],
         "m": {
-          "普通攻击2": 2,
-          "Melee4_3_Damage": 5,
-          "PerfectEvadeAttack_Damage": 3
+          "일반 공격 · 2타": 2,
+          "근접 공격 · 4타 · 세부 3단": 5,
+          "회피반격": 3
         },
         "f": {}
       },
       {
         "g": "skill",
         "h": [
-          "Skill1_Damage",
-          "Skill2_Damage",
-          "Skill3_Damage",
-          "Skill4_Damage"
+          "바이레일 스킬 · 1타",
+          "바이레일 스킬 · 2타",
+          "바이레일 스킬 · 3타",
+          "바이레일 스킬 · 4타"
         ],
         "r": [
           [
@@ -371,10 +425,10 @@
       {
         "g": "ultimate",
         "h": [
-          "范围伤害倍率",
-          "多段伤害倍率",
-          "爆发伤害倍率",
-          "觉醒4造成的额外范围伤害倍率"
+          "범위 피해 계수",
+          "연속 피해 계수",
+          "폭발 피해 계수",
+          "각성 4 추가 범위 피해 계수"
         ],
         "r": [
           [
@@ -445,17 +499,17 @@
           ]
         ],
         "m": {
-          "多段伤害倍率": 6
+          "연속 피해 계수": 6
         },
         "f": {}
       },
       {
         "g": "support",
         "h": [
-          "援护技：「恶灵左直拳！」伤害倍率",
-          "灵可「同频合击」伤害倍率",
-          "Skill1_ThrowXiaozhen_Damage",
-          "Skill1_ThrowXiaozhen_Damage2"
+          "지원 스킬: 「악령 레프트 잽!」 피해 계수",
+          "링코 「동조 합격」 피해 계수",
+          "바이레일 스킬 1 · 샤오전 투척 피해",
+          "바이레일 스킬 1 · 샤오전 투척 피해 2"
         ],
         "r": [
           [
@@ -526,80 +580,35 @@
           ]
         ],
         "m": {
-          "Skill1_ThrowXiaozhen_Damage": 3
+          "바이레일 스킬 1 · 샤오전 투척 피해": 3
         },
         "f": {}
       }
     ]
   },
-  "crosscheck": {
-    "progression": null,
-    "isolatedLevelChecks": [],
-    "additionalRegionalChecks": []
-  },
-  "console": {
-    "characterId": "linko",
+  "r3": {
     "nameKo": "링코",
-    "nameEn": "Linko",
-    "console": {
-      "preferredModuleShape": "III",
-      "perDriveBonusKo": "III형 드라이브 1개당 치명 확률 +8%",
-      "recommendedLayout": [
-        "II",
-        "III",
-        "III",
-        "IV"
+    "sourceUrl": "https://www.ntestation.com/%E7%81%B5%E5%8F%AF",
+    "r3Raises": [
+      "바이레일 스킬",
+      "울티메이트",
+      "지원기"
+    ],
+    "tables": {
+      "redirectSkill": [
+        "轰击伤害倍率=38.4%+29.8%+51.4%+96.3%"
+      ],
+      "ultimate": [
+        "范围伤害倍率=158.7%",
+        "多段伤害倍率=124.4%*6",
+        "爆发伤害倍率=1587.5%",
+        "觉醒4造成的额外范围伤害倍率=215.9%"
+      ],
+      "support": [
+        "援护技恶灵左直拳伤害倍率=431.8%",
+        "灵可同频合击伤害倍率=1079.5%",
+        "小贞同频合击伤害倍率=71.9%*3+215.9%"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "fireflies-and-the-forest",
-      "alternativeSetIds": [
-        "lost-radiance",
-        "speedy-hedgehog"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%",
-      "령속성 피해%"
-    ],
-    "substatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%",
-      "공격력%",
-      "공격력",
-      "통상 피해%"
-    ],
-    "sourceUrls": [
-      "https://nte.inven.co.kr/db/esper/23",
-      "https://www.ntebuild.com/characters/linko"
-    ]
-  },
-  "fieldSkills": {
-    "passives": [
-      {
-        "nameKo": "약점 탐지기",
-        "unlock": "2단계",
-        "effectKo": "주박 후속 공격의 기본 피해가 30% 증가하고, 주박 대상이 받는 후속 공격 피해도 10% 증가한다."
-      },
-      {
-        "nameKo": "정밀 조율",
-        "unlock": "4단계",
-        "effectKo": "공명 공격 적중 시 해당 속성 저항을 8% 낮춘다. 12초 동안 지속된다."
-      }
-    ],
-    "citySkills": [
-      {
-        "nameKo": "주방의 마법",
-        "categoryKo": "상점",
-        "effectKo": "1·3단계에서 손님 유입이 각각 18 증가하고, 2·4단계에서 재료 소모가 각각 1% 줄어든다. 5단계에서 손님 유입이 27 증가한다."
-      },
-      {
-        "nameKo": "전시와 설명",
-        "categoryKo": "도시 활동",
-        "effectKo": "경매에서 전시품을 판매해 얻는 퐁스가 10% 증가하고, 2단계에서 5% 더 증가한다."
-      }
-    ],
-    "sourceUrl": "https://neverness.app/characters/linko"
+    }
   }
 }

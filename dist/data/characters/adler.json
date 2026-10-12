@@ -18,8 +18,7 @@
   "detail": {
     "id": "adler",
     "globalStatus": "released",
-    "guideRoleEn": "Survival",
-    "coreMechanicKo": "기본 공격으로 카르마를 쌓아 스킬 피해를 높이고, 보호막과 지속 피해를 제공한다. 스코치 대상에게 무작위 약화 효과를 추가한다.",
+    "coreMechanicKo": "보호막과 사이클 유도를 담당하는 서포터 겸 서브 딜러입니다. 인벤 데이터베이스는 바이레일 스킬과 울티메이트를 먼저 육성하도록 권합니다.",
     "keySkillNamesEn": {
       "basic": "Deliverance",
       "skill": "Evil's Bane",
@@ -33,7 +32,13 @@
       "zhHans": "王宇航",
       "ko": "심규혁"
     },
-    "source": "https://www.prydwen.gg/neverness-to-everness/characters/adler"
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/adler",
+    "skillDescriptionsKo": {
+      "basic": "최대 5단 연속 공격과 조준 공격으로 적을 공격합니다. 공중 낙하 공격과 극한 회피 반격도 사용할 수 있으며, 기본 공격으로 「업」을 쌓아 바이레일 스킬을 강화합니다.",
+      "skill": "「공여 환영」을 소환해 주변 적을 공격하고 지속 피해를 줍니다. 동시에 자신과 아군에게 보호막 「깨달음의 가호」를 부여하며, 축적한 「업」을 소모해 스킬의 직접 피해와 지속 피해를 강화할 수 있습니다.",
+      "ultimate": "다섯 「공여」를 소환해 표적을 연속 공격합니다. 적이 하나뿐이면 공격이 추가로 적중합니다.",
+      "support": "조준해 압축탄을 발사하고 전방의 적을 공격합니다."
+    }
   },
   "setting": {
     "summary": "「에이본」 사람들과 이웃의 신회를 한 몸에 받는 완벽한 집사",
@@ -48,7 +53,6 @@
   "mechanics": {
     "id": "adler",
     "nameKo": "아들러",
-    "nameZhHans": "阿德勒",
     "level80BaseStats": {
       "hp": 14302,
       "atk": 437,
@@ -56,80 +60,111 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "20.1%; 57.7%; 15.4%*2; 21.9%+23.1%+74.6%; 87.5%; aim 10.4%; plunge 36%; parry 176%; cycle 33.",
-      "skill": "70% DEF*3; DoT 20% DEF each second for 10s; shield 1000+80% DEF for 8s; cycle 7.",
-      "ultimate": "100% DEF per hit, 5 hits per target (10 hits on a lone target); energy 120.",
-      "support": "200%."
-    },
     "awakeningEffectsKo": [
-      "A1: 궁극기 사용 후 업(業) 20중첩 획득.",
-      "A2: 업 중첩당 피해 증가량을 3%로 높임.",
-      "A3: 명오의 혜우 보호막 흡수량 20% 증가.",
-      "A4: 보호막이 깨질 때 아들러 방어력의 50%에 해당하는 초과 피해를 흡수.",
-      "A5: 궁극기 사용 후 궁극기 에너지 20 회복.",
-      "A6: 명오의 혜우 지속시간을 12초로 연장."
+      "A1: 울티메이트 사용 시 자신에게 「업」을 20중첩 부여한다.",
+      "A2: 「업」 1중첩당 아들러의 피해 보너스가 3%로 상승한다.",
+      "A3: 「깨달음의 가호」 보호막 흡수량이 20% 증가한다.",
+      "A4: 「깨달음의 가호」가 깨질 때 아들러 방어력의 50%를 기준으로 초과 피해를 흡수한다.",
+      "A5: 울티메이트 사용 시 울티메이트 에너지 20을 돌려받는다.",
+      "A6: 「깨달음의 가호」 지속시간이 12초로 연장된다."
     ],
     "resonanceKo": {
-      "3": "기본 공격/변궤 스킬/궁극기 레벨 +1.",
-      "6": "명오의 혜우 보호 중 파티의 주 속성 피해 +10%."
+      "3": "일반 공격, 바이레일 스킬, 울티메이트 레벨이 1 상승한다.",
+      "6": "「깨달음의 가호」 보호 중 파티 전체의 주 속성 피해가 10% 증가한다."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/adeler",
-    "notes": "Lv.80 stats and coefficient values are community database values; skill level selector unresolved.",
+    "sourceUrl": "https://nte.inven.co.kr/db/esper/16",
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다.",
     "awakeningNamesKo": {
-      "A1": "",
-      "A2": "",
-      "A3": "",
-      "A4": "",
-      "A5": "",
-      "A6": ""
+      "A1": "무색",
+      "A2": "무수",
+      "A3": "무상",
+      "A4": "무행",
+      "A5": "무식",
+      "A6": "제법 공상"
     }
   },
-  "r3": {
+  "console": {
+    "characterId": "adler",
     "nameKo": "아들러",
-    "sourceUrl": "https://www.ntestation.com/%E9%98%BF%E5%BE%B7%E5%8B%92",
-    "r3Raises": [
-      "기본 공격",
-      "변궤 스킬",
-      "궁극기"
-    ],
-    "tables": {
-      "basic": [
-        "普通攻击1=43.4%",
-        "普通攻击2=124.6%",
-        "普通攻击3=33.2%*2",
-        "普通攻击4=47.3%+49.9%+161.1%",
-        "普通攻击5=188.9%",
-        "瞄准攻击=22.5%",
-        "下落伤害=77.7%",
-        "极限反击=380%"
-      ],
-      "redirectSkill": [
-        "直接伤害倍率=151.1%*3防御力",
-        "持续伤害倍率=43.2%防御力",
-        "提供护盾倍率=2160+172%防御力"
-      ],
-      "ultimate": [
-        "单次伤害倍率=215.9%防御力"
+    "nameEn": "Adler",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 방어력 +12%",
+      "recommendedLayout": [
+        "III",
+        "III",
+        "III",
+        "III"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "kingdoms-guard",
+      "alternativeSetIds": [
+        "speedy-hedgehog"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "방어력%",
+      "방어력"
+    ],
+    "substatPriorityKo": [
+      "방어력%",
+      "방어력",
+      "브레이크 강도",
+      "사이클 강도"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/16",
+      "https://www.ntebuild.com/characters/adler"
+    ]
   },
+  "fieldSkills": {
+    "passives": [],
+    "citySkills": [
+      {
+        "nameKo": "커피 장인",
+        "categoryKo": "상점",
+        "effectKo": {
+          "Lv.1": "배치된 가게의 메뉴 판매가가 추가로 0.12폰즈 상승한다.",
+          "Lv.2": "배치된 가게의 식재료 소모 속도가 1% 감소한다.",
+          "Lv.3": "「점장 특제」에서 커피를 자동 제조할 수 있다.",
+          "Lv.4": "배치된 가게의 식재료 소모 속도가 1% 감소한다.",
+          "Lv.5": "배치된 가게의 메뉴 판매가가 추가로 0.18폰즈 상승한다."
+        },
+        "maxLevel": 5
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 이능력자 DB",
+      "url": "https://nte.inven.co.kr/db/esper/16"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/adler"
+    },
+    {
+      "name": "아들러 스킬 설명 대조 · GhostWeb",
+      "url": "https://ghostweb.tistory.com/2380"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E9%98%BF%E5%BE%B7%E5%8B%92",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击2",
-          "普通攻击3",
-          "普通攻击4_1",
-          "普通攻击4_2",
-          "普通攻击4_3",
-          "普通攻击5",
-          "瞄准攻击",
-          "下落伤害",
-          "极限反击"
+          "일반 공격 · 1타",
+          "일반 공격 · 2타",
+          "일반 공격 · 3타",
+          "일반 공격 · 4타 · 세부 1단",
+          "일반 공격 · 4타 · 세부 2단",
+          "일반 공격 · 4타 · 세부 3단",
+          "일반 공격 · 5타",
+          "조준 공격",
+          "낙하 공격",
+          "회피반격"
         ],
         "r": [
           [
@@ -266,17 +301,17 @@
           ]
         ],
         "m": {
-          "普通攻击3": 2
+          "일반 공격 · 3타": 2
         },
         "f": {}
       },
       {
         "g": "skill",
         "h": [
-          "直接伤害倍率",
-          "持续伤害倍率",
-          "护盾固定值",
-          "护盾基于防御值"
+          "직접 피해 계수",
+          "지속 피해 계수",
+          "보호막 고정량",
+          "방어력 비례 보호막"
         ],
         "r": [
           [
@@ -347,19 +382,19 @@
           ]
         ],
         "m": {
-          "直接伤害倍率": 3
+          "직접 피해 계수": 3
         },
         "f": {
-          "直接伤害倍率": {
-            "suffix": "防御力"
+          "직접 피해 계수": {
+            "suffix": "방어력"
           },
-          "持续伤害倍率": {
-            "suffix": "防御力"
+          "지속 피해 계수": {
+            "suffix": "방어력"
           },
-          "护盾基于防御值": {
-            "suffix": "防御力"
+          "방어력 비례 보호막": {
+            "suffix": "방어력"
           },
-          "护盾固定值": {
+          "보호막 고정량": {
             "type": "integer"
           }
         }
@@ -367,7 +402,7 @@
       {
         "g": "ultimate",
         "h": [
-          "单次伤害倍率"
+          "1회 피해 계수"
         ],
         "r": [
           [
@@ -406,15 +441,15 @@
         ],
         "m": {},
         "f": {
-          "单次伤害倍率": {
-            "suffix": "防御力"
+          "1회 피해 계수": {
+            "suffix": "방어력"
           }
         }
       },
       {
         "g": "support",
         "h": [
-          "援护技"
+          "지원 스킬"
         ],
         "r": [
           [
@@ -456,66 +491,33 @@
       }
     ]
   },
-  "crosscheck": {
-    "progression": null,
-    "isolatedLevelChecks": [],
-    "additionalRegionalChecks": []
-  },
-  "console": {
-    "characterId": "adler",
+  "r3": {
     "nameKo": "아들러",
-    "nameEn": "Adler",
-    "console": {
-      "preferredModuleShape": "III",
-      "perDriveBonusKo": "III형 드라이브 1개당 방어력 +12%",
-      "recommendedLayout": [
-        "III",
-        "III",
-        "III",
-        "III"
+    "sourceUrl": "https://www.ntestation.com/%E9%98%BF%E5%BE%B7%E5%8B%92",
+    "r3Raises": [
+      "기본 공격",
+      "바이레일 스킬",
+      "울티메이트"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=43.4%",
+        "普通攻击2=124.6%",
+        "普通攻击3=33.2%*2",
+        "普通攻击4=47.3%+49.9%+161.1%",
+        "普通攻击5=188.9%",
+        "瞄准攻击=22.5%",
+        "下落伤害=77.7%",
+        "极限反击=380%"
+      ],
+      "redirectSkill": [
+        "直接伤害倍率=151.1%*3防御力",
+        "持续伤害倍率=43.2%防御力",
+        "提供护盾倍率=2160+172%防御力"
+      ],
+      "ultimate": [
+        "单次伤害倍率=215.9%防御力"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "kingdoms-guard",
-      "alternativeSetIds": [
-        "speedy-hedgehog"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "방어력%",
-      "방어력"
-    ],
-    "substatPriorityKo": [
-      "방어력%",
-      "방어력",
-      "브레이크 강도",
-      "사이클 강도"
-    ],
-    "sourceUrls": [
-      "https://nte.inven.co.kr/db/esper/16",
-      "https://www.ntebuild.com/characters/adler"
-    ]
-  },
-  "fieldSkills": {
-    "passives": [
-      {
-        "nameKo": "절제",
-        "unlock": "2단계",
-        "effectKo": "작열을 부여하면 공격력 20% 감소, 이능 저항 10% 감소, 브레이크 효율 10% 증가 중 무작위 효과 하나를 15초 동안 부여한다."
-      },
-      {
-        "nameKo": "올곧은 마음",
-        "unlock": "4단계",
-        "effectKo": "방어력이 20% 증가한다."
-      }
-    ],
-    "citySkills": [
-      {
-        "nameKo": "커피 장인",
-        "categoryKo": "상점",
-        "effectKo": "1단계에서 판매 가격이 0.12퐁스 오르고, 2·4단계에서 재료 소모가 각각 1% 줄어든다. 3단계에서는 점주의 선택 중 커피를 자동 제공하며, 5단계에서 가격이 0.18퐁스 더 오른다."
-      }
-    ],
-    "sourceUrl": "https://neverness.app/characters/adler"
+    }
   }
 }

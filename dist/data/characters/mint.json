@@ -18,8 +18,7 @@
   "detail": {
     "id": "mint",
     "globalStatus": "released",
-    "guideRoleEn": "Damage",
-    "coreMechanicKo": "전장에 오래 남아 기본 공격과 회전 공격으로 피해를 누적하는 단순한 근접형 딜러다. 방어력과 경직 저항 패시브로 안정성을 얻는다.",
+    "coreMechanicKo": "일반 공격, 바이레일 스킬, 울티메이트를 두루 쓰는 온필드 딜러입니다. 인벤 데이터베이스는 울티메이트와 바이레일 스킬을 우선 육성하도록 안내합니다.",
     "keySkillNamesEn": {
       "basic": "Perfect Containment",
       "skill": "Super Claws",
@@ -33,7 +32,13 @@
       "zhHans": "陈雨",
       "ko": "성예원"
     },
-    "source": "https://www.prydwen.gg/neverness-to-everness/characters/mint"
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/mint",
+    "skillDescriptionsKo": {
+      "basic": "연속 공격으로 적을 베며 공중 낙하 공격과 극한 회피 반격으로 전투를 이어갑니다.",
+      "skill": "「오의·슈퍼 바람 할퀴기」로 앞으로 돌진했다가 되돌아오며 두 차례 범위 공격을 가합니다.",
+      "ultimate": "「오의·벽력 질풍참」을 발동해 바람 칼날을 연속으로 날리고 마지막 일격을 가합니다.",
+      "support": "공중에서 차지한 뒤 적을 꿰뚫는 공격을 사용합니다."
+    }
   },
   "setting": {
     "summary": "평가를 매일 수 있다면, 수용팀 내에서 「이상에게 가장 많이 속은」 사람",
@@ -48,7 +53,6 @@
   "mechanics": {
     "id": "mint",
     "nameKo": "민트",
-    "nameZhHans": "薄荷",
     "level80BaseStats": {
       "hp": 12120,
       "atk": 596,
@@ -56,83 +60,114 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "10.4%+23.1%; 17%; 26.2%+34.1%; 18.4%; 25.5%+52.3%; plunge 65%; parry 174%; airborne 28.3%*3+46.7%; charged spin 13.3% per tick for up to 6s; cycle 19.",
-      "skill": "90%*2; cycle 8.",
-      "ultimate": "132.6%+58.8%*5+373.5%; energy 100.",
-      "support": "200%."
-    },
     "awakeningEffectsKo": [
-      "A1: 극한 반격 적중 시 스킬 쿨다운 초기화, 3초당 1회.",
-      "A2: 스킬 피해 +40%.",
-      "A3: 아군이 창생 또는 복문 발동 시 민트 공격력 +15%, 15초.",
-      "A4: 적이 하나뿐일 때 치명타 확률 +12%.",
-      "A5: 스킬 사용 후 치명타 피해 +25%, 6초.",
-      "A6: 체력 40% 미만 적에게 주는 피해 +15%."
+      "A1: 패링에 성공하면 바이레일 스킬 쿨타임을 초기화한다. 3초마다 1회 발동한다.",
+      "A2: 바이레일 스킬 피해가 40% 증가한다.",
+      "A3: 파티원이 블로섬 또는 헥스 반응을 발동하면 민트의 공격력이 15초 동안 15% 증가한다.",
+      "A4: 단일 적과 전투할 때 치명 확률이 12% 증가한다.",
+      "A5: 바이레일 스킬을 발동하면 치명 피해가 6초 동안 25% 증가한다.",
+      "A6: 체력이 40% 미만인 적에게 주는 피해가 15% 증가한다."
     ],
     "resonanceKo": {
-      "3": "기본 공격/스킬/궁극기 레벨 +1.",
-      "6": "스킬 사용 후 사이클 에너지 +2."
+      "3": "일반 공격, 바이레일 스킬, 울티메이트 레벨이 1 상승한다.",
+      "6": "바이레일 스킬 사용 시 사이클 수치 5를 획득한다."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/bohe",
+    "sourceUrl": "https://nte.inven.co.kr/db/esper/4",
     "awakeningNamesKo": {
-      "A1": "",
-      "A2": "",
-      "A3": "",
-      "A4": "",
-      "A5": "",
-      "A6": ""
-    }
+      "A1": "특파 작전",
+      "A2": "보충 시험",
+      "A3": "개근상 장학금",
+      "A4": "점심 쉬는 시간",
+      "A5": "첫 번째 직감",
+      "A6": "엘리트 대원"
+    },
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다."
   },
-  "r3": {
+  "console": {
+    "characterId": "mint",
     "nameKo": "민트",
-    "sourceUrl": "https://www.ntestation.com/%E8%96%84%E8%8D%B7",
-    "r3Raises": [
-      "기본 공격",
-      "변궤 스킬",
-      "궁극기"
-    ],
-    "tables": {
-      "basic": [
-        "普通攻击1=22.5%+49.9%",
-        "普通攻击2=36.7%",
-        "普通攻击3=56.6%+73.6%",
-        "普通攻击4=39.7%",
-        "普通攻击4=55.1%+112.9%",
-        "下落伤害=140.3%",
-        "极限反击=375.7%",
-        "长按普攻跃起伤害=61.1%*3+100.8%",
-        "长按普攻持续伤害=28.7%每段"
-      ],
-      "redirectSkill": [
-        "伤害倍率=194.3%*2"
-      ],
-      "ultimate": [
-        "冲击伤害倍率=286.3%",
-        "连续爪击伤害倍率=126.9%*5",
-        "斩击伤害倍率=806.4%"
+    "nameEn": "Mint",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 치명 확률 +8%",
+      "recommendedLayout": [
+        "II",
+        "III",
+        "III",
+        "IV"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "fireflies-and-the-forest",
+      "alternativeSetIds": [
+        "shadow-creed"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "령속성 피해%",
+      "치명 피해%",
+      "공격력%",
+      "치명 확률%"
+    ],
+    "substatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%",
+      "통상 피해%",
+      "공격력%",
+      "공격력"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/4",
+      "https://www.ntebuild.com/characters/mint"
+    ],
+    "conflictNoteKo": "한국 인벤 데이터베이스의 III형 보너스 치명 확률 +8%를 적용했습니다. NTEBuild는 +7.5%로 달리 표기하므로 차이를 출처에 남깁니다."
   },
+  "fieldSkills": {
+    "passives": [],
+    "citySkills": [
+      {
+        "nameKo": "민트 회오리",
+        "categoryKo": "상점",
+        "effectKo": {
+          "Lv.1": "요리 가격이 0.12폰즈 오른다.",
+          "Lv.2": "재료 소모가 1% 줄어든다.",
+          "Lv.3": "「점장 특제」 연속 보너스에 따라 팁을 최대 5회까지 얻는다.",
+          "Lv.4": "재료 소모가 1% 줄어든다.",
+          "Lv.5": "가격이 0.18폰즈 더 오른다."
+        },
+        "maxLevel": 5
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 이능력자 DB",
+      "url": "https://nte.inven.co.kr/db/esper/4"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/mint"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E8%96%84%E8%8D%B7",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击1_1",
-          "普通攻击2",
-          "普通攻击3",
-          "普通攻击3_1",
-          "普通攻击4",
-          "普通攻击5",
-          "普通攻击5_1",
-          "下落伤害",
-          "极限反击",
-          "Evade1",
-          "Evade4",
-          "长按普攻持续伤害"
+          "일반 공격 · 1타",
+          "일반 공격 · 1타 · 세부 1단",
+          "일반 공격 · 2타",
+          "일반 공격 · 3타",
+          "일반 공격 · 3타 · 세부 1단",
+          "일반 공격 · 4타",
+          "일반 공격 · 5타",
+          "일반 공격 · 5타 · 세부 1단",
+          "낙하 공격",
+          "회피반격",
+          "회피 공격 · 1타",
+          "회피 공격 · 4타",
+          "일반 공격 중 길게 눌러 지속 피해"
         ],
         "r": [
           [
@@ -302,18 +337,18 @@
           ]
         ],
         "m": {
-          "Evade1": 3
+          "회피 공격 · 1타": 3
         },
         "f": {
-          "长按普攻持续伤害": {
-            "suffix": "每段"
+          "일반 공격 중 길게 눌러 지속 피해": {
+            "suffix": "타격당"
           }
         }
       },
       {
         "g": "skill",
         "h": [
-          "伤害倍率"
+          "피해 계수"
         ],
         "r": [
           [
@@ -351,16 +386,16 @@
           ]
         ],
         "m": {
-          "伤害倍率": 2
+          "피해 계수": 2
         },
         "f": {}
       },
       {
         "g": "ultimate",
         "h": [
-          "冲击伤害倍率",
-          "连续爪击伤害倍率",
-          "斩击伤害倍率"
+          "충격 피해 계수",
+          "연속 발톱 공격 피해 계수",
+          "베기 피해 계수"
         ],
         "r": [
           [
@@ -420,14 +455,14 @@
           ]
         ],
         "m": {
-          "连续爪击伤害倍率": 5
+          "연속 발톱 공격 피해 계수": 5
         },
         "f": {}
       },
       {
         "g": "support",
         "h": [
-          "援护技"
+          "지원 스킬"
         ],
         "r": [
           [
@@ -469,185 +504,150 @@
       }
     ]
   },
-  "crosscheck": {
-    "progression": {
-      "nameKo": "민트",
-      "nameJa": "ミント",
-      "sourceUrl": "https://wikiwiki.jp/nte/%E3%83%9F%E3%83%B3%E3%83%88",
-      "coverage": "Partial rows only. The page fills selected levels rather than every LV1-LV12 cell; missing levels are null/unknown and must not be interpolated.",
-      "records": [
-        {
-          "skill": "basic.hit1",
-          "levels": {
-            "1": "10.4%+23.1%",
-            "5": "14.1%+31.4%",
-            "6": "15.3%+33.9%"
-          }
-        },
-        {
-          "skill": "basic.hit2",
-          "levels": {
-            "1": "17%",
-            "5": "23.1%",
-            "6": "25%"
-          }
-        },
-        {
-          "skill": "basic.hit3",
-          "levels": {
-            "1": "26.2%+34.1%",
-            "5": "35.6%+46.4%",
-            "6": "38.5%+50.1%"
-          }
-        },
-        {
-          "skill": "basic.hit4",
-          "levels": {
-            "1": "18.4%",
-            "5": "25%",
-            "6": "27%"
-          }
-        },
-        {
-          "skill": "basic.hit5",
-          "levels": {
-            "1": "25.5%+52.3%",
-            "5": "34.7%+71.2%",
-            "6": "37.5%+76.8%"
-          }
-        },
-        {
-          "skill": "basic.plunge",
-          "levels": {
-            "1": "65%",
-            "5": "88.4%",
-            "6": "95.5%"
-          }
-        },
-        {
-          "skill": "basic.counter",
-          "levels": {
-            "1": "174%",
-            "5": "236.7%",
-            "6": "255.7%"
-          }
-        },
-        {
-          "skill": "basic.jump",
-          "levels": {
-            "1": "28.3%×3+46.7%",
-            "5": "38.5%×3+63.5%",
-            "6": "41.6%×3+68.6%"
-          }
-        },
-        {
-          "skill": "skill.superWindClaw",
-          "levels": {
-            "1": "90%×2",
-            "5": "122.4%×2",
-            "6": "132.2%×2",
-            "10": "179.9%×2"
-          }
-        },
-        {
-          "skill": "ultimate.impact",
-          "levels": {
-            "1": "132.6%",
-            "5": "180.4%",
-            "6": "194.8%",
-            "10": "265.1%"
-          }
-        },
-        {
-          "skill": "ultimate.repeatedClaw",
-          "levels": {
-            "1": "58.8%×5",
-            "5": "80%×5",
-            "6": "86.4%×5",
-            "10": "117.5%×5"
-          }
-        },
-        {
-          "skill": "ultimate.slash",
-          "levels": {
-            "1": "373.5%",
-            "5": "508.1%",
-            "6": "548.8%",
-            "10": "746.6%"
-          }
-        },
-        {
-          "skill": "support.invincibleTyphoon",
-          "levels": {
-            "1": "200%",
-            "4": "251.9%",
-            "5": "272.1%"
-          }
-        }
-      ]
-    },
-    "isolatedLevelChecks": [],
-    "additionalRegionalChecks": []
-  },
-  "console": {
-    "characterId": "mint",
+  "r3": {
     "nameKo": "민트",
-    "nameEn": "Mint",
-    "console": {
-      "preferredModuleShape": "III",
-      "perDriveBonusKo": "III형 드라이브 1개당 치명 확률 +8%",
-      "recommendedLayout": [
-        "II",
-        "III",
-        "III",
-        "IV"
+    "sourceUrl": "https://www.ntestation.com/%E8%96%84%E8%8D%B7",
+    "r3Raises": [
+      "기본 공격",
+      "바이레일 스킬",
+      "울티메이트"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=22.5%+49.9%",
+        "普通攻击2=36.7%",
+        "普通攻击3=56.6%+73.6%",
+        "普通攻击4=39.7%",
+        "普通攻击4=55.1%+112.9%",
+        "下落伤害=140.3%",
+        "极限反击=375.7%",
+        "长按普攻跃起伤害=61.1%*3+100.8%",
+        "长按普攻持续伤害=28.7%每段"
+      ],
+      "redirectSkill": [
+        "伤害倍率=194.3%*2"
+      ],
+      "ultimate": [
+        "冲击伤害倍率=286.3%",
+        "连续爪击伤害倍率=126.9%*5",
+        "斩击伤害倍率=806.4%"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "fireflies-and-the-forest",
-      "alternativeSetIds": [
-        "shadow-creed"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "령속성 피해%",
-      "치명 피해%",
-      "공격력%",
-      "치명 확률%"
-    ],
-    "substatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%",
-      "통상 피해%",
-      "공격력%",
-      "공격력"
-    ],
-    "sourceUrls": [
-      "https://nte.inven.co.kr/db/esper/4",
-      "https://www.ntebuild.com/characters/mint"
-    ],
-    "conflictNoteKo": "한국 인벤 DB의 III형 보너스 치명 확률 +8%를 적용했습니다. NTEBuild는 +7.5%로 달리 표기하므로 차이를 출처에 남깁니다."
+    }
   },
-  "fieldSkills": {
-    "passives": [
+  "crosscheck": {
+    "nameKo": "민트",
+    "nameJa": "ミント",
+    "sourceUrl": "https://wikiwiki.jp/nte/%E3%83%9F%E3%83%B3%E3%83%88",
+    "coverage": "Partial rows only. The page fills selected levels rather than every LV1-LV12 cell; missing levels are null/unknown and must not be interpolated.",
+    "records": [
       {
-        "nameKo": "변신! 슈퍼 민트!",
-        "unlock": "2단계",
-        "effectKo": "「창조의 꽃」의 공격 범위가 넓어진다."
+        "skill": "basic.hit1",
+        "levels": {
+          "1": "10.4%+23.1%",
+          "5": "14.1%+31.4%",
+          "6": "15.3%+33.9%"
+        }
       },
       {
-        "nameKo": "빙고! 끝났어!",
-        "unlock": "4단계",
-        "effectKo": "민트가 필드에 있을 때 방어력이 20%, 경직 저항이 30% 증가한다."
-      }
-    ],
-    "citySkills": [
+        "skill": "basic.hit2",
+        "levels": {
+          "1": "17%",
+          "5": "23.1%",
+          "6": "25%"
+        }
+      },
       {
-        "nameKo": "민트 회오리",
-        "categoryKo": "상점",
-        "effectKo": "1단계에서 요리 가격이 0.12퐁스 오르고, 2·4단계에서 재료 소모가 각각 1% 줄어든다. 점주의 선택 연속 보너스에 따라 팁을 최대 5회까지 얻으며, 5단계에서 가격이 0.18퐁스 더 오른다."
+        "skill": "basic.hit3",
+        "levels": {
+          "1": "26.2%+34.1%",
+          "5": "35.6%+46.4%",
+          "6": "38.5%+50.1%"
+        }
+      },
+      {
+        "skill": "basic.hit4",
+        "levels": {
+          "1": "18.4%",
+          "5": "25%",
+          "6": "27%"
+        }
+      },
+      {
+        "skill": "basic.hit5",
+        "levels": {
+          "1": "25.5%+52.3%",
+          "5": "34.7%+71.2%",
+          "6": "37.5%+76.8%"
+        }
+      },
+      {
+        "skill": "basic.plunge",
+        "levels": {
+          "1": "65%",
+          "5": "88.4%",
+          "6": "95.5%"
+        }
+      },
+      {
+        "skill": "basic.counter",
+        "levels": {
+          "1": "174%",
+          "5": "236.7%",
+          "6": "255.7%"
+        }
+      },
+      {
+        "skill": "basic.jump",
+        "levels": {
+          "1": "28.3%×3+46.7%",
+          "5": "38.5%×3+63.5%",
+          "6": "41.6%×3+68.6%"
+        }
+      },
+      {
+        "skill": "skill.superWindClaw",
+        "levels": {
+          "1": "90%×2",
+          "5": "122.4%×2",
+          "6": "132.2%×2",
+          "10": "179.9%×2"
+        }
+      },
+      {
+        "skill": "ultimate.impact",
+        "levels": {
+          "1": "132.6%",
+          "5": "180.4%",
+          "6": "194.8%",
+          "10": "265.1%"
+        }
+      },
+      {
+        "skill": "ultimate.repeatedClaw",
+        "levels": {
+          "1": "58.8%×5",
+          "5": "80%×5",
+          "6": "86.4%×5",
+          "10": "117.5%×5"
+        }
+      },
+      {
+        "skill": "ultimate.slash",
+        "levels": {
+          "1": "373.5%",
+          "5": "508.1%",
+          "6": "548.8%",
+          "10": "746.6%"
+        }
+      },
+      {
+        "skill": "support.invincibleTyphoon",
+        "levels": {
+          "1": "200%",
+          "4": "251.9%",
+          "5": "272.1%"
+        }
       }
-    ],
-    "sourceUrl": "https://neverness.app/characters/mint"
+    ]
   }
 }

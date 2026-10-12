@@ -18,8 +18,7 @@
   "detail": {
     "id": "jiuyuan",
     "globalStatus": "released",
-    "guideRoleEn": "Damage",
-    "coreMechanicKo": "장미 계약 탄환으로 적을 표식하고, 궁극기에서 표식의 누적 결산 피해를 한꺼번에 발동한다. 스킬은 적을 끌어당기며 탄환을 보충한다.",
+    "coreMechanicKo": "적에게 「위험한 장미의 약속」을 부착하고 조건에 따라 피해를 정산하는 령 속성 캐릭터입니다. 인벤 데이터베이스는 바이레일 스킬과 울티메이트를 우선 육성하도록 안내합니다.",
     "keySkillNamesEn": {
       "basic": "When Secrets Take Shape",
       "skill": "Intel Hunter",
@@ -33,7 +32,13 @@
       "zhHans": "张安琪",
       "ko": "방시우"
     },
-    "source": "https://www.prydwen.gg/neverness-to-everness/characters/jiuyuan"
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/jiuyuan",
+    "skillDescriptionsKo": {
+      "basic": "연속 공격과 두 발의 총격으로 적을 공격합니다. 조준 및 차지 공격으로 표적에 「위험한 장미의 약속」을 남기며, 공중 낙하 공격과 반격도 사용합니다.",
+      "skill": "적 주변을 이동하며 공격하고 끌어당깁니다. 약속 탄환 네 발을 얻어 표적에게 「위험한 장미의 약속」을 남기고, 이후 공격으로 표식을 활용합니다.",
+      "ultimate": "빠른 연속 사격 후 넓은 범위에 폭발을 일으킵니다. 표식이 있는 적을 정산 상태로 만들고 마지막 공격으로 표식 효과를 처리합니다.",
+      "support": "곡선을 그리는 탄환으로 표적을 공격하고 추가 탄환을 준비합니다."
+    }
   },
   "setting": {
     "summary": "다재다능하고 예측 불가한 스테리 엘리트 배송원 겸 「점장대리」",
@@ -48,7 +53,6 @@
   "mechanics": {
     "id": "jiuyuan",
     "nameKo": "구원",
-    "nameZhHans": "九原",
     "level80BaseStats": {
       "hp": 15635,
       "atk": 652,
@@ -56,91 +60,118 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "21.8%; 24.1%+9.3%; 33.5%+5.1%+25.9%; 12.6%+24.5%+17.5%+10.2%; 76%; charged shot 80%; rose bullet 33.3% each; aim 16%; plunge 28.8%; mark tick 15%/s; settlement 100%.",
-      "skill": "36%+38.2%*4+111.4%; 4 rose bullets; cycle 12.",
-      "ultimate": "61.8%+78.4%*3+24.4%*7+132.1%; settlement multiplier 400%; energy 100.",
-      "support": "200%; grants 2 rose bullets."
-    },
     "awakeningEffectsKo": [
-      "A1: 치명적 장미 계약 대상 1명마다 공격력 +5%, 최대 +15%.",
-      "A2: 표식 지속 피해 계수 +100%; 궁극기 결산 누적 피해의 5%만큼 파티 회복.",
-      "A3: 궁극기 결산 시 적 경직치 4 추가 감소.",
-      "A4: 직접 발동 결산 피해 +50%, 범위 적용.",
-      "A5: 장미 계약 대상에게 주는 피해 +8%.",
-      "A6: 표식 대상이 스킬을 쓰면 200% 피해, 5초당 1회."
+      "A1: 「위험한 장미의 약속」이 걸린 적 한 명당 구원의 공격력이 5% 증가한다. 최대 15%.",
+      "A2: 「위험한 장미의 약속」 피해 배율이 100% 증가한다. 계약 청산 시 해당 표식에 누적된 피해의 20%만큼 파티 전체를 회복한다.",
+      "A3: 직접 「계약 청산」을 발동하면 대상의 붕괴 수치를 4 추가 차감한다.",
+      "A4: 직접 「계약 청산」을 발동하면 피해 배율이 50% 증가하며 범위 내 적에게 적용된다.",
+      "A5: 「위험한 장미의 약속」이 걸린 대상에게 주는 피해가 8% 증가한다.",
+      "A6: 「위험한 장미의 약속」이 걸린 적이 스킬을 시전할 때마다 200% 피해를 받는다. 5초마다 1회 적용된다."
     ],
     "resonanceKo": {
-      "3": "기본 공격/스킬/궁극기 레벨 +1.",
-      "6": "장미 계약 대상의 령 속성 저항 -10%."
+      "3": "일반 공격, 바이레일 스킬, 울티메이트 레벨이 1 상승한다.",
+      "6": "「위험한 장미의 약속」이 걸린 대상의 령 속성 피해 저항이 12% 감소한다."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/jiuyuan",
+    "sourceUrl": "https://nte.inven.co.kr/db/esper/11",
     "awakeningNamesKo": {
-      "A1": "",
-      "A2": "",
-      "A3": "",
-      "A4": "",
-      "A5": "",
-      "A6": ""
-    }
+      "A1": "통찰과 침묵",
+      "A2": "비수가 되어 돌아온 과거",
+      "A3": "승세 굳히기",
+      "A4": "한 방 한 방이 치명타",
+      "A5": "진실을 아는 자의 여유",
+      "A6": "모든 비밀은 내 손안에"
+    },
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다."
   },
-  "r3": {
+  "console": {
+    "characterId": "jiuyuan",
     "nameKo": "구원",
-    "sourceUrl": "https://www.ntestation.com/%E4%B9%9D%E5%8E%9F",
-    "r3Raises": [
-      "기본 공격",
-      "변궤 스킬",
-      "궁극기"
-    ],
-    "tables": {
-      "basic": [
-        "普通攻击1=47.1%",
-        "普通攻击2=52%+20.1%",
-        "普通攻击3=72.3%+11%+55.9%",
-        "普通攻击4=27.2%+52.9%+37.8%+22%",
-        "普通攻击5=164.1%",
-        "下落伤害=62.2%",
-        "长按普攻射击=172.7%",
-        "玫约子弹每段射击=71.9%",
-        "瞄准攻击=34.5%",
-        "极限反击=224.5%",
-        "致命玫约每秒伤害=32.4%",
-        "制约清算=215.9%",
-        "自动制约清算=215.9%"
-      ],
-      "redirectSkill": [
-        "伤害倍率=77.7%+82.5%*4+240.5%"
-      ],
-      "ultimate": [
-        "伤害倍率=133.4%+169.3%*3+52.7%*7+285.2%"
+    "nameEn": "Jiuyuan",
+    "console": {
+      "preferredModuleShape": "II",
+      "perDriveBonusKo": "II형 드라이브 1개당 치명 확률 +6%",
+      "recommendedLayout": [
+        "II",
+        "III",
+        "III",
+        "IV"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "fireflies-and-the-forest",
+      "alternativeSetIds": [
+        "devils-blood-curse",
+        "street-boxer",
+        "shadow-creed"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%"
+    ],
+    "substatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%",
+      "공격력",
+      "통상 피해%"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/11",
+      "https://www.ntebuild.com/characters/jiuyuan"
+    ]
   },
+  "fieldSkills": {
+    "passives": [],
+    "citySkills": [
+      {
+        "nameKo": "대리점 우대 회원",
+        "categoryKo": "차량",
+        "effectKo": {
+          "Lv.1": "차량 피격 시 내구도 감소가 3% 줄어든다.",
+          "Lv.2": "램페이지 플레이어 차량 개조 공임이 10% 줄어든다.",
+          "Lv.3": "차량 피격 시 내구도 감소가 3% 줄어든다.",
+          "Lv.4": "램페이지 플레이어 차량 개조 공임이 10% 줄어든다.",
+          "Lv.5": "차량 내구도 감소가 4% 더 줄어든다."
+        },
+        "maxLevel": 5
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 이능력자 DB",
+      "url": "https://nte.inven.co.kr/db/esper/11"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/kuhara"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E4%B9%9D%E5%8E%9F",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击2",
-          "普通攻击2_1",
-          "普通攻击3",
-          "普通攻击3_1",
-          "普通攻击3_2",
-          "普通攻击4",
-          "普通攻击4_1",
-          "普通攻击4_2",
-          "普通攻击4_3",
-          "普通攻击5",
-          "下落伤害",
-          "长按普攻射击",
-          "玫约子弹每段射击",
-          "瞄准攻击",
-          "极限反击",
-          "致命玫约每秒伤害",
-          "制约清算",
-          "自动制约清算"
+          "일반 공격 · 1타",
+          "일반 공격 · 2타",
+          "일반 공격 · 2타 · 세부 1단",
+          "일반 공격 · 3타",
+          "일반 공격 · 3타 · 세부 1단",
+          "일반 공격 · 3타 · 세부 2단",
+          "일반 공격 · 4타",
+          "일반 공격 · 4타 · 세부 1단",
+          "일반 공격 · 4타 · 세부 2단",
+          "일반 공격 · 4타 · 세부 3단",
+          "일반 공격 · 5타",
+          "낙하 공격",
+          "일반 공격 중 길게 눌러 사격",
+          "맹약 탄환 타격당 사격 피해",
+          "조준 공격",
+          "회피반격",
+          "치명적 맹약 초당 피해",
+          "제약 청산",
+          "자동 제약 청산"
         ],
         "r": [
           [
@@ -376,16 +407,16 @@
           ]
         ],
         "m": {
-          "普通攻击1": 2
+          "일반 공격 · 1타": 2
         },
         "f": {}
       },
       {
         "g": "skill",
         "h": [
-          "Skill1",
-          "Skill2",
-          "Skill3"
+          "바이레일 스킬 · 1타",
+          "바이레일 스킬 · 2타",
+          "바이레일 스킬 · 3타"
         ],
         "r": [
           [
@@ -445,17 +476,17 @@
           ]
         ],
         "m": {
-          "Skill2": 4
+          "바이레일 스킬 · 2타": 4
         },
         "f": {}
       },
       {
         "g": "ultimate",
         "h": [
-          "极轨终结1",
-          "极轨终结2",
-          "极轨终结3",
-          "极轨终结4"
+          "극궤 종결 · 1타",
+          "극궤 종결 · 2타",
+          "극궤 종결 · 3타",
+          "극궤 종결 · 4타"
         ],
         "r": [
           [
@@ -526,15 +557,15 @@
           ]
         ],
         "m": {
-          "极轨终结2": 3,
-          "极轨终结3": 7
+          "극궤 종결 · 2타": 3,
+          "극궤 종결 · 3타": 7
         },
         "f": {}
       },
       {
         "g": "support",
         "h": [
-          "援护技"
+          "지원 스킬"
         ],
         "r": [
           [
@@ -576,68 +607,36 @@
       }
     ]
   },
-  "crosscheck": {
-    "progression": null,
-    "isolatedLevelChecks": [],
-    "additionalRegionalChecks": []
-  },
-  "console": {
-    "characterId": "jiuyuan",
+  "r3": {
     "nameKo": "구원",
-    "nameEn": "Jiuyuan",
-    "console": {
-      "preferredModuleShape": "II",
-      "perDriveBonusKo": "II형 드라이브 1개당 치명 확률 +6%",
-      "recommendedLayout": [
-        "II",
-        "III",
-        "III",
-        "IV"
+    "sourceUrl": "https://www.ntestation.com/%E4%B9%9D%E5%8E%9F",
+    "r3Raises": [
+      "기본 공격",
+      "바이레일 스킬",
+      "울티메이트"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=47.1%",
+        "普通攻击2=52%+20.1%",
+        "普通攻击3=72.3%+11%+55.9%",
+        "普通攻击4=27.2%+52.9%+37.8%+22%",
+        "普通攻击5=164.1%",
+        "下落伤害=62.2%",
+        "长按普攻射击=172.7%",
+        "玫约子弹每段射击=71.9%",
+        "瞄准攻击=34.5%",
+        "极限反击=224.5%",
+        "致命玫约每秒伤害=32.4%",
+        "制约清算=215.9%",
+        "自动制约清算=215.9%"
+      ],
+      "redirectSkill": [
+        "伤害倍率=77.7%+82.5%*4+240.5%"
+      ],
+      "ultimate": [
+        "伤害倍率=133.4%+169.3%*3+52.7%*7+285.2%"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "fireflies-and-the-forest",
-      "alternativeSetIds": [
-        "devils-blood-curse",
-        "street-boxer",
-        "shadow-creed"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%"
-    ],
-    "substatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%",
-      "공격력",
-      "통상 피해%"
-    ],
-    "sourceUrls": [
-      "https://nte.inven.co.kr/db/esper/11",
-      "https://www.ntebuild.com/characters/jiuyuan"
-    ]
-  },
-  "fieldSkills": {
-    "passives": [
-      {
-        "nameKo": "기회를 잡아라",
-        "unlock": "2단계",
-        "effectKo": "「창조의 줄기」를 하나 더 설치할 수 있고, 설치 한도가 6개로 늘어난다."
-      },
-      {
-        "nameKo": "내 명령 아래의 속삭임",
-        "unlock": "4단계",
-        "effectKo": "꽃술의 적 속박 효과가 강화된다. 이미 속박된 적을 다시 속박하면 공격력의 15%에 해당하는 령속성 피해를 추가로 준다."
-      }
-    ],
-    "citySkills": [
-      {
-        "nameKo": "대리점 우대 회원",
-        "categoryKo": "차량",
-        "effectKo": "1·3단계에서 차량 피격 내구도 감소가 각각 3% 줄고, 2·4단계에서 램페이지 플레이어 차량 개조 공임이 각각 10% 줄어든다. 5단계에서는 내구도 감소가 4% 더 줄어든다."
-      }
-    ],
-    "sourceUrl": "https://neverness.app/characters/kuhara"
+    }
   }
 }

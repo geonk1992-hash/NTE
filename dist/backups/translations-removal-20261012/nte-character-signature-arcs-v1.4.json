@@ -1,0 +1,1042 @@
+{
+  "dataset": "Neverness to Everness character signature Arc data",
+  "snapshotDate": "2026-10-02",
+  "gameVersion": "1.4 Global",
+  "scope": {
+    "releasedCharacters": 23,
+    "charactersWithConfirmedSignatureArc": 22,
+    "signatureArcRecords": 23,
+    "definition": "A signature Arc is one explicitly linked to a character by a motif/signature guide or character-specific source. General best-in-slot/recommended Arcs are not treated as signatures without that link.",
+    "zeroRule": "Zero is one character and has two distinct signature Arc records.",
+    "excluded": "Mint's possible recommendations are not included as confirmed signatures because the reviewed sources disagree and do not establish a dedicated Arc link."
+  },
+  "dataNotes": [
+    "R1 and R5 effects are sourced values. Rank 2-4 values in rankInterpolationPairs are linearly interpolated from the matching R1/R5 numeric options; non-scaling conditions and durations remain as written in R1.",
+    "Base stats are max-level (Lv.80) values. They are community database values, not independently extracted from the live client.",
+    "When translated pages from the same publisher are used, they count as one source family rather than independent regional corroboration.",
+    "Arc names follow the Korean Inven database when listed there. Crime and Punishment has no confirmed Korean title in the reviewed database; 죄와 벌 is a provisional translation.",
+    "하토르의 Raging Flames는 한국 인벤과 NTEGame 상세 페이지의 R1/R5 효과 서술이 다릅니다. 양쪽 원문 변형을 sourceConflictVariants에 각각 보존했습니다. ATK 666은 Inven과 NTEGame의 성장표가 일치하고 NTEGame의 요약 metrics만 481로 달라 성장표/인벤 값을 저장했습니다."
+  ],
+  "characters": [
+    {
+      "characterId": "adler",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "umbrella"
+      ]
+    },
+    {
+      "characterId": "aurelia",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "stellar-veil"
+      ],
+      "nameMappingNote": "Aurelia is linked to the Korean community name Umitsuki / Haeyue in Chinese sources."
+    },
+    {
+      "characterId": "baicang",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "camellia-society"
+      ]
+    },
+    {
+      "characterId": "blackbird",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "crime-and-punishment"
+      ]
+    },
+    {
+      "characterId": "chaos",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "whats-desired"
+      ]
+    },
+    {
+      "characterId": "chiz",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "contemplative-cat"
+      ]
+    },
+    {
+      "characterId": "daffodill",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "youthful-fantasy"
+      ]
+    },
+    {
+      "characterId": "edgar",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "call-of-the-twisted-city"
+      ]
+    },
+    {
+      "characterId": "fadia",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "eternal-waltz"
+      ]
+    },
+    {
+      "characterId": "haniel",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "blow-up-the-crowd"
+      ]
+    },
+    {
+      "characterId": "hathor",
+      "status": "confirmed_with_effect_conflict",
+      "signatureArcIds": [
+        "raging-flames"
+      ]
+    },
+    {
+      "characterId": "hotori",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "marching-beyond-time"
+      ]
+    },
+    {
+      "characterId": "iroi",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "the-wrong-gate"
+      ]
+    },
+    {
+      "characterId": "jiuyuan",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "reality-refuge"
+      ]
+    },
+    {
+      "characterId": "lacrimosa",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "the-last-rose"
+      ]
+    },
+    {
+      "characterId": "linko",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "voice-of-the-voyager"
+      ]
+    },
+    {
+      "characterId": "mint",
+      "status": "unconfirmed",
+      "signatureArcIds": [],
+      "candidates": {
+        "clear-skies": "recommended by one build source; signature link not established",
+        "mind-royale": "listed as best-in-slot by another build source; signature link not established"
+      }
+    },
+    {
+      "characterId": "nanally",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "ready-ready"
+      ]
+    },
+    {
+      "characterId": "sakiri",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "good-boys-grand-adventure"
+      ]
+    },
+    {
+      "characterId": "shinku",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "blushing-mirage"
+      ],
+      "mechanicNote": "The Arc's Ultimate-triggered Cosmos damage/DEF-ignore buff is separate from Shinku's personal Overwhelming Gaze stack mechanic."
+    },
+    {
+      "characterId": "skia",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "tears-beneath-the-mask"
+      ]
+    },
+    {
+      "characterId": "zankou",
+      "status": "confirmed",
+      "signatureArcIds": [
+        "ravenous-blade"
+      ]
+    },
+    {
+      "characterId": "zero",
+      "status": "confirmed_two_variants",
+      "signatureArcIds": [
+        "day-off",
+        "the-rain-that-shook-the-world"
+      ]
+    }
+  ],
+  "arcs": [
+    {
+      "id": "umbrella",
+      "nameEn": "Umbrella",
+      "nameKo": "우산",
+      "characterId": "adler",
+      "rarity": "A",
+      "level80": {
+        "attack": 395,
+        "secondaryStat": "DEF",
+        "secondaryValue": "52.5%"
+      },
+      "rankEffects": {
+        "R1": "HP +10%. 착용자의 HP가 50% 초과일 때 보호막 효과 +10%.",
+        "R5": "HP +18%. 착용자의 HP가 50% 초과일 때 보호막 효과 +18%."
+      },
+      "verification": {
+        "status": "verified_mapping_stat_rank",
+        "note": "일부 예전 중국어 전용 안내가 S급으로 표기하지만 한국 DB와 아이템 상세 DB는 A급이므로 A급을 채택."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Umbrella_4_fork_yuren/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "stellar-veil",
+      "nameEn": "Stellar Veil",
+      "nameKo": "「은하의 찰나」",
+      "characterId": "aurelia",
+      "rarity": "S",
+      "level80": {
+        "attack": 512,
+        "secondaryStat": "ATK",
+        "secondaryValue": "27.5%"
+      },
+      "rankEffects": {
+        "R1": "착용자의 Psyche 피해 +12%. Psyche 피해를 주면 치명 피해가 5초 동안 2% 증가하며, 최대 10중첩.",
+        "R5": "착용자의 Psyche 피해 +21%. Psyche 피해를 주면 치명 피해가 5초 동안 중첩당 3.6% 증가하며, 최대 10중첩(발동 간격 최소 0.1초)."
+      },
+      "verification": {
+        "status": "verified_mapping_stats; rank5_value_needs_client_check",
+        "note": "영문 DB의 R5 고정 증가율 표기가 단계별 증가율과 완전히 일치하는지 라이브 클라이언트 대조가 필요."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Stellar_Veil_5_fork_moon/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/121"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "camellia-society",
+      "nameEn": "Camellia Society",
+      "nameKo": "동백꽃 모임",
+      "characterId": "baicang",
+      "rarity": "S",
+      "level80": {
+        "attack": 666,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "12%"
+      },
+      "rankEffects": {
+        "R1": "피해를 받지 않고 HP가 감소하면 5초 동안 치명 피해가 중첩당 12% 증가 (최대 4중첩). Arc: Silent Garden을 해금한다. 발동 시 현재 HP 5%를 소모하고 25초마다 다음 공격 중 하나를 무작위 실행: ① Incantation 피해 24% ATK 5회, ② 18% ATK 6회(마지막 타격은 2배).",
+        "R5": "피해를 받지 않고 HP가 감소하면 5초 동안 치명 피해가 중첩당 20% 증가 (최대 4중첩). Arc: Silent Garden을 해금한다. 발동 시 현재 HP 5%를 소모하고 25초마다 다음 공격 중 하나를 무작위 실행: ① Incantation 피해 40% ATK 5회, ② 30% ATK 6회(마지막 타격은 2배)."
+      },
+      "verification": {
+        "status": "verified_mapping_stats; effect_translation_summarized",
+        "note": "중첩 조건과 타격 구조를 간결하게 요약했으며 원문 문장 전체의 번역본은 아님."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Camellia_Society_5_fork_jingmotingyuan/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/142"
+      },
+      "rankInterpolationPairs": [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "crime-and-punishment",
+      "nameEn": "Crime and Punishment",
+      "nameKo": "죄와 벌",
+      "koNameStatus": "provisional_translation",
+      "characterId": "blackbird",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "사이클 강도 +72, Psyche 피해 +20%. 울티메이트 사용 후 15초 동안 팀 치명 피해 +16%, 착용자는 추가로 +32%.",
+        "R5": "사이클 강도 +144, Psyche 피해 +40%. 울티메이트 사용 후 15초 동안 팀 치명 피해 +32%, 착용자는 추가로 +64%."
+      },
+      "verification": {
+        "status": "cross_checked_jp_en_zh_de; korean_name_provisional",
+        "note": "일본어 AppMedia와 영어·중국어·독일어 가이드에서 Blackbird 연결 및 R1 효과가 일치. 독일어/중국어 ntegame 페이지는 영어 페이지와 같은 사이트 계열이므로 독립 출처로 중복 집계하지 않음."
+      },
+      "sources": {
+        "japan": "https://appmedia.jp/nte/80441734",
+        "english": "https://www.mone.gg/blog/nte/blackbird.html",
+        "chinese": "https://ntegame.net/guides/blackbird-build-guide/",
+        "german": "https://ntegame.net/de/characters/blackbird/"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "whats-desired",
+      "nameEn": "What's Desired",
+      "nameKo": "만인의 갈망",
+      "characterId": "chaos",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "Lakshana 피해 +20%. 바이레일 스킬 또는 울티메이트를 사용하면 치명 피해 +40% (20초).",
+        "R5": "Lakshana 피해 +40%. 바이레일 스킬 또는 울티메이트를 사용하면 치명 피해 +80% (20초)."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Whats_Desired_5_fork_goldwool/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/120"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "contemplative-cat",
+      "nameEn": "Contemplative Cat",
+      "nameKo": "생각하는 고양이",
+      "characterId": "chiz",
+      "rarity": "S",
+      "level80": {
+        "attack": 512,
+        "secondaryStat": "CRIT DMG",
+        "secondaryValue": "44%"
+      },
+      "rankEffects": {
+        "R1": "보유 폰스 100,000당 Cosmos 피해 +2.5%, 최대 10중첩.",
+        "R5": "보유 폰스 100,000당 Cosmos 피해 +4.5%, 최대 10중첩."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Contemplative_Cat_5_fork_mamen/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/137"
+      },
+      "rankInterpolationPairs": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "youthful-fantasy",
+      "nameEn": "Youthful Fantasy",
+      "nameKo": "암흑 청춘의 망상",
+      "characterId": "daffodill",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "ATK",
+        "secondaryValue": "30%"
+      },
+      "rankEffects": {
+        "R1": "Break Intensity +60. Arc 발동으로 책을 소환해 일정 간격으로 적을 공격하고, 착용자의 Chaos 피해 +20% 및 추가 Chaos 피해를 준다.",
+        "R5": "Break Intensity +88. Arc: Black Tome은 팀원의 지원 스킬 사용으로 사슬 2개를 모두 풀면 발동 가능. 20초 동안 책을 소환하고 5초마다 적을 지정한다. 지정 적 대상 착용자의 Chaos 피해 +36%, 지정 적이 브레이크 피해를 받을 때 착용자 ATK의 320%에 해당하는 Chaos 피해."
+      },
+      "verification": {
+        "status": "verified_mapping_stats; effect_translation_summarized",
+        "note": "원문은 Arc 소환 지속시간과 타격별 계수도 제시하지만 이 요약 레코드에서는 생략."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Youthful_Fantasy_5_fork_BlackBook/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/138"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "call-of-the-twisted-city",
+      "nameEn": "Call of the Twisted City",
+      "nameKo": "뒤틀린 도시의 부름",
+      "characterId": "edgar",
+      "rarity": "A",
+      "level80": {
+        "attack": 395,
+        "secondaryStat": "HP",
+        "secondaryValue": "37.5%"
+      },
+      "rankEffects": {
+        "R1": "바이레일 스킬 사용 후 10초 동안 치유 보너스 +12%.",
+        "R5": "바이레일 스킬 사용 후 10초 동안 치유 보너스 +20%."
+      },
+      "verification": {
+        "status": "verified_mapping_stat_rank",
+        "note": "일부 예전 전용 안내가 S급으로 표기하지만 Arc DB와 한국 도감은 A급으로 표시하므로 A급을 채택."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Call_of_the_Twisted_City_4_fork_Castle/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/144"
+      },
+      "rankInterpolationPairs": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "eternal-waltz",
+      "nameEn": "Eternal Waltz",
+      "nameKo": "영원한 왈츠",
+      "characterId": "fadia",
+      "rarity": "S",
+      "level80": {
+        "attack": 424,
+        "secondaryStat": "HP",
+        "secondaryValue": "41.2%"
+      },
+      "rankEffects": {
+        "R1": "최대 HP +20%. 울티메이트 사용 후 10초 동안 Mental 피해 +10%.",
+        "R5": "최대 HP +32%. 울티메이트 사용 후 10초 동안 Mental 피해 +18%."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Eternal_Waltz_5_fork_Arachne/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/134"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "blow-up-the-crowd",
+      "nameEn": "Blow Up the Crowd",
+      "nameKo": "폭발 현장",
+      "characterId": "haniel",
+      "rarity": "S",
+      "level80": {
+        "attack": 512,
+        "secondaryStat": "ATK",
+        "secondaryValue": "27.5%"
+      },
+      "rankEffects": {
+        "R1": "착용자가 대기 중이면 현재 필드 캐릭터의 ATK +10%; 착용자가 피해를 줄 때마다 필드 캐릭터 ATK +2% (최대 4중첩, 2초마다 최대 1회). 착용자가 필드에 나오면 대기 효과 초기화. 착용자가 필드에 있으면 Psyche 피해 +12%; Psyche 기본 공격마다 추가 +2% (최대 10중첩, 0.3초마다 최대 1회). 캐릭터 교체 시 필드 효과 초기화.",
+        "R5": "착용자가 대기 중이면 현재 필드 캐릭터의 ATK +14%; 착용자가 피해를 줄 때마다 필드 캐릭터 ATK +3.2% (최대 4중첩, 2초마다 최대 1회). 착용자가 필드에 나오면 대기 효과 초기화. 착용자가 필드에 있으면 Psyche 피해 +20%; Psyche 기본 공격마다 추가 +3.2% (최대 10중첩, 0.3초마다 최대 1회). 캐릭터 교체 시 필드 효과 초기화."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects",
+        "note": "캐릭터가 필드에 있는지 여부에 따라 서로 다른 효과가 적용됨."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Blow_up_the_Crowd_5_fork_BitGame/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/139"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    },
+    {
+      "id": "raging-flames",
+      "nameEn": "Raging Flames",
+      "nameKo": "염혼의 질주",
+      "characterId": "hathor",
+      "rarity": "S",
+      "level80": {
+        "attack": 666,
+        "secondaryStat": "CRIT DMG",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "울티메이트 사용 후 10초 동안 바이레일 스킬 피해 +22.5%; 이 효과 중 바이레일 스킬을 쓸 때마다 바이레일 스킬 피해가 추가 +15% (최대 2중첩).",
+        "R5": "울티메이트 사용 후 10초 동안 바이레일 스킬 피해 +37.5%; 이 효과 중 바이레일 스킬을 쓸 때마다 바이레일 스킬 피해가 추가 +25% (최대 2중첩)."
+      },
+      "verification": {
+        "status": "conflict",
+        "preferredSource": "Korean Inven Arc detail",
+        "conflict": "Korean Inven lists Lv.80 ATK 666 and R1/R5 Redirect Skill values 22.5%/15% and 37.5%/25%. NTEGame's localized Arc page has inconsistent ATK summaries (481 vs its own growth table ending at 666) and a different effect formula (Lakshana DMG +15%/+25%, then Redirect/Ultimate +10%/+20%, per-Redirect +5%/+9%). Preserve as unresolved; do not treat this record as final client-verified data."
+      },
+      "sources": {
+        "koreanDb": "https://nte.inven.co.kr/db/arc/135",
+        "englishArcDb": "https://www.ntegame.com/arcs/Raging_Flames_5_fork_wushoutieyu/",
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/"
+      },
+      "sourceConflictVariants": {
+        "ntegame": {
+          "R5": "Lakshana 피해 +25%. 울티메이트 후 10초 동안 바이레일 스킬 및 울티메이트 피해 +20%; 이 상태에서 바이레일 스킬을 쓸 때마다 바이레일 스킬 피해 +9% (최대 2중첩).",
+          "R1": "Lakshana 피해 +15%. 울티메이트 후 10초 동안 바이레일 스킬 및 울티메이트 피해 +10%; 이 상태에서 바이레일 스킬을 쓸 때마다 바이레일 스킬 피해 +5% (최대 2중첩).",
+          "source": "https://www.ntegame.com/arcs/Raging_Flames_5_fork_wushoutieyu/"
+        },
+        "koreanInven": {
+          "R5": "울티메이트 후 10초 동안 바이레일 스킬 피해 +37.5%; 이 상태에서 바이레일 스킬을 쓸 때마다 바이레일 스킬 피해 +25% (최대 2중첩).",
+          "R1": "울티메이트 후 10초 동안 바이레일 스킬 피해 +22.5%; 이 상태에서 바이레일 스킬을 쓸 때마다 바이레일 스킬 피해 +15% (최대 2중첩).",
+          "source": "https://nte.inven.co.kr/db/arc/135"
+        }
+      },
+      "rankInterpolationPairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "marching-beyond-time",
+      "nameEn": "Marching Beyond Time",
+      "nameKo": "시간 밖으로의 행진",
+      "characterId": "hotori",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "ATK +16%. 착용자가 바이레일 스킬을 쓰면 Wastelab 상태에 진입하고 기존 Wastetime을 초기화한다. 이 상태에서 아군이 바이레일 스킬/지원 스킬을 쓸 때마다 Wastetime +1 (최대 3). 상태 중 착용자가 울티메이트를 쓰면 상태를 끝내고 중첩을 소비해 울티메이트 치명 피해 +24%, 소비한 중첩당 추가 +8%; 3중첩을 한 번에 소비하면 70초 동안 방어력 12% 무시.",
+        "R5": "ATK +32%. 착용자가 바이레일 스킬을 쓰면 Wastelab 상태에 진입하고 기존 Wastetime을 초기화한다. 이 상태에서 아군이 바이레일 스킬/지원 스킬을 쓸 때마다 Wastetime +1 (최대 3). 상태 중 착용자가 울티메이트를 쓰면 상태를 끝내고 중첩을 소비해 울티메이트 치명 피해 +48%, 소비한 중첩당 추가 +16%; 3중첩을 한 번에 소비하면 70초 동안 방어력 24% 무시."
+      },
+      "verification": {
+        "status": "verified_mapping_stats; effect_translation_summarized",
+        "note": "방어력 무시 수치는 Arc 발동 등 세부조건에 따라 적용되며 여기서는 간단히 요약."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Marching_Beyond_Time_5_fork_Time/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/124"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          7,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "the-wrong-gate",
+      "nameEn": "The Wrong Gate",
+      "nameKo": "금기의 문",
+      "characterId": "iroi",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "ATK",
+        "secondaryValue": "30%"
+      },
+      "rankEffects": {
+        "R1": "ATK +16%. 착용자가 아군을 치유하면 20초 동안 착용자의 Anima 피해 +30%, 팀 피해 +15%.",
+        "R5": "ATK +32%. 착용자가 아군을 치유하면 20초 동안 착용자의 Anima 피해 +60%, 팀 피해 +30%."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/The_Wrong_Gate_5_fork_TheWrongGate/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/118"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "reality-refuge",
+      "nameEn": "Reality Refuge",
+      "nameKo": "현실 도피처",
+      "characterId": "jiuyuan",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "ATK",
+        "secondaryValue": "30%"
+      },
+      "rankEffects": {
+        "R1": "Anima 피해 +15%. 착용자의 Attachment 피해 +10%; 울티메이트 사용 후 6초 동안 Attachment 피해 증가가 +20%가 된다.",
+        "R5": "Anima 피해 +25%. Attachment 피해 +15%; 울티메이트 사용 후 6초 동안 Attachment 피해 +30%."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Reality_Refuge_5_fork_Butterfly/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/127"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "the-last-rose",
+      "nameEn": "The Last Rose",
+      "nameKo": "「마지막 장미」",
+      "characterId": "lacrimosa",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "ATK +14%. 지속 피해를 주면 Chaos Thorn 중첩을 얻고 중첩당 치명 피해 +6% (3초, 최대 10중첩). 바이레일 스킬은 중첩 10개를 즉시 부여하며 적의 브레이크 상태를 3초 연장한다.",
+        "R5": "ATK +28%. 중첩당 치명 피해 증가가 +12%로 상승한다. 최대 중첩과 지속시간은 동일."
+      },
+      "verification": {
+        "status": "verified_mapping_stats; effect_translation_summarized"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/The_Last_Rose_5_fork_Rose/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/123"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "voice-of-the-voyager",
+      "nameEn": "Voice of the Voyager",
+      "nameKo": "원행자의 목소리",
+      "characterId": "linko",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "ATK +24%. 지원 스킬 치명 피해 +66%. 지원 스킬 피해가 울티메이트에 치명 피해 보너스를 부여한다: 중첩당 +22%, 3초, 최대 3중첩.",
+        "R5": "ATK +48%. 지원 스킬 치명 피해 +132%. 울티메이트 치명 피해 보너스가 중첩당 +44%로 강화된다 (최대 3중첩)."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects",
+        "note": "예전 전용 가이드는 링코를 예정 캐릭터로 표기하나, 최신 한국 DB에는 실제 전용 아크 데이터가 등록되어 있어 최신 DB를 반영."
+      },
+      "sources": {
+        "koreanDb": "https://nte.inven.co.kr/db/arc/49",
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "ready-ready",
+      "nameEn": "Ready-Ready",
+      "nameKo": "준비, 준비",
+      "characterId": "nanally",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "ATK +15%. 바이레일 스킬/울티메이트 후 일반 공격과 반격 피해가 각각 +15%씩 증가하며 해당 효과는 최대 2중첩. 호랑이 부적 연계 공격은 보스 피해 +10% (10초).",
+        "R5": "ATK +30%. 일반 공격/반격 중첩당 피해 증가가 각각 +30%, 호랑이 부적 연계 공격의 보스 피해 증가가 +20%로 강화."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects",
+        "note": "세부 발동 조건은 기술 연계 방식에 따라 달라질 수 있어 요약 표기."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/140",
+        "english": "https://allthings.how/how-to-get-ready-ready-arc-in-nte-tiger-special-banner/"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "good-boys-grand-adventure",
+      "nameEn": "Good Boy's Grand Adventure",
+      "nameKo": "착한 강아지의 여행",
+      "characterId": "sakiri",
+      "rarity": "S",
+      "level80": {
+        "attack": 474,
+        "secondaryStat": "ATK",
+        "secondaryValue": "45%"
+      },
+      "rankEffects": {
+        "R1": "충전 효율 +18%. 울티메이트 사용 후 20초 동안 팀 ATK +10%; 적이 제어 상태면 추가로 +6%.",
+        "R5": "충전 효율 +30%. 울티메이트 후 팀 ATK +16%, 제어 상태 적 조건의 추가 증가 +10%."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Good_Boys_Grand_Adventure_5_fork_mofeikesi/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/143"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "blushing-mirage",
+      "nameEn": "Blushing Mirage",
+      "nameKo": "홍염의 신기루",
+      "characterId": "shinku",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "ATK +20%. 울티메이트 사용 후 20초 동안 Cosmos 피해 +32%, 적 DEF 12% 무시.",
+        "R5": "ATK +32%. 울티메이트 사용 후 20초 동안 Cosmos 피해 +51.2%, 적 DEF 19.2% 무시."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects",
+        "mechanicNote": "아크는 울티메이트 후 피해 증가 및 방어 무시를 주며 신쿠의 응시 중첩을 직접 쌓거나 보존하지 않는다."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Blushing_Mirage_5_fork_BlushingMirage/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/46",
+        "koreanCharacterGuide": "https://www.inven.co.kr/board/nte/6518/242"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "tears-beneath-the-mask",
+      "nameEn": "Tears Beneath the Mask",
+      "nameKo": "가면 뒤의 눈물",
+      "characterId": "skia",
+      "rarity": "S",
+      "level80": {
+        "attack": 512,
+        "secondaryStat": "ATK",
+        "secondaryValue": "27.5%"
+      },
+      "rankEffects": {
+        "R1": "울티메이트로 적을 표식해 20초 동안 표식 적이 주는 피해를 18% 감소시킨다.",
+        "R5": "울티메이트로 표식한 적이 20초 동안 주는 피해를 30% 감소시킨다."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects",
+        "mechanicNote": "Arc 표식명 Warning Gaze는 신쿠의 고유 기믹 응시와 다른 효과."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Tears_Beneath_the_Mask_5_fork_NestBird/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/126"
+      },
+      "rankInterpolationPairs": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "ravenous-blade",
+      "nameEn": "Ravenous Blade",
+      "nameKo": "심장을 좀먹는 칼",
+      "characterId": "zankou",
+      "rarity": "S",
+      "level80": {
+        "attack": 570,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "24%"
+      },
+      "rankEffects": {
+        "R1": "치명타 확률 +16%. 착용자가 주속성 피해를 줄 때마다 치명 피해 +9% (15초, 최대 7중첩; 0.3초마다 최대 1회, 발동 시 지속시간 갱신).",
+        "R5": "치명타 확률 +32%. 착용자가 주속성 피해를 줄 때마다 치명 피해 +18% (15초, 최대 7중첩; 0.3초마다 최대 1회, 발동 시 지속시간 갱신)."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects",
+        "note": "최대 중첩 시 치명 피해 증가분은 R1 +63%, R5 +126%."
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/48",
+        "englishDb": "https://www.icy-veins.com/neverness-to-everness/weapons/ravenous-blade",
+        "englishGuide": "https://ntegame.net/en/guides/zankou-build-guide/"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "day-off",
+      "nameEn": "Day Off",
+      "nameKo": "휴일",
+      "characterId": "zero",
+      "rarity": "S",
+      "level80": {
+        "attack": 512,
+        "secondaryStat": "Charge Efficiency",
+        "secondaryValue": "33%"
+      },
+      "rankEffects": {
+        "R1": "ATK +30%. Arc: Eclipse를 해금한다. 착용자에게 40초 동안 Eclipse를 생성하며, 그동안 적 처치 시마다 울티메이트 에너지 6 회복 (최대 5회, 재사용 대기시간 300초).",
+        "R5": "ATK +50%. Arc: Eclipse를 해금한다. 착용자에게 40초 동안 Eclipse를 생성하며, 그동안 적 처치 시마다 울티메이트 에너지 10 회복 (최대 5회, 재사용 대기시간 300초)."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/Day_Off_5_fork_rishi/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/141"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "the-rain-that-shook-the-world",
+      "nameEn": "The Rain That Shook the World",
+      "nameKo": "「세상을 뒤흔든 비」",
+      "characterId": "zero",
+      "rarity": "S",
+      "level80": {
+        "attack": 512,
+        "secondaryStat": "CRIT Rate",
+        "secondaryValue": "22%"
+      },
+      "rankEffects": {
+        "R1": "착용자의 바이레일 스킬과 울티메이트가 주는 Cosmos 피해 +30%. 바이레일 스킬 사용 후 15초 동안 사이클 강도 +36 (재발동 시 지속시간 갱신).",
+        "R5": "착용자의 바이레일 스킬과 울티메이트가 주는 Cosmos 피해 +42%. 바이레일 스킬 사용 후 15초 동안 사이클 강도 +72 (재발동 시 지속시간 갱신)."
+      },
+      "verification": {
+        "status": "verified_mapping_stats_effects"
+      },
+      "sources": {
+        "mapping": "https://ntegame.net/zh-cn/guides/signature-weapons/",
+        "arcDb": "https://www.ntegame.com/arcs/The_Rain_That_Shook_the_World_5_fork_worldrain/",
+        "koreanDb": "https://nte.inven.co.kr/db/arc/122"
+      },
+      "rankInterpolationPairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    }
+  ]
+}

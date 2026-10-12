@@ -19,8 +19,7 @@
   "detail": {
     "id": "blackbird",
     "globalStatus": "released",
-    "guideRoleEn": "Damage",
-    "coreMechanicKo": "적에게 깃털 표식을 남겨 대기 중인 협공 피해를 유도하고 사이클 게이지를 빠르게 채운다. 궁극기로 마녀 형태에 진입하며 악의 자원을 소비해 연속 공격과 팀 공격력 증가를 얻는다.",
+    "coreMechanicKo": "「악의」를 쌓아 협동 공격을 유도하고, 울티메이트로 「구세의 마녀」 상태에 들어가 강화 공격을 퍼붓는 혼 속성 딜러입니다.",
     "keySkillNamesEn": {
       "basic": "Fleeting Shadow / Pyreflame",
       "skill": "Netherplume Rite / Flames of Deliverance",
@@ -39,7 +38,13 @@
       "https://ntegame.net/ko/characters/blackbird/",
       "https://ntegame.net/ko/guides/blackbird-build-guide/"
     ],
-    "comparisonNote": "한국어 공략은 출시 전 중국 서버 데이터를 사용했다고 밝히며 일부 자원·기술명에 가칭을 표시한다. 레이븐은 공식 한국어 1.4 공지의 표기를 사용했다. 메인/서브 딜러 구분은 자료마다 달라 고정 분류로 저장하지 않았다."
+    "comparisonNote": "한국어 공략은 출시 전 중국 서버 데이터를 사용했다고 밝히며 일부 자원·기술명에 가칭을 표시한다. 레이븐은 공식 한국어 1.4 공지의 표기를 사용했다. 메인/서브 딜러 구분은 자료마다 달라 고정 분류로 저장하지 않았다.",
+    "skillDescriptionsKo": {
+      "basic": "레이븐은 연속 공격으로 적을 베고, 일부 공격을 길게 눌러 적을 속박하면서 「악의」를 쌓습니다. 공중 낙하 공격과 극한 회피 후 반격으로도 자원을 얻으며, 「구세의 마녀」 상태에서는 공격 동작이 강화되고 일부 공격이 「악의」를 소모해 추가 피해를 줍니다.",
+      "skill": "「장송의 깃털」로 적을 표식하면 아군의 공격에 맞춰 레이븐이 협동 공격 「실낙조」를 발동하고 「악의」를 얻습니다. 협동 공격은 짧은 재사용 대기시간이 있으며 정해진 횟수까지 발동합니다. 마녀 상태에서는 강화 공격 후 「저승의 화염」을 발동할 수 있고, 이 공격은 「악의」를 소모합니다.",
+      "ultimate": "「구세의 마녀」 상태에 진입해 공격을 강화하고, 상태 중 다시 발동하면 마녀의 힘을 거둬들이며 적을 공격합니다. 상태 지속 중 필드에서 물러나면 지속 시간이 멈춥니다.",
+      "support": "필드에 진입하며 전방의 적을 공격합니다. 마녀 상태에서는 「악의」를 소모하는 강화 지원 공격을 사용합니다."
+    }
   },
   "setting": {
     "summary": "「마녀의 집」 주인. 신비롭고 우아한 마녀 아가씨로 알려져 있다.",
@@ -56,7 +61,6 @@
   "mechanics": {
     "id": "blackbird",
     "nameKo": "레이븐",
-    "nameZhHans": "黑羽",
     "level80BaseStats": {
       "hp": 15514,
       "atk": 668,
@@ -64,30 +68,24 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "Source lists normal-form hit strings 23.7%; 48.7%*2; 30.1%*4; 25.8%*5; 36.4%*5, plus Witch-form strings 16.2%*2, 11.1%*5, 10.5%*6, 67.8%, 23.6%*6, 21.6%*5, 20.2%*5, 28%, 63%; form/resource-specific values need full client-level audit.",
-      "skill": "Netherplume Rite 100%*4; Witch-form Flames of Deliverance 105%*4; mark 15s; Malice gained 40, consumed 20; cycle values 100 and 7.",
-      "ultimate": "Requies Animarum 66.7%*9; exit combo 128.6%*7; Witch form 16s; party ATK +20% for 15s; energy 100.",
-      "support": "Judgment Upon Me 200%; Witch-form Naught but Mercy 200%, Malice cost shown as 3.9."
-    },
     "awakeningEffectsKo": [
-      "A1:「구세의 마녀」 가 「울티메이트 : 불꽃들을 하나로」 발동 시 모든 「악의」 를 소모할 수 있다. 「바이레일 스킬 : 저승의 화염」 의 피해 배율이 150% 증가한다.",
-      "A2:「바이레일 스킬 : 장송의 깃털」 의 피해배율이 100% 증가한다. 「구세의 마녀」 상태에서 방어력이 20% 상승한다. \n\n「바이레일 스킬 : 저승의 화염」 발동 후 자신 기본 공격력 * 400% 만큼 HP를 회복한다.",
-      "A3: 레이븐이 「악의」 를 소모하여 주는 피해 배율이 50% 증가한다.",
-      "A4: 레이븐이 「울티메이트 : 모든 영혼에 안식을」을 발동 시 부여하는 파티 전체 공격력 증가 효과의 지속 시간이 25초로 연장되고, 이 기간동안 파티 전체가 주는 피해가 12% 증가한다.",
-      "A5: 레이븐이 피해를 주면 명중한 목표의 혼속성, 상속성, 암속성 피해 저항을 8% 감소시킨다. (25초 지속)",
-      "A6: 레이븐이 「울티메이트 : 모든 영혼에 안식을」을 을 발동하면 자신의 혼속성 이능력 피해가 25% 증가한다. (25초 지속) \n\n레이븐이 「구세의 마녀」 상태가 아닐 때, 실낙조 가 협동 공격을 발동하면 「악의」 를 4P 획득한다."
+      "A1: 「구세의 마녀」 중 마무리 울티메이트가 「악의」를 모두 소모한다. 강화 바이레일 스킬 「저승의 화염」 피해 배율이 150% 증가한다.",
+      "A2: 바이레일 스킬 「장송의 깃털」 피해 배율이 100% 증가한다. 「구세의 마녀」 상태에서 방어력이 20% 증가하고, 「저승의 화염」 발동 후 기본 공격력의 400%만큼 회복한다.",
+      "A3: 「악의」를 소모해 주는 피해 배율이 50% 증가한다.",
+      "A4: 첫 울티메이트 「모든 영혼에 안식을」이 부여하는 파티 공격력 증가 지속시간이 25초로 늘어난다. 지속 중 파티 피해가 12% 증가한다.",
+      "A5: 적중한 대상의 혼·상·암 속성 피해 저항이 25초 동안 8% 감소한다.",
+      "A6: 첫 울티메이트 사용 후 혼 속성 피해가 25초 동안 25% 증가한다. 기본 형태에서 「실낙조」 협동 공격이 발동하면 「악의」를 4 획득한다."
     ],
     "resonanceKo": {
-      "3": "「울티메이트 : 모든 영혼에 안식을」 피해 배율이 100% 증가하고, 「울티메이트 : 불꽃들을 하나로」 피해배율이 50%증가한다.\n\n레이븐이 「울티메이트 : 모든 영혼에 안식을」을 발동하면 「악의」 를 20P 회복한다.",
-      "6": " 레이븐이 파티에 있을 때 파티 전체의 치명 피해가 30% 증가한다."
+      "3": "일반 공격, 바이레일 스킬, 울티메이트 레벨이 1 상승한다. 「모든 영혼에 안식을」 피해 배율이 100%, 마무리 울티메이트 피해 배율이 50% 증가하고, 첫 울티메이트 사용 시 「악의」를 20 회복한다.",
+      "6": "파티 전체 치명 피해가 30% 증가한다."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/heiyu",
+    "sourceUrl": "https://www.inven.co.kr/board/nte/6518/351?category=%EC%9D%B4%EB%8A%A5%EB%A0%A5",
     "koreanComparisonSources": [
       "https://ntegame.net/ko/characters/blackbird/",
       "https://ntegame.net/ko/guides/blackbird-build-guide/"
     ],
-    "notes": "한국 공략은 출시 전 중국 서버 데이터라고 명시. Awakening A1 계수 충돌은 원자료 양쪽을 보존함.",
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다.",
     "awakeningNamesKo": {
       "A1": "배신자",
       "A2": "유랑기",
@@ -97,69 +95,109 @@
       "A6": "생과 사"
     }
   },
-  "r3": {
+  "console": {
+    "characterId": "blackbird",
     "nameKo": "레이븐",
-    "sourceUrl": "https://www.ntestation.com/%E9%BB%91%E7%BE%BD",
-    "r3Raises": [
-      "기본 공격(두 형태)",
-      "변궤 스킬(葬羽冥·渡世死焰)",
-      "궁극기(恳请众魂安息·万火归一)"
-    ],
-    "r3AdditionalCoefficientTextKo": "R3 원문에는 궁극기 1 계수 +100%, 궁극기 2 계수 +50% 문구도 별도로 있습니다. Lv.11 원계수에 합산하지 않았습니다.",
-    "tables": {
-      "basic": [
-        "普通攻击1=51.2%",
-        "普通攻击2=105.1%*2",
-        "普通攻击3=65%*4",
-        "普通攻击4=55.7%*5",
-        "普通攻击5=78.6%*5",
-        "分支攻击1=245.9%",
-        "下落伤害=102.8%",
-        "极限反击=275.3%",
-        "魔女普通攻击1=70.2%*2",
-        "魔女普通攻击2=47.9%*5",
-        "魔女普通攻击3=45.3%*6",
-        "魔女普通攻击4=292.5%",
-        "魔女普通攻击5=101.7%*6",
-        "魔女分支攻击1=93.3%*5",
-        "魔女分支攻击2=87.2%*5",
-        "魔女下落伤害=120.9%",
-        "魔女极限反击=272%"
-      ],
-      "redirectSkill": [
-        "葬羽冥倍率=215.9%*4",
-        "协同攻击倍率=431.8%",
-        "渡世死焰倍率=226.7%*4"
-      ],
-      "ultimate": [
-        "恳请众魂安息倍率=100.8%*9",
-        "万火归一倍率=194.3%*7"
+    "nameEn": "Blackbird",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 치명 확률 +8%",
+      "recommendedLayout": [
+        "II",
+        "III",
+        "III",
+        "IV"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "devils-blood-curse",
+      "alternativeSetIds": [
+        "speedy-hedgehog"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "치명 피해%",
+      "혼속성 피해%"
+    ],
+    "substatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%",
+      "통상 피해%",
+      "공격력%",
+      "사이클 강도"
+    ],
+    "sourceUrls": [
+      "https://www.ntebuild.com/characters/blackbird",
+      "https://beebom.com/neverness-to-everness-blackbird-build/",
+      "https://www.mone.gg/blog/nte/blackbird.html"
+    ]
   },
+  "fieldSkills": {
+    "passives": [],
+    "citySkills": [
+      {
+        "nameKo": "기도의 노래",
+        "categoryKo": "탐험",
+        "effectKo": {
+          "Lv.1": "마녀의 집 점괘에서 축복 시도 횟수가 하루 1회 증가한다.",
+          "Lv.2": "잃어버린 이야기 시도 횟수가 하루 1회 추가된다.",
+          "Lv.3": "마녀의 집 점괘에서 축복 시도 횟수가 하루 1회 증가한다.",
+          "Lv.4": "보물찾기 시도 횟수가 하루 1회 추가된다.",
+          "Lv.5": "마녀의 집 점괘에서 축복 시도 횟수가 하루 1회 증가한다."
+        },
+        "maxLevel": 5
+      },
+      {
+        "nameKo": "숨바꼭질 고수",
+        "categoryKo": "도시 활동",
+        "effectKo": {
+          "Lv.1": "숨바꼭질 대전 1회당 도시 체력을 1 추가로 소모한다.",
+          "Lv.2": "도시 체력 추가 소모량이 1 더 늘어난다.",
+          "Lv.3": "",
+          "Lv.4": "",
+          "Lv.5": ""
+        },
+        "maxLevel": 2
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 레이븐 각성 공략",
+      "url": "https://www.inven.co.kr/board/nte/6518/351?category=%EC%9D%B4%EB%8A%A5%EB%A0%A5"
+    },
+    {
+      "name": "지글 레이븐 한국어 캐릭터 정보",
+      "url": "https://gigle.kr/nte/character/raven"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/blackbird"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E9%BB%91%E7%BE%BD",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击2",
-          "普通攻击3",
-          "普通攻击4",
-          "普通攻击5",
-          "分支攻击1",
-          "下落伤害",
-          "极限反击",
-          "魔女普通攻击1",
-          "魔女普通攻击2",
-          "魔女普通攻击3",
-          "魔女普通攻击4",
-          "魔女普通攻击5",
-          "魔女分支攻击1",
-          "魔女分支攻击2",
-          "魔女下落伤害",
-          "魔女极限反击"
+          "일반 공격 · 1타",
+          "일반 공격 · 2타",
+          "일반 공격 · 3타",
+          "일반 공격 · 4타",
+          "일반 공격 · 5타",
+          "강공격 · 1타",
+          "낙하 공격",
+          "회피반격",
+          "마녀 형태 일반 공격 · 1타",
+          "마녀 형태 일반 공격 · 2타",
+          "마녀 형태 일반 공격 · 3타",
+          "마녀 형태 일반 공격 · 4타",
+          "마녀 형태 일반 공격 · 5타",
+          "마녀 형태 강공격 · 1타",
+          "마녀 형태 강공격 · 2타",
+          "마녀 형태 낙하 공격",
+          "마녀 형태 회피반격"
         ],
         "r": [
           [
@@ -373,25 +411,25 @@
           ]
         ],
         "m": {
-          "普通攻击2": 2,
-          "普通攻击3": 4,
-          "普通攻击4": 5,
-          "普通攻击5": 5,
-          "魔女普通攻击1": 2,
-          "魔女普通攻击2": 5,
-          "魔女普通攻击3": 6,
-          "魔女普通攻击5": 6,
-          "魔女分支攻击1": 5,
-          "魔女分支攻击2": 5
+          "일반 공격 · 2타": 2,
+          "일반 공격 · 3타": 4,
+          "일반 공격 · 4타": 5,
+          "일반 공격 · 5타": 5,
+          "마녀 형태 일반 공격 · 1타": 2,
+          "마녀 형태 일반 공격 · 2타": 5,
+          "마녀 형태 일반 공격 · 3타": 6,
+          "마녀 형태 일반 공격 · 5타": 6,
+          "마녀 형태 강공격 · 1타": 5,
+          "마녀 형태 강공격 · 2타": 5
         },
         "f": {}
       },
       {
         "g": "skill",
         "h": [
-          "葬羽冥倍率",
-          "协同攻击倍率",
-          "渡世死焰倍率"
+          "장우명 피해 계수",
+          "협동 공격 계수",
+          "도세 사염 피해 계수"
         ],
         "r": [
           [
@@ -451,16 +489,16 @@
           ]
         ],
         "m": {
-          "葬羽冥倍率": 4,
-          "渡世死焰倍率": 4
+          "장우명 피해 계수": 4,
+          "도세 사염 피해 계수": 4
         },
         "f": {}
       },
       {
         "g": "ultimate",
         "h": [
-          "恳请众魂安息倍率",
-          "万火归一倍率"
+          "「모든 영혼에 안식을」 피해 계수",
+          "만화귀일 피해 계수"
         ],
         "r": [
           [
@@ -509,16 +547,16 @@
           ]
         ],
         "m": {
-          "恳请众魂安息倍率": 9,
-          "万火归一倍率": 7
+          "「모든 영혼에 안식을」 피해 계수": 9,
+          "만화귀일 피해 계수": 7
         },
         "f": {}
       },
       {
         "g": "support",
         "h": [
-          "援护技",
-          "魔女援护技"
+          "지원 스킬",
+          "마녀 형태 지원 스킬"
         ],
         "r": [
           [
@@ -571,99 +609,44 @@
       }
     ]
   },
-  "crosscheck": {
-    "progression": null,
-    "isolatedLevelChecks": [
-      {
-        "characterId": "blackbird",
-        "nameKo": "레이븐",
-        "effect": "Off-field Lost Bird attack triggered when the active character hits the mark",
-        "level": 1,
-        "coefficient": "200% ATK",
-        "sourceUrl": "https://ntegame.net/de/characters/blackbird/",
-        "versionNote": "The guide identifies this as Version 1.4 content. It is one explicit Lv.1 value, not a complete Blackbird progression table."
-      }
-    ],
-    "additionalRegionalChecks": [
-      {
-        "characterId": "blackbird",
-        "nameKo": "레이븐",
-        "skill": "redirectSkill.lostBirdMarkHit",
-        "level": 1,
-        "coefficient": "200% ATK",
-        "sourceFamily": "ntegame localized guides",
-        "matchingLocales": [
-          "Korean",
-          "German",
-          "Spanish"
-        ],
-        "independence": "One translated editorial source family; do not count the three locale pages as three independent confirmations.",
-        "sourceUrl": "https://ntegame.net/ko/characters/blackbird/"
-      }
-    ]
-  },
-  "console": {
-    "characterId": "blackbird",
+  "r3": {
     "nameKo": "레이븐",
-    "nameEn": "Blackbird",
-    "console": {
-      "preferredModuleShape": "III",
-      "perDriveBonusKo": "III형 드라이브 1개당 치명 확률 +8%",
-      "recommendedLayout": [
-        "II",
-        "III",
-        "III",
-        "IV"
+    "sourceUrl": "https://www.ntestation.com/%E9%BB%91%E7%BE%BD",
+    "r3Raises": [
+      "기본 공격(두 형태)",
+      "바이레일 스킬(장송의 깃털 / 저승의 화염)",
+      "울티메이트(모든 영혼에 안식을 / 불꽃들을 하나로)"
+    ],
+    "r3AdditionalCoefficientTextKo": "R3 원문에는 울티메이트 1 계수 +100%, 울티메이트 2 계수 +50% 문구도 별도로 있습니다. Lv.11 원계수에 합산하지 않았습니다.",
+    "tables": {
+      "basic": [
+        "普通攻击1=51.2%",
+        "普通攻击2=105.1%*2",
+        "普通攻击3=65%*4",
+        "普通攻击4=55.7%*5",
+        "普通攻击5=78.6%*5",
+        "分支攻击1=245.9%",
+        "下落伤害=102.8%",
+        "极限反击=275.3%",
+        "魔女普通攻击1=70.2%*2",
+        "魔女普通攻击2=47.9%*5",
+        "魔女普通攻击3=45.3%*6",
+        "魔女普通攻击4=292.5%",
+        "魔女普通攻击5=101.7%*6",
+        "魔女分支攻击1=93.3%*5",
+        "魔女分支攻击2=87.2%*5",
+        "魔女下落伤害=120.9%",
+        "魔女极限反击=272%"
+      ],
+      "redirectSkill": [
+        "葬羽冥倍率=215.9%*4",
+        "协同攻击倍率=431.8%",
+        "渡世死焰倍率=226.7%*4"
+      ],
+      "ultimate": [
+        "恳请众魂安息倍率=100.8%*9",
+        "万火归一倍率=194.3%*7"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "devils-blood-curse",
-      "alternativeSetIds": [
-        "speedy-hedgehog"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "치명 피해%",
-      "혼속성 피해%"
-    ],
-    "substatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%",
-      "통상 피해%",
-      "공격력%",
-      "사이클 강도"
-    ],
-    "sourceUrls": [
-      "https://www.ntebuild.com/characters/blackbird",
-      "https://beebom.com/neverness-to-everness-blackbird-build/",
-      "https://www.mone.gg/blog/nte/blackbird.html"
-    ]
-  },
-  "fieldSkills": {
-    "passives": [
-      {
-        "nameKo": "지빠귀의 노래",
-        "unlock": "2단계",
-        "effectKo": "「스테인」 강화: 「스테인」 의 기본 피해 증가 효과가 30%로 증가하고, 지속시간이 20초로 연장된다. \n\n「노바」 강화: 「노바」 상태가 종료되면 레이븐이 그동안 목표가 실제로 받은 누적 피해의 20%만큼 정신 피해를 추가로 준다. (「노바」 상태를 발동시킨 서포트 스킬 및 이번 「노바」 상태 자체로 주는 피해는 누적 피해에 포함되지 않는다) \n최대 피해량은 레이븐 기본 공격력의 1,000배를 초과하지 않으며, 다른 피해 증가 및 감소 효과의 영향을 받지 않는다. 이후 레이븐이 목표에게 「노바」 를 1회 부여한다. \n이 효과로 부여된 「노바」 는 다시 「노바」 부여 효과를 발동시킬 수 없다."
-      },
-      {
-        "nameKo": "기나긴 길",
-        "unlock": "4단계",
-        "effectKo": "「서포트 스킬: 단죄는 나의 몫」 을 발동하면 「악의」 를 20P 획득한다."
-      }
-    ],
-    "citySkills": [
-      {
-        "nameKo": "기도의 노래",
-        "categoryKo": "탐험",
-        "effectKo": "마녀의 집 점괘에서 축복 시도 횟수가 1·3·5단계에 하루 1회씩 늘어난다. 2단계에서 잃어버린 이야기, 4단계에서 보물찾기 시도도 각각 하루 1회 추가된다."
-      },
-      {
-        "nameKo": "숨바꼭질 고수",
-        "categoryKo": "도시 활동",
-        "effectKo": "숨바꼭질 대전 1회당 도시 체력을 1 추가로 소모한다. 2단계에서 추가 소모량이 1 더 늘어난다."
-      }
-    ],
-    "sourceUrl": "https://www.neverness.app/characters/blackbird"
+    }
   }
 }

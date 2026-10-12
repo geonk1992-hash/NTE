@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "datasets": {
+    "roster": {
+      "dataset": "Neverness to Everness character roster",
+      "snapshotDate": "2026-10-02",
+      "gameVersion": "1.4",
+      "scope": "Unique playable characters released by the snapshot date; gender-selectable Esper Zero is one character record.",
+      "coverage": {
+        "releasedUniqueCharacters": 23,
+        "confirmedUpcomingCharacters": 1,
+        "plannedUniqueCharactersInGlobalVersion14": 24,
+        "deepSkillAndGrowthData": "see nte-character-details-v1.4.json for kit summaries and nte-character-mechanics-v1.4.json for community-source coefficients, level-80 stats, and awakening effects; breakthrough-stage stat tables and materials remain unverified",
+        "acquisitionDetails": "not included; availability varies by server, event, and version"
+      },
+      "taxonomy": {
+        "elements": {
+          "Anima": {
+            "ko": "령",
+            "zhHans": "灵"
+          },
+          "Chaos": {
+            "ko": "암",
+            "zhHans": "暗"
+          },
+          "Cosmos": {
+            "ko": "빛",
+            "zhHans": "光"
+          },
+          "Incantation": {
+            "ko": "주",
+            "zhHans": "咒"
+          },
+          "Lakshana": {
+            "ko": "상",
+            "zhHans": "相"
+          },
+          "Psyche": {
+            "ko": "혼",
+            "zhHans": "魂"
+          }
+        },
+        "arcTypes": {
+          "Condensate": {
+            "ko": "결합",
+            "zhHans": "聚合"
+          },
+          "Gas": {
+            "ko": "기체",
+            "zhHans": "气态"
+          },
+          "Liquid": {
+            "ko": "액체",
+            "zhHans": "液态"
+          },
+          "Plasma": {
+            "ko": "플라스마",
+            "zhHans": "等离子"
+          },
+          "Solid": {
+            "ko": "고체",
+            "zhHans": "固态"
+          }
+        }
+      },
+      "sources": {
+        "officialKoreanPatchNotes": "https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html",
+        "officialChineseSite": "https://yh.wanmei.com/main.html",
+        "englishRosterAndGuides": "https://www.prydwen.gg/neverness-to-everness/characters",
+        "koreanCommunityDatabase": "https://ntegame.net/ko/characters/",
+        "koreanSecondaryRoster": "https://alkapa.gg/neverness-to-everness/characters",
+        "chineseCommunityRoster": "https://wiki.mysqil.com/characters/",
+        "chineseBilibiliWikiRoster": "https://wiki.biligame.com/yh/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4"
+      }
+    },
+    "details": {
+      "dataset": "Neverness to Everness character kit and profile details",
+      "snapshotDate": "2026-10-02",
+      "gameVersion": "1.4 Global",
+      "scope": {
+        "releasedGlobalCharacters": 23,
+        "announcedLaterInVersion": 1,
+        "uniqueCharacterCountForVersion14": 24,
+        "zeroRule": "Esper Zero is a single character record; selectable male/female presentation and voice actors are stored as variants, not separate characters."
+      },
+      "translationAndVerification": {
+        "skillNames": "Kept in English as indexed by the English community database; not presented as official Korean client names.",
+        "koMechanicSummaries": "Short Korean paraphrases translated from the linked English guide, with Korean and Chinese community material used to compare roster identity and 1.4 timing.",
+        "coefficients": "Not copied into this summary file. See nte-character-mechanics-v1.4.json for community-source multipliers, Lv.80 stats, and awakenings. The source pages leave skill levels unresolved as Lv.[Select] and do not independently confirm per-character 1.4 status; breakthrough-stage tables/materials still need live-client verification.",
+        "versionCaveat": "Most English kit guides were last reviewed before 1.4. Their mechanics are useful reference data but are not individually certified against the 1.4 Korean client. Blackbird's English guide is marked Patch 1.4. Akane Rin is preview-only as of this snapshot.",
+        "voiceActorCaveat": "Voice actor credits follow the linked English character pages when present. Akane Rin's Korean and Chinese credits come from the Korean community preview and remain unverified in the global client; missing credits are null."
+      }
+    },
+    "settings": {
+      "dataset": "Neverness to Everness character settings",
+      "snapshotDate": "2026-10-05",
+      "gameVersion": "1.4 Global",
+      "sourceFile": "캐릭터 설정.txt",
+      "noteKo": "캐릭터 설정 문구는 사용자가 제공한 파일을 캐릭터 이름별로 연결했습니다. 원문 날짜와 표기를 그대로 유지합니다."
+    },
+    "introductions": {
+      "dataset": "Neverness to Everness character introductions",
+      "snapshotDate": "2026-10-05",
+      "gameVersion": "1.4 Global",
+      "translationNoteKo": "캐릭터 소개는 캐릭터별 상세 프로필을 확인해 각 ID에 맞춰 새로 작성했습니다. 한국어 문구는 읽기 쉽도록 옮긴 요약이며 공식 한국어 번역으로 표기하지 않습니다.",
+      "sourceNoteKo": "각 인물의 sourceUrl은 해당 인물의 프로필 문구와 소속을 대조한 자료입니다. 레이븐의 마녀의 집 소속 및 잔홍의 악역·환상 설정은 사용자가 알려 준 정정을 우선 반영했습니다."
+    },
+    "mechanics": {
+      "dataset": "Neverness to Everness character skill coefficients, awakenings, and ascension notes",
+      "snapshotDate": "2026-10-02",
+      "intendedVersion": "Global 1.4",
+      "rosterScope": {
+        "releasedUniqueCharacters": 23,
+        "zero": "One character record; gender-selectable forms are not separate units.",
+        "upcomingExcluded": [
+          "akane-rin"
+        ],
+        "sourceStatus": "The Chinese community database has no per-character patch label. Do not treat these pages as independently verified Global 1.4 client data."
+      },
+      "methodology": {
+        "primarySource": "Mysqil / 环世全鉴 Chinese community character database; the site states that it is community-maintained using game and community contributions.",
+        "coefficientLevel": "Mysqil pages show Lv.[Select], so their extracted coefficients remain unlevelled. Explicit external level checks are stored in nte-skill-level-crosscheck-v1.4.json and nte-character-r3-level11-v1.4.json; only named character/skill/level combinations are level-verified. The R3 file records the Lv.11 values for skills raised by Resonance 3.",
+        "translation": "Korean awakening descriptions are concise translations/paraphrases of the Chinese community entries. Skill coefficients are retained as source-style numeric strings to preserve hit order and unusual formulas.",
+        "ascension": "The pages expose level checkpoints 1/20/30/40/50/60/70/80 and a Lv.80 stat view. Static extraction does not expose intermediate ascension stat tables or materials; the interactive calculator reports zero materials while selectors are unset.",
+        "koreanCrosscheck": "Korean character names were matched against the existing roster file. Numerical coefficients and every translated mechanic were not independently confirmed against the Korean live client.",
+        "roundingAndConflicts": "Keep source rounding and ambiguity. Do not normalize values that may depend on a skill level, target count, resource state, or source-side typo."
+      },
+      "sharedAscensionRecord": {
+        "displayedLevelCheckpoints": [
+          1,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "level80StatsCapturedWhereAvailable": true,
+        "stageByStageStats": "not captured from static page",
+        "breakthroughMaterials": "not captured; static page leaves current/target selectors unset and displays 0 materials",
+        "skillGrowthMaterials": "not captured for the same selector limitation"
+      }
+    },
+    "r3": {
+      "dataset": "NTE character R3 Lv.11 skill coefficient cross-check",
+      "snapshotDate": "2026-10-02",
+      "intendedVersion": "Global 1.4 roster; coefficients are community-source values, not Global-client verified",
+      "source": {
+        "name": "异环信息站 (NTE Station)",
+        "authority": "Unofficial Chinese community database. Each listed coefficient slider was set to Lv.11 in the rendered page; R3 text was read from the same page.",
+        "baseUrl": "https://www.ntestation.com/"
+      },
+      "rowEncoding": "Each item is a simplified-Chinese source row label followed by '=' and the displayed coefficient. Row order is preserved. Coefficients are source strings; do not silently combine separate R3 damage modifiers.",
+      "characterCoverage": {
+        "r3SkillLevelIncreaseCharacters": 22,
+        "recordsHere": 21,
+        "shinkuReference": "See nte-skill-level-crosscheck-v1.4.json#/characters/shinku; its level-11 value is array index 10 in each R3-raised coefficient row.",
+        "excluded": [
+          {
+            "id": "chiz",
+            "nameKo": "치즈",
+            "reasonKo": "R3 increases 金谷 acquisition while in Fan state; it does not raise a combat skill level."
+          }
+        ]
+      },
+      "notices": [
+        "All numbers above are the Lv.11 values shown by NTE Station for R3-raised skills. This is a level point, not a complete progression table for each character.",
+        "NTE Station values are community reference data and have not been compared row-by-row with the Global 1.4 Korean client.",
+        "Blackbird and Zankou R3 coefficient increases are retained separately because the source wording does not justify silently folding them into the displayed Lv.11 coefficient strings."
+      ]
+    },
+    "crosscheck": {
+      "dataset": "NTE character skill-level coefficient cross-check",
+      "snapshotDate": "2026-10-02",
+      "intendedVersion": "Global 1.4",
+      "scope": "External-source level-by-level coefficient evidence; this is a partial cross-check, not a complete 23-character database.",
+      "sources": {
+        "japaneseCommunityWiki": {
+          "name": "Neverness to Everness Wiki* (Japanese community wiki)",
+          "url": "https://wikiwiki.jp/nte/",
+          "levelHeaders": "Character pages with coefficient tables use LV1-LV12 columns. Blank cells remain unknown and are not interpolated.",
+          "authority": "Unofficial community wiki; not an official client export. Page-level patch provenance is not consistently stated."
+        },
+        "prydwen": {
+          "name": "Prydwen NTE character guides",
+          "url": "https://www.prydwen.gg/neverness-to-everness/characters",
+          "levelHeaders": "Character guides can explicitly label coefficient blocks 'Multipliers (Level 1)'; they are useful for Lv.1 spot checks, not full level curves.",
+          "authority": "Unofficial guide. Page review/calculation patch differs by character."
+        },
+        "ntegameBlackbird": {
+          "name": "ntegame Blackbird guide",
+          "url": "https://ntegame.net/de/characters/blackbird/",
+          "levelHeaders": "The 1.4 guide explicitly labels the off-field mark-triggered Lost Bird attack as Level 1: 200% ATK.",
+          "authority": "Unofficial community guide based on the 1.4 release window; this is one isolated level-labelled effect, not a full skill table."
+        },
+        "nteStation": {
+          "name": "异环信息站 (NTE Station; Chinese community database)",
+          "url": "https://www.ntestation.com/",
+          "levelHeaders": "Character pages expose interactive skill coefficient tables with level sliders. Values below were captured with each R3-affected skill slider set to Lv.11.",
+          "authority": "Unofficial Chinese community database. Slider values and R3 descriptions were read from the rendered character pages; they are not an official Global client export."
+        },
+        "gameVika": {
+          "name": "GameVika NTE Damage Calculator",
+          "url": "https://gamevika.com/en/nte/damage",
+          "levelHeaders": "Interactive character/skill/rank calculator. The page says it uses 744 skill-damage rows from the game's own data files and rank arrays of up to 15 values. A Shinku Basic Attack 1-1 check at rank 11 and ATK 1000 displayed non-crit damage 393, implying a 39.3% coefficient.",
+          "authority": "Fan-made English-language calculator. It claims coefficients come from game data, but does not publish the source build/version tag; its character selector did not include the 1.3 Zankou/Linko or 1.4 Blackbird/Akane Rin additions during this check. Treat the captured Shinku result as a corroborating legacy-character spot check, not a complete 1.4 source."
+        },
+        "ntegameLocalized": {
+          "name": "ntegame localized character guides (Korean/German/Spanish and other locales)",
+          "url": "https://ntegame.net/ko/characters/blackbird/",
+          "levelHeaders": "Blackbird's off-field mark-triggered Lost Bird attack is explicitly labelled Level 1: 200% ATK; the Korean, German, and Spanish pages carry matching text and the same 2026-09-28 China-server comparison note.",
+          "authority": "Unofficial fan-guide site. Localized editions belong to one editorial source family and are not independent numerical confirmations."
+        },
+        "koreanInven": {
+          "name": "이환 인벤 community and news pages",
+          "url": "https://nte.inven.co.kr/?vtype=pc",
+          "levelHeaders": "1.4 news, guides, and player discussions were found; no independent Korean full level-by-level character coefficient table was verified in this search.",
+          "authority": "Korean community/news source. User-posted isolated numbers are leads only, not validated database values."
+        }
+      },
+      "coverageSummary": {
+        "fullLv1To10CharacterTablesVerified": 1,
+        "partialLevelTablesVerified": 2,
+        "isolatedLv1EffectsVerified": 1,
+        "charactersWithNoLevelProgressionInThisArtifact": 20,
+        "note": "The existing mechanics JSON still contains Mysqil coefficients with unresolved level selectors. Do not copy those values into a level column unless an external table explicitly verifies the character, skill, and level. GameVika's Shinku Lv.11 check is derived from calculator output and has no exposed source-build tag; use as a corroborating spot check.",
+        "fullLv1To11CharacterTablesVerified": 1,
+        "charactersWithR3SkillLv11Crosscheck": 22,
+        "charactersWhoseR3DoesNotRaiseCombatSkillLevels": 1
+      },
+      "unassignedChecks": {
+        "isolatedLevelChecks": [],
+        "additionalRegionalChecks": [
+          {
+            "region": "Korea",
+            "source": "NTE Inven community",
+            "sourceUrl": "https://nte.inven.co.kr/?vtype=pc",
+            "finding": "1.4 news/guides and user discussion exist, but no independent Korean full rank-by-rank coefficient table was verified in this pass.",
+            "use": "Discovery and terminology leads only."
+          }
+        ]
+      }
+    },
+    "coefficients": {
+      "schema": 1,
+      "source": "https://www.ntestation.com"
+    },
+    "consoles": {
+      "dataset": "NTE character Console and Cartridge recommendations",
+      "snapshotDate": "2026-10-02",
+      "gameVersion": "1.4",
+      "scope": "Global 1.4 released roster: all 23 unique playable characters. Esper Zero is one character record.",
+      "glossary": {
+        "consoleKo": "콘솔",
+        "consoleShapeKo": "콘솔 드라이브 형태(II/III/IV); sources also call these Modules or Drives.",
+        "cartridgeKo": "카트리지 세트",
+        "notesKo": "캐릭터별 추천 및 주·부옵은 커뮤니티 빌드 기준이며 파티, 보유 옵션, 각성, 전용 아크와 운용 방식에 따라 달라질 수 있습니다."
+      },
+      "sources": {
+        "koreanCommunityDatabase": "https://nte.inven.co.kr/db/esper/",
+        "englishBuildGuides": "https://www.ntebuild.com/guides",
+        "consoleSetReference": "https://neverness.app/console",
+        "versionNoteKo": "Neverness.app은 콘솔 세트 정보를 1.3 기준으로 표시하므로, 세트 효과 구조의 대조에만 사용했습니다. 캐릭터 빌드는 1.4 NTEBuild 공략과 한국 인벤 DB를 중심으로 수집했습니다.",
+        "chinese14AllCharacterGuide": "https://www.taptap.cn/moment/853685874712379892?group_id=805079",
+        "japaneseOlderAllCharacterGuide": "https://lifematome.blog/nte-chara-list/",
+        "regionalCrosscheckKo": "중국 TapTap 1.4 가이드는 캐릭터별 추천을 이미지로 제시해 개별 텍스트 수치 전사에는 사용하지 않았고, 추천 레이아웃이 유일한 해답이 아니며 4세트 효과를 먼저 완성하라는 원칙을 확인했습니다. 일본어 전 캐릭터 장비 글은 2026-05-04 게시로 1.4 이전 빌드일 가능성이 커 현재 캐릭터 권장값에는 반영하지 않았습니다."
+      },
+      "cartridgeSets": [
+        {
+          "id": "crimson-twin-butterflies",
+          "nameEn": "Crimson: Twin Butterflies",
+          "nameKo": "진홍: 쌍둥이 나비",
+          "twoPieceKo": "주속성 피해 +10%.",
+          "fourPieceKo": "파티원이 근처 적에게 주속성 피해를 줄 때 착용자 공격력 +6%. 최대 6중첩, 각 10초. 필드 밖에서도 유지.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/22"
+          ]
+        },
+        {
+          "id": "devils-blood-curse",
+          "nameEn": "Devil’s Blood: Curse",
+          "nameKo": "악마의 피: 저주",
+          "twoPieceKo": "혼속성 피해 +10%.",
+          "fourPieceKo": "주는 피해 +18%; Nova 또는 Stain 상태의 적에게는 보너스가 +36%로 증가.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/18"
+          ]
+        },
+        {
+          "id": "diabolos",
+          "nameEn": "Diabolos",
+          "nameKo": "디아볼로스",
+          "twoPieceKo": "암속성 피해 +10%.",
+          "fourPieceKo": "암속성 저항 12% 무시. 착용자가 노바 또는 「스코치」 발동 시 20초 동안 24% 무시.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/2"
+          ]
+        },
+        {
+          "id": "fireflies-and-the-forest",
+          "nameEn": "Fireflies and the Forest",
+          "nameKo": "숲속 반딧불의 마음",
+          "twoPieceKo": "령속성 피해 +10%.",
+          "fourPieceKo": "파티원의 근처 적 대상 령속성 피해마다 착용자 치명 피해 +8%, 최대 7중첩. 각 10초, 필드 밖 유지.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/4"
+          ]
+        },
+        {
+          "id": "kingdoms-guard",
+          "nameEn": "Kingdom’s Guard",
+          "nameKo": "왕국 수호자",
+          "twoPieceKo": "방어력 +15%.",
+          "fourPieceKo": "보호막 효과 +20%.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/16"
+          ]
+        },
+        {
+          "id": "lost-radiance",
+          "nameEn": "Lost Radiance",
+          "nameKo": "잃어버린 빛",
+          "twoPieceKo": "빛속성 피해 +10%.",
+          "fourPieceKo": "울티메이트 후 20초간 적 방어력 25% 무시.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/20"
+          ]
+        },
+        {
+          "id": "quiet-manor",
+          "nameEn": "Quiet Manor",
+          "nameKo": "고요한 산장",
+          "twoPieceKo": "정신속성 피해 +10%.",
+          "fourPieceKo": "일반 공격 적중 시 정신 피해 +12%, 최대 3중첩, 6초.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/6"
+          ]
+        },
+        {
+          "id": "shadow-creed",
+          "nameEn": "Shadow Creed",
+          "nameKo": "그림자 신조",
+          "twoPieceKo": "공격력 +10%.",
+          "fourPieceKo": "바이레일 스킬 사용 시 공격력 +25%, 20초.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/4"
+          ]
+        },
+        {
+          "id": "speedy-hedgehog",
+          "nameEn": "Speedy Hedgehog",
+          "nameKo": "음속 블루 고슴도치",
+          "twoPieceKo": "충전 효율 +12%.",
+          "fourPieceKo": "울티메이트 후 파티 전체 공격력 +15%, 20초.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/21"
+          ]
+        },
+        {
+          "id": "street-boxer",
+          "nameEn": "Street Boxer",
+          "nameKo": "스트리트 복서",
+          "twoPieceKo": "상속성 피해 +10%.",
+          "fourPieceKo": "치명 확률 +14%. 파티가 Remora 또는 Stain 발동 시 추가 +14%, 20초.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/19"
+          ]
+        },
+        {
+          "id": "theas-night-tavern",
+          "nameEn": "Thea’s Night Tavern",
+          "nameKo": "티아의 심야 선술집",
+          "twoPieceKo": "HP +10%.",
+          "fourPieceKo": "치유 효과 +20%.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/15"
+          ]
+        },
+        {
+          "id": "tiny-big-adventure",
+          "nameEn": "Tiny Big Adventure",
+          "nameKo": "작은 대모험",
+          "twoPieceKo": "HP +10%.",
+          "fourPieceKo": "HP를 잃을 때 최대 HP +4%, 최대 10중첩. 울티메이트 사용 시 중첩 10회 획득.",
+          "sourceUrls": [
+            "https://neverness.app/console",
+            "https://nte.inven.co.kr/db/esper/6"
+          ]
+        }
+      ],
+      "dataQuality": {
+        "releasedCharacterCount": 23,
+        "characterRecommendationRecords": 23,
+        "cartridgeSetRecords": 12,
+        "recommendationKind": "Community build recommendations, not official developer recommendations.",
+        "knownDiscrepancies": [
+          "Mint: Korean Inven gives +8% CRIT Rate per Type III Drive; NTEBuild shows +7.5%. Korean value is used in profile; both are recorded here.",
+          "Edgar: Inven prioritizes Thea’s Night Tavern; NTEBuild prioritizes Speedy Hedgehog. Both remain visible as a playstyle/source difference."
+        ],
+        "verificationNoteKo": "추천 레이아웃은 각 가이드가 제안한 콘솔 형태 구성이지 공식 고정 정답이 아닙니다. 한국어 명칭을 우선 사용하고, 영문 원문명도 함께 보존했습니다."
+      },
+      "terminologyKo": {
+        "elementalDamage": "@속성 피해 (예: 령속성 피해, 빛속성 피해)",
+        "genericDamage": "통상 피해",
+        "cycleIntensity": "사이클 강도",
+        "chargeEfficiency": "충전 효율 (사이클 강도와 별도 능력치)"
+      }
+    }
+  }
+}

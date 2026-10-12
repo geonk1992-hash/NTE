@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-10-08",
+  "sourceUrl": "https://nte.perfectworld.com/kr/article/news/index.html",
+  "items": [
+    {
+      "id": "2026-09-29-porsche-creator-event",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2026-09-29",
+      "title": "1.4 버전 「이환 × 포르쉐」 2차 창작 작품 공모전",
+      "summaryKo": "공모전 일정과 참여 방법, 창작 주제와 보상 내용을 안내합니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20260929/264431.html",
+      "sections": [
+        {
+          "headingKo": "일정",
+          "itemsKo": [
+            "작품 제출: 2026년 9월 30일 12:00~11월 6일 12:00(KST)",
+            "심사: 11월 7일 13:00~11월 23일 00:59(KST)",
+            "수상작 공개: 11월 23일 13:00~11월 30일 00:59(KST), 보상은 11월 30일부터 순차 지급됩니다."
+          ]
+        },
+        {
+          "headingKo": "참여 방법",
+          "itemsKo": [
+            "1.4 버전의 이환×Porsche 컬래버 탈것을 주제로 2차 창작물을 만들고 #이환, #NTE, #NTEPorsche 해시태그를 붙여 공개 플랫폼에 게시합니다.",
+            "게임 내 촬영 사진, 일러스트, 15초 이상 영상 등으로 참여할 수 있습니다. 게시물 링크를 공식 Google 제출 폼에 등록해야 합니다."
+          ]
+        },
+        {
+          "headingKo": "보상",
+          "itemsKo": [
+            "최우수상 3명에게 각 1,000달러, 우수상 20명에게 각 100달러를 지급합니다.",
+            "독창성, 콘텐츠 매력도, 제작 수준과 완성도를 종합 평가하며 이환 Official과 Porsche Official이 심사합니다."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-09-29-version-1-4",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-09-29",
+      "title": "1.4 버전 「누구를 위하여 기도를 올리나」 업데이트 공지",
+      "summaryKo": "1.4 업데이트 점검과 보상, 신규 캐릭터 레이븐, 신규 스토리·지역·이벤트 내용을 안내합니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html",
+      "sections": [
+        {
+          "headingKo": "점검 및 보상",
+          "itemsKo": [
+            "업데이트 점검은 2026년 9월 30일 07:00~12:00(KST) 예정이며, 점검 중에는 게임에 접속할 수 없습니다. 「핑크퍼스를 털어라」는 06:30부터 입장이 제한됩니다.",
+            "점검 보상 환석 300개와 오류 복구 보상 환석 300개가 점검 종료 후 우편으로 지급됩니다. 지급 대상은 9월 30일 07:00 전에 캐릭터를 생성한 계정입니다."
+          ]
+        },
+        {
+          "headingKo": "신규 캐릭터와 아크",
+          "itemsKo": [
+            "신규 한정 S급 캐릭터 레이븐과 S급 아크 「죄와 벌」이 추가됩니다. 한정 모집은 9월 30일 업데이트 후부터 10월 21일 06:59(KST)까지 진행됩니다.",
+            "라크리모사와 아크 「마지막 장미」가 복각됩니다. 두 복각 모집도 10월 21일 06:59(KST)에 종료됩니다."
+          ]
+        },
+        {
+          "headingKo": "신규 스토리와 지역",
+          "itemsKo": [
+            "신규 메인 스토리 「마녀」는 「안개 둥지 게임」 완료 후 해제됩니다. 레이븐의 도시 산책 스토리와 초대 콘텐츠도 추가됩니다.",
+            "신규 지역 「푸카 파라다이스」와 「성 알보 마을」이 열립니다."
+          ]
+        },
+        {
+          "headingKo": "컬래버와 기간 한정 이벤트",
+          "itemsKo": [
+            "이환×Porsche 컬래버 블라인드 박스와 Porsche Club이 열립니다. 컬래버 블라인드 박스 이벤트는 11월 11일 06:59(KST)까지 진행됩니다.",
+            "「시즌 선물」과 「푸카 파라다이스 여행기」 등 업데이트 기념 이벤트가 시작됩니다. 「숯덩이의 보물」은 10월 8일부터, 「활력제 충전」은 10월 5~19일(서버 시간), 「픽셀 대방출」은 10월 19~26일(서버 시간)에 진행됩니다."
+          ]
+        },
+        {
+          "headingKo": "추가 콘텐츠와 개선",
+          "itemsKo": [
+            "레이븐 코스튬과 액세서리가 추가되고, 도시 타이쿤 「푸카 멤버십 플랜」이 열립니다.",
+            "액세서리 외관 설정, 배구 스타 멀티플레이, 드론 트래킹 등 기능이 추가됩니다. 헌터 보급 레벨 상한이 80으로 확장되며, 캐릭터·전투 관련 오류 수정도 포함됩니다."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-09-28-account-sanctions",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-09-28",
+      "title": "2026년 9월 28일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 계정에 대한 제재 조치와 공정한 게임 환경을 위한 운영 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260928/264397.html",
+      "sections": [
+        {
+          "headingKo": "제재 기준과 안내",
+          "itemsKo": [
+            "개발팀은 게임 공정성을 훼손하는 행위에 대응하며, 위반 정도와 횟수에 따라 부당 이득 회수, 계정 정지 또는 영구 이용 제한을 적용할 수 있다고 안내합니다.",
+            "이번 공지에는 제재된 계정 목록과 함께 외부 불법 프로그램 사용 및 버그 악용을 삼가고 건전한 게임 환경 조성에 협조해 달라는 당부가 포함되어 있습니다."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-09-21-notice-archive-04",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-09-21",
+      "title": "2026년 9월 21일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260921/264254.html"
+    },
+    {
+      "id": "2026-09-15-news-archive-05",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-09-15",
+      "title": "9월 16일 Asia & SEA 서버 점검 안내",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260914/264138.html"
+    },
+    {
+      "id": "2026-09-14-notice-archive-06",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-09-14",
+      "title": "2026년 9월 14일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260914/264148.html"
+    },
+    {
+      "id": "2026-09-08-news-archive-07",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-09-08",
+      "title": "<이환> 9월 9일 서버 점검 공지",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260908/263945.html"
+    },
+    {
+      "id": "2026-09-07-notice-archive-08",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-09-07",
+      "title": "2026년 9월 7일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260907/263934.html"
+    },
+    {
+      "id": "2026-08-31-notice-archive-09",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-08-31",
+      "title": "2026년 8월 31일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260831/263812.html"
+    },
+    {
+      "id": "2026-08-24-notice-archive-10",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-08-24",
+      "title": "2026년 8월 24일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260824/263714.html"
+    },
+    {
+      "id": "2026-08-19-event-archive-11",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2026-08-19",
+      "title": "1.3 버전 팬아트 공모전",
+      "summaryKo": "참여 일정과 신청 방법, 보상 등 공식 모집·창작 이벤트 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20260818/263621.html"
+    },
+    {
+      "id": "2026-08-18-news-archive-12",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-08-18",
+      "title": "1.3 버전 「안개 너머의 별빛」 업데이트 공지",
+      "summaryKo": "버전 업데이트와 게임 공개 관련 공식 소식입니다. 주요 콘텐츠와 진행 일정은 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html"
+    },
+    {
+      "id": "2026-08-17-notice-archive-13",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-08-17",
+      "title": "2026년 8월 17일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260817/263594.html"
+    },
+    {
+      "id": "2026-08-10-notice-archive-14",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-08-10",
+      "title": "2026년 8월 10일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260810/263501.html"
+    },
+    {
+      "id": "2026-08-03-notice-archive-15",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-08-03",
+      "title": "2026년 8월 3일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260803/263405.html"
+    },
+    {
+      "id": "2026-07-28-news-archive-16",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-07-28",
+      "title": "<이환> 7월 29일 서버 점검 공지",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html"
+    },
+    {
+      "id": "2026-07-27-notice-archive-17",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-07-27",
+      "title": "2026년 7월 27일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260727/263282.html"
+    },
+    {
+      "id": "2026-07-20-notice-archive-18",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-07-20",
+      "title": "2026년 7월 20일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260720/263217.html"
+    },
+    {
+      "id": "2026-07-14-notice-archive-19",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-07-14",
+      "title": "2026년 7월 14일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260714/263139.html"
+    },
+    {
+      "id": "2026-07-08-event-archive-20",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2026-07-08",
+      "title": "신규 블라인드 박스 「훼손된 네온」 출시",
+      "summaryKo": "이벤트 진행 기간과 참여 방법, 획득 보상에 관한 공식 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20260708/263081.html"
+    },
+    {
+      "id": "2026-07-08-news-archive-21",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-07-08",
+      "title": "「이환」 Steam, Epic, 갤럭시 스토어에 정식 출시 - 자주 묻는 질문(FAQ)",
+      "summaryKo": "플랫폼 이용과 게임 관련 자주 묻는 질문을 정리한 공식 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260708/263051.html"
+    },
+    {
+      "id": "2026-07-08-event-archive-22",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2026-07-08",
+      "title": "「이환」 1.2 버전 창작 작품 공모전",
+      "summaryKo": "참여 일정과 신청 방법, 보상 등 공식 모집·창작 이벤트 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20260703/262994.html"
+    },
+    {
+      "id": "2026-07-06-news-archive-23",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-07-06",
+      "title": "1.2 버전 「999일 야화」 업데이트 공지",
+      "summaryKo": "버전 업데이트와 게임 공개 관련 공식 소식입니다. 주요 콘텐츠와 진행 일정은 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260706/263025.html"
+    },
+    {
+      "id": "2026-07-06-notice-archive-24",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-07-06",
+      "title": "2026년 7월 6일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260706/263015.html"
+    },
+    {
+      "id": "2026-06-29-notice-archive-25",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-06-29",
+      "title": "2026년 6월 29일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260629/262915.html"
+    },
+    {
+      "id": "2026-06-23-notice-archive-26",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-06-23",
+      "title": "2026년 6월 24일(KST) 서버 점검 공지",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260623/262806.html"
+    },
+    {
+      "id": "2026-06-22-notice-archive-27",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-06-22",
+      "title": "2026년 6월 22일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260622/262789.html"
+    },
+    {
+      "id": "2026-06-16-notice-archive-28",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-06-16",
+      "title": "2026년 6월 16일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260616/262701.html"
+    },
+    {
+      "id": "2026-06-08-notice-archive-29",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-06-08",
+      "title": "2026년 6월 8일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260608/262594.html"
+    },
+    {
+      "id": "2026-06-03-news-archive-30",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-06-03",
+      "title": "「이환」丨Porsche 컬래버 블라인드 박스 「광란의 질주」 출시!",
+      "summaryKo": "신규 콘텐츠 및 출시 관련 공식 소식입니다. 상세 일정과 참여 정보는 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260603/262519.html"
+    },
+    {
+      "id": "2026-06-03-event-archive-31",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2026-06-03",
+      "title": "「단꿈에서 깨어날 때」 한정 보드",
+      "summaryKo": "이벤트 진행 기간과 참여 방법, 획득 보상에 관한 공식 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20260603/262499.html"
+    },
+    {
+      "id": "2026-06-02-notice-archive-32",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-06-02",
+      "title": "1.1 버전 「꿈의 회랑」 점검 안내",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260602/262473.html"
+    },
+    {
+      "id": "2026-06-01-notice-archive-33",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-06-01",
+      "title": "2026년 6월 1일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260601/262452.html"
+    },
+    {
+      "id": "2026-05-26-notice-archive-34",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-05-26",
+      "title": "<이환> 1.1 버전 프리뷰 특별 방송 | 총정리",
+      "summaryKo": "이환 한국 공식 사이트에 게시된 소식입니다. 세부 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260526/262361.html"
+    },
+    {
+      "id": "2026-05-25-notice-archive-35",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-05-25",
+      "title": "2026년 5월 25일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260525/262331.html"
+    },
+    {
+      "id": "2026-05-18-notice-archive-36",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-05-18",
+      "title": "2026년 5월 18일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260518/262251.html"
+    },
+    {
+      "id": "2026-05-12-notice-archive-37",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-05-12",
+      "title": "2026년 05월 13일 임시 점검 공지",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260512/262140.html"
+    },
+    {
+      "id": "2026-05-11-notice-archive-38",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-05-11",
+      "title": "2026년 5월 11일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260511/262128.html"
+    },
+    {
+      "id": "2026-05-07-notice-archive-39",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-05-07",
+      "title": "<이환> 헤테로에서 온 편지 | 복덩이 친전",
+      "summaryKo": "이환 한국 공식 사이트에 게시된 소식입니다. 세부 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260507/262110.html"
+    },
+    {
+      "id": "2026-05-07-notice-archive-40",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-05-07",
+      "title": "2026년 5월 7일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260507/262096.html"
+    },
+    {
+      "id": "2026-05-02-news-archive-41",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-05-02",
+      "title": "<이환> X 네네치킨 컬래버 정보 안내!",
+      "summaryKo": "신규 콘텐츠 및 출시 관련 공식 소식입니다. 상세 일정과 참여 정보는 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260504/262041.html"
+    },
+    {
+      "id": "2026-05-01-notice-archive-42",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-05-01",
+      "title": "2026년 5월 1일 위반 계정 제재 공지",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260501/262039.html"
+    },
+    {
+      "id": "2026-04-30-event-archive-43",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2026-04-30",
+      "title": "<이환> 오픈 기념: 창작 작품 공모전",
+      "summaryKo": "참여 일정과 신청 방법, 보상 등 공식 모집·창작 이벤트 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20260429/262017.html"
+    },
+    {
+      "id": "2026-04-29-news-archive-44",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-04-29",
+      "title": "<이환> 그랜드 오픈!",
+      "summaryKo": "버전 업데이트와 게임 공개 관련 공식 소식입니다. 주요 콘텐츠와 진행 일정은 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260428/261954.html"
+    },
+    {
+      "id": "2026-04-28-notice-archive-45",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-04-28",
+      "title": "<이환> PlayStation®5 자주 묻는 질문(FAQ) 안내",
+      "summaryKo": "플랫폼 이용과 게임 관련 자주 묻는 질문을 정리한 공식 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260428/261975.html"
+    },
+    {
+      "id": "2026-04-27-notice-archive-46",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-04-27",
+      "title": "<이환> 그랜드 오픈 자주 묻는 질문(FAQ)",
+      "summaryKo": "버전 업데이트와 게임 공개 관련 공식 소식입니다. 주요 콘텐츠와 진행 일정은 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260426/261934.html"
+    },
+    {
+      "id": "2026-04-27-news-archive-47",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-04-27",
+      "title": "<이환> 사전 다운로드 시작!",
+      "summaryKo": "사전예약 또는 사전 다운로드 일정과 참여 방법에 관한 공식 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260424/261923.html"
+    },
+    {
+      "id": "2026-04-23-event-archive-48",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2026-04-23",
+      "title": "<이환> 그랜드 오픈 이벤트 & 획득 경로 안내",
+      "summaryKo": "버전 업데이트와 게임 공개 관련 공식 소식입니다. 주요 콘텐츠와 진행 일정은 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20260422/261902.html"
+    },
+    {
+      "id": "2026-03-26-event-archive-49",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2026-03-26",
+      "title": "이환 공식 콘텐츠 크리에이터 모집！",
+      "summaryKo": "참여 일정과 신청 방법, 보상 등 공식 모집·창작 이벤트 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20260324/261418.html"
+    },
+    {
+      "id": "2026-03-25-news-archive-50",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-03-25",
+      "title": "이환 글로벌 사전예약 3,000만 달성!",
+      "summaryKo": "사전예약 또는 사전 다운로드 일정과 참여 방법에 관한 공식 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260324/261413.html"
+    },
+    {
+      "id": "2026-02-26-news-archive-51",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-02-26",
+      "title": "<이환> 4월 29일 그랜드 오픈",
+      "summaryKo": "버전 업데이트와 게임 공개 관련 공식 소식입니다. 주요 콘텐츠와 진행 일정은 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260226/261063.html"
+    },
+    {
+      "id": "2026-02-19-notice-archive-52",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-02-19",
+      "title": "이환 「공생 테스트」 종료 안내",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260213/260978.html"
+    },
+    {
+      "id": "2026-02-07-news-archive-53",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-02-07",
+      "title": "<이환> 스토어 사전예약 정식 오픈!",
+      "summaryKo": "사전예약 또는 사전 다운로드 일정과 참여 방법에 관한 공식 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260207/260849.html"
+    },
+    {
+      "id": "2026-02-06-notice-archive-54",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-02-06",
+      "title": "<이환> 「공생 테스트」 서버 오픈 안내",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260205/260821.html"
+    },
+    {
+      "id": "2026-02-06-notice-archive-55",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-02-06",
+      "title": "공정 운영 안내",
+      "summaryKo": "게임 내 부정행위 대응과 공정한 게임 환경을 위한 운영 안내입니다. 세부 제재 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260206/260832.html"
+    },
+    {
+      "id": "2026-02-04-notice-archive-56",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2026-02-04",
+      "title": "<이환> 「공생 테스트」 다운로드 및 실행 안내",
+      "summaryKo": "서버 점검 또는 테스트 운영 일정과 이용 안내를 담은 공식 공지입니다. 적용 시간과 보상 등 세부 내용은 원문을 확인해 주세요.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20260203/260710.html"
+    },
+    {
+      "id": "2026-02-04-news-archive-57",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2026-02-04",
+      "title": "이환 「공생 테스트」 자격 발급&사전 다운로드 정식 오픈!",
+      "summaryKo": "사전예약 또는 사전 다운로드 일정과 참여 방법에 관한 공식 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20260204/260732.html"
+    },
+    {
+      "id": "2025-12-23-event-archive-58",
+      "category": "event",
+      "categoryKo": "이벤트",
+      "date": "2025-12-23",
+      "title": "이환 콘텐츠 크리에이터 모집！",
+      "summaryKo": "참여 일정과 신청 방법, 보상 등 공식 모집·창작 이벤트 안내입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gameevent/20251222/259952.html"
+    },
+    {
+      "id": "2025-12-23-news-archive-59",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2025-12-23",
+      "title": "이환 「공생 테스트」 트레일러丨「안녕, 신입」",
+      "summaryKo": "이환의 세계와 게임 플레이를 소개하는 공식 영상 공개 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20251222/259950.html"
+    },
+    {
+      "id": "2025-12-23-notice-archive-60",
+      "category": "notice",
+      "categoryKo": "공지",
+      "date": "2025-12-23",
+      "title": "[이환 「공생 테스트」 모집 시작]",
+      "summaryKo": "이환 한국 공식 사이트에 게시된 소식입니다. 세부 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamebroad/20251222/259964.html"
+    },
+    {
+      "id": "2024-12-20-news-archive-61",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-12-20",
+      "title": "캐릭터 소개 - 파디아",
+      "summaryKo": "공식 캐릭터 소개와 설정을 확인할 수 있는 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20241220/254251.html"
+    },
+    {
+      "id": "2024-11-27-news-archive-62",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-11-27",
+      "title": "「이환」 에피소드丨에이본의 하루",
+      "summaryKo": "헤테로 시티와 등장인물의 일상을 담은 공식 에피소드 소개입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20241127/253866.html"
+    },
+    {
+      "id": "2024-11-22-news-archive-63",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-11-22",
+      "title": "캐릭터 소개 - 라크리모사",
+      "summaryKo": "공식 캐릭터 소개와 설정을 확인할 수 있는 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20241122/253824.html"
+    },
+    {
+      "id": "2024-09-26-news-archive-64",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-09-26",
+      "title": "캐릭터 소개 - 호토리",
+      "summaryKo": "공식 캐릭터 소개와 설정을 확인할 수 있는 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240926/252974.html"
+    },
+    {
+      "id": "2024-09-26-news-archive-65",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-09-26",
+      "title": "이환 최신 플레이영상 트레일러丨헤테로 시티의 일상",
+      "summaryKo": "이환의 세계와 게임 플레이를 소개하는 공식 영상 공개 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240926/252968.html"
+    },
+    {
+      "id": "2024-09-05-news-archive-66",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-09-05",
+      "title": "이환(NTE) TGS2024 참가 확정!",
+      "summaryKo": "이환 한국 공식 사이트에 게시된 소식입니다. 세부 내용은 공식 원문에서 확인할 수 있습니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240905/252625.html"
+    },
+    {
+      "id": "2024-08-30-news-archive-67",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-08-30",
+      "title": "캐릭터 소개 - 타기도",
+      "summaryKo": "공식 캐릭터 소개와 설정을 확인할 수 있는 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240830/252546.html"
+    },
+    {
+      "id": "2024-08-30-news-archive-68",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-08-30",
+      "title": "캐릭터 소개 - 사키리",
+      "summaryKo": "공식 캐릭터 소개와 설정을 확인할 수 있는 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240830/252544.html"
+    },
+    {
+      "id": "2024-08-30-news-archive-69",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-08-30",
+      "title": "캐릭터 소개 - 민트",
+      "summaryKo": "공식 캐릭터 소개와 설정을 확인할 수 있는 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240830/252542.html"
+    },
+    {
+      "id": "2024-08-30-news-archive-70",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-08-30",
+      "title": "캐릭터 소개 - 나나리",
+      "summaryKo": "공식 캐릭터 소개와 설정을 확인할 수 있는 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240830/252541.html"
+    },
+    {
+      "id": "2024-08-30-news-archive-71",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-08-30",
+      "title": "이환 실제 플레이 영상 | Neverness to Everness 실제 플레이 PV 첫 공개!",
+      "summaryKo": "이환의 세계와 게임 플레이를 소개하는 공식 영상 공개 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240830/252539.html"
+    },
+    {
+      "id": "2024-08-30-news-archive-72",
+      "category": "news",
+      "categoryKo": "뉴스",
+      "date": "2024-08-30",
+      "title": "<이환> PV 첫 공개——「이상」 도시에서의 「일상」 생활",
+      "summaryKo": "이환의 세계와 게임 플레이를 소개하는 공식 영상 공개 소식입니다.",
+      "sourceUrl": "https://nte.perfectworld.com/kr/article/news/gamenews/20240830/252538.html"
+    }
+  ]
+}

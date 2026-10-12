@@ -18,8 +18,7 @@
   "detail": {
     "id": "hathor",
     "globalStatus": "released",
-    "guideRoleEn": "Damage",
-    "coreMechanicKo": "전달력 자원을 모아 궁극기 강화 상태에 들어간다. 상태 중에는 가시 오토바이 공격인 사이클론 스트라이크를 연속 사용한다.",
+    "coreMechanicKo": "「스피드퀵」을 쌓아 울티메이트 에너지를 모으고, 「긴급 배송」 중 연속 바이레일 스킬로 화력을 내는 딜러입니다.",
     "keySkillNamesEn": {
       "basic": "Rapid Delivery",
       "skill": "Aerial Command / Cyclone Strike",
@@ -33,7 +32,13 @@
       "zhHans": "洪海天",
       "ko": "이다은"
     },
-    "source": "https://www.prydwen.gg/neverness-to-everness/characters/hathor"
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/hathor",
+    "skillDescriptionsKo": {
+      "basic": "연속 공격과 차지 공격으로 적을 공격하고 공중 낙하 공격과 극한 회피 반격도 사용합니다. 공격과 전투 행동으로 「스피드퀵」을 쌓습니다.",
+      "skill": "「공중 지령」으로 이동하며 적을 공격하고 「스피드퀵」을 쌓습니다. 길게 눌러 목표를 지정해 강화 공격을 준비할 수 있으며, 「긴급 배송」이 활성화되면 「싸이클론 스트라이크」로 연속 돌진 공격을 가하고 방어 효과를 얻습니다.",
+      "ultimate": "익스프레스 상태에 진입해 이동과 공격을 강화하고 바이레일 스킬을 강화합니다. 「스피드퀵」 축적 상태가 강화 효과에 반영되며, 캐릭터를 교체하면 상태가 종료됩니다.",
+      "support": "두 차례 발차기로 적을 공격합니다."
+    }
   },
   "setting": {
     "summary": "임무 일정표를 작성하고 철저하게 실행에 옮기는 높은 효율성의 배송원",
@@ -48,7 +53,6 @@
   "mechanics": {
     "id": "hathor",
     "nameKo": "하토르",
-    "nameZhHans": "哈索尔",
     "level80BaseStats": {
       "hp": 15998,
       "atk": 644,
@@ -56,85 +60,116 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "24.3%; 16.1%+13.6%*4; 13.3%*2; 22.4%+47.9%+99.4%; 44.1%+109.9%; plunge 125%; charged branch 240%; parry 68%+130%; cycle 37.",
-      "skill": "Aerial Command tap 100%*2+100%; hold 10.2%*4+122.5%+55.2%*5, DoT 55.6% per hit; motorcycle combo 42.9%*7, 143.2%+113.6%+143.2%, 196.9%+353.1%.",
-      "ultimate": "96.2%*2+507.6%; emergency delivery 5s; +15% ATK per Quick Delivery stack; energy 100.",
-      "support": "63.9%+136.1%."
-    },
     "awakeningEffectsKo": [
-      "A1: 전투 후 처음 길게 누르는 변궤 스킬에서 즉시 급송의 힘 6중첩 획득.",
-      "A2: 우수 평가 표식/만점 추적이 자연 종료되어도 급송의 힘 획득.",
-      "A3: 보스가 아닌 적 대상 피해 +15%.",
-      "A4: 긴급 배송 중 회전 타격 성공마다 다음 회전 타격 치명타 확률 +25%.",
-      "A5: 급송의 힘 1중첩마다 피해 +1%, 최대 +15%.",
-      "A6: 긴급 배송 중 치명타 피해 +30%."
+      "A1: 전투 진입 후 처음 길게 누른 바이레일 스킬에서 「스피드퀵」 6중첩을 즉시 획득한다.",
+      "A2: 「호평 일색」과 「별점 5점 추적」이 자연 종료되면 「스피드퀵」을 획득한다.",
+      "A3: 보스를 제외한 적에게 주는 피해가 15% 증가한다.",
+      "A4: 「긴급 배송」 중 싸이클론 스트라이크를 명중시킬 때마다 다음 싸이클론 스트라이크의 치명 확률이 25% 증가한다. 「긴급 배송」 종료 시 해제된다.",
+      "A5: 「스피드퀵」 1중첩마다 주는 피해가 1% 증가한다. 최대 15%이며 전투 이탈 시 해제된다.",
+      "A6: 「긴급 배송」 중 치명 피해가 30% 증가한다."
     ],
     "resonanceKo": {
-      "3": "기본 공격/스킬/궁극기 레벨 +1.",
-      "6": "긴급 배송 중 적 방어력 10% 무시."
+      "3": "일반 공격, 바이레일 스킬, 울티메이트 레벨이 1 상승한다.",
+      "6": "「긴급 배송」 중 대상 방어력의 10%를 무시한다."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/hasuoer",
+    "sourceUrl": "https://nte.inven.co.kr/db/esper/17",
     "awakeningNamesKo": {
-      "A1": "",
-      "A2": "",
-      "A3": "",
-      "A4": "",
-      "A5": "",
-      "A6": ""
-    }
+      "A1": "엘리트 배송원",
+      "A2": "가시 지배",
+      "A3": "외로운 날개",
+      "A4": "엔진의 울림",
+      "A5": "레귤러 샌드위치",
+      "A6": "일상생활 공략 중"
+    },
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다."
   },
-  "r3": {
+  "console": {
+    "characterId": "hathor",
     "nameKo": "하토르",
-    "sourceUrl": "https://www.ntestation.com/%E5%93%88%E7%B4%A2%E5%B0%94",
-    "r3Raises": [
-      "기본 공격",
-      "변궤 스킬",
-      "궁극기"
-    ],
-    "tables": {
-      "basic": [
-        "普通攻击1=52.5%",
-        "普通攻击2=34.8%+29.4%*4",
-        "普通攻击3=28.7%*2",
-        "普通攻击4=48.4%+103.4%+214.6%",
-        "普通攻击5=95.2%+237.3%",
-        "下落伤害=269.9%",
-        "分支伤害=518.1%",
-        "极限反击=146.8%+280.7%"
-      ],
-      "redirectSkill": [
-        "短按伤害倍率=215.9%*2+215.9%",
-        "长按伤害倍率=22%*4+264.5%+119.2%*5",
-        "持续伤害倍率=120%",
-        "转轮打击1倍率=92.6%*7",
-        "转轮打击2倍率=309.2%+245.3%+309.2%",
-        "转轮打击3倍率=425.1%+762.3%"
-      ],
-      "ultimate": [
-        "伤害倍率=207.7%*2+1095.9%"
+    "nameEn": "Hathor",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 공격력 +10%",
+      "recommendedLayout": [
+        "II",
+        "III",
+        "III",
+        "IV"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "street-boxer",
+      "alternativeSetIds": [
+        "devils-blood-curse",
+        "fireflies-and-the-forest",
+        "shadow-creed"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "상속성 피해%",
+      "치명 피해%"
+    ],
+    "substatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%",
+      "통상 피해%",
+      "공격력%"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/17",
+      "https://www.ntebuild.com/characters/hathor"
+    ]
   },
+  "fieldSkills": {
+    "passives": [],
+    "citySkills": [
+      {
+        "nameKo": "특급 배달원",
+        "categoryKo": "도시 활동",
+        "effectKo": {
+          "Lv.1": "하루 배달 포인트가 2 늘어난다.",
+          "Lv.2": "만족도 포인트가 10 늘어난다.",
+          "Lv.3": "하루 배달 포인트가 2 늘어난다.",
+          "Lv.4": "만족도 포인트가 10 늘어난다.",
+          "Lv.5": "하루 배달 1건을 즉시 완료하고 보상을 받는다."
+        },
+        "maxLevel": 5
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 이능력자 DB",
+      "url": "https://nte.inven.co.kr/db/esper/17"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/hathor"
+    },
+    {
+      "name": "하토르 스킬 설명 대조 · GhostWeb",
+      "url": "https://ghostweb.tistory.com/2389"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E5%93%88%E7%B4%A2%E5%B0%94",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击2",
-          "普通攻击2_1",
-          "普通攻击3",
-          "普通攻击4",
-          "普通攻击4_1",
-          "普通攻击4_2",
-          "普通攻击5",
-          "普通攻击5_1",
-          "下落伤害",
-          "分支伤害",
-          "极限反击",
-          "极限反击1"
+          "일반 공격 · 1타",
+          "일반 공격 · 2타",
+          "일반 공격 · 2타 · 세부 1단",
+          "일반 공격 · 3타",
+          "일반 공격 · 4타",
+          "일반 공격 · 4타 · 세부 1단",
+          "일반 공격 · 4타 · 세부 2단",
+          "일반 공격 · 5타",
+          "일반 공격 · 5타 · 세부 1단",
+          "낙하 공격",
+          "강공격 피해",
+          "회피반격",
+          "회피반격 · 1타"
         ],
         "r": [
           [
@@ -304,26 +339,26 @@
           ]
         ],
         "m": {
-          "普通攻击2_1": 4,
-          "普通攻击3": 2
+          "일반 공격 · 2타 · 세부 1단": 4,
+          "일반 공격 · 3타": 2
         },
         "f": {}
       },
       {
         "g": "skill",
         "h": [
-          "Skill1",
-          "Skill1_1",
-          "Skill2",
-          "Skill3",
-          "Skill4",
-          "持续伤害倍率",
-          "转轮打击1倍率",
-          "Skill6",
-          "Skill7",
-          "Skill8",
-          "Skill9",
-          "Skill10"
+          "바이레일 스킬 · 1타",
+          "바이레일 스킬 · 1타 · 세부 1단",
+          "바이레일 스킬 · 2타",
+          "바이레일 스킬 · 3타",
+          "바이레일 스킬 · 4타",
+          "지속 피해 계수",
+          "회전 타격 1 피해 계수",
+          "바이레일 스킬 · 6타",
+          "바이레일 스킬 · 7타",
+          "바이레일 스킬 · 8타",
+          "바이레일 스킬 · 9타",
+          "바이레일 스킬 · 10타"
         ],
         "r": [
           [
@@ -482,18 +517,18 @@
           ]
         ],
         "m": {
-          "Skill1": 2,
-          "Skill2": 4,
-          "Skill4": 5,
-          "转轮打击1倍率": 7
+          "바이레일 스킬 · 1타": 2,
+          "바이레일 스킬 · 2타": 4,
+          "바이레일 스킬 · 4타": 5,
+          "회전 타격 1 피해 계수": 7
         },
         "f": {}
       },
       {
         "g": "ultimate",
         "h": [
-          "极轨终结1",
-          "极轨终结2"
+          "극궤 종결 · 1타",
+          "극궤 종결 · 2타"
         ],
         "r": [
           [
@@ -542,15 +577,15 @@
           ]
         ],
         "m": {
-          "极轨终结1": 2
+          "극궤 종결 · 1타": 2
         },
         "f": {}
       },
       {
         "g": "support",
         "h": [
-          "援护技1",
-          "援护技2"
+          "지원 스킬 · 1타",
+          "지원 스킬 · 2타"
         ],
         "r": [
           [
@@ -600,78 +635,46 @@
         ],
         "m": {},
         "f": {
-          "援护技1": {
-            "suffix": "最大生命值"
+          "지원 스킬 · 1타": {
+            "suffix": "최대 체력"
           },
-          "援护技2": {
-            "suffix": "防御值"
+          "지원 스킬 · 2타": {
+            "suffix": "방어력"
           }
         }
       }
     ]
   },
-  "crosscheck": {
-    "progression": null,
-    "isolatedLevelChecks": [],
-    "additionalRegionalChecks": []
-  },
-  "console": {
-    "characterId": "hathor",
+  "r3": {
     "nameKo": "하토르",
-    "nameEn": "Hathor",
-    "console": {
-      "preferredModuleShape": "III",
-      "perDriveBonusKo": "III형 드라이브 1개당 공격력 +10%",
-      "recommendedLayout": [
-        "II",
-        "III",
-        "III",
-        "IV"
+    "sourceUrl": "https://www.ntestation.com/%E5%93%88%E7%B4%A2%E5%B0%94",
+    "r3Raises": [
+      "기본 공격",
+      "바이레일 스킬",
+      "울티메이트"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=52.5%",
+        "普通攻击2=34.8%+29.4%*4",
+        "普通攻击3=28.7%*2",
+        "普通攻击4=48.4%+103.4%+214.6%",
+        "普通攻击5=95.2%+237.3%",
+        "下落伤害=269.9%",
+        "分支伤害=518.1%",
+        "极限反击=146.8%+280.7%"
+      ],
+      "redirectSkill": [
+        "短按伤害倍率=215.9%*2+215.9%",
+        "长按伤害倍率=22%*4+264.5%+119.2%*5",
+        "持续伤害倍率=120%",
+        "转轮打击1倍率=92.6%*7",
+        "转轮打击2倍率=309.2%+245.3%+309.2%",
+        "转轮打击3倍率=425.1%+762.3%"
+      ],
+      "ultimate": [
+        "伤害倍率=207.7%*2+1095.9%"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "street-boxer",
-      "alternativeSetIds": [
-        "devils-blood-curse",
-        "fireflies-and-the-forest",
-        "shadow-creed"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "상속성 피해%",
-      "치명 피해%"
-    ],
-    "substatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%",
-      "통상 피해%",
-      "공격력%"
-    ],
-    "sourceUrls": [
-      "https://nte.inven.co.kr/db/esper/17",
-      "https://www.ntebuild.com/characters/hathor"
-    ]
-  },
-  "fieldSkills": {
-    "passives": [
-      {
-        "nameKo": "지연 경고",
-        "unlock": "2단계",
-        "effectKo": "「레모라」 지속 시간이 12초가 되며, 「레모라」 상태인 적을 공격할 때 치명 확률이 10% 증가한다."
-      },
-      {
-        "nameKo": "효율 향상",
-        "unlock": "4단계",
-        "effectKo": "적 처치 시 익스프레스 배달 동력을 1 얻는다."
-      }
-    ],
-    "citySkills": [
-      {
-        "nameKo": "특급 배달원",
-        "categoryKo": "도시 활동",
-        "effectKo": "1·3단계에서 하루 배달 포인트가 각각 2 늘고, 2·4단계에서 만족도 포인트가 각각 10 늘어난다. 5단계에서는 하루 배달 1건을 즉시 완료하고 보상을 받는다."
-      }
-    ],
-    "sourceUrl": "https://neverness.app/characters/hathor"
+    }
   }
 }

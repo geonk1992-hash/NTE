@@ -18,8 +18,7 @@
   "detail": {
     "id": "baicang",
     "globalStatus": "released",
-    "guideRoleEn": "Damage",
-    "coreMechanicKo": "공격으로 축복·침묵·질책 계열의 파워 워드를 쌓아 궁극기 영역에서 효과를 발동한다. 적 체력이 낮으면 처형 효과도 노릴 수 있다.",
+    "coreMechanicKo": "일반 공격과 바이레일 스킬로 언령 문자를 쌓고 울티메이트로 소모하는 온필드 딜러입니다. 인벤 데이터베이스는 세 전투 기술을 균등하게 육성하도록 권합니다.",
     "keySkillNamesEn": {
       "basic": "Walk the Talk",
       "skill": "Generous Guidance",
@@ -33,7 +32,13 @@
       "zhHans": "桑毓泽",
       "ko": "심규혁"
     },
-    "source": "https://www.prydwen.gg/neverness-to-everness/characters/baicang"
+    "source": "https://www.prydwen.gg/neverness-to-everness/characters/baicang",
+    "skillDescriptionsKo": {
+      "basic": "연속 공격의 앞부분을 길게 누르면 「꾸밈 없는 말」, 뒤쪽 공격 뒤 길게 누르면 「거짓 없는 말」을 발동해 원거리 공격을 이어갑니다. 공격과 반격으로 「축」을 생성하고, 일정 주기의 기본 공격은 말을 추가로 만들어 전투에 활용합니다.",
+      "skill": "「공평한 마음」으로 적을 공격합니다. 회피 직후에는 「억눌린 생각」으로 「금」을, 특정 공격 뒤에는 「정죄의 일격」으로 「죄」를 생성합니다. 각 공격으로 모은 말은 울티메이트에서 종류별 효과를 냅니다.",
+      "ultimate": "「가을 심판」 영역을 펼치고 축적한 말을 사용합니다. 「금」은 단일 적을, 「죄」는 범위 안의 적을 공격하고, 「축」은 단일 적을 공격하면서 아군을 회복합니다.",
+      "support": "적을 공격해 「금」을 생성합니다."
+    }
   },
   "setting": {
     "summary": "「가장 대장 같지 않은 대장」 순위 상위권에 있는 E.T.D 4팀 대장",
@@ -48,7 +53,6 @@
   "mechanics": {
     "id": "baicang",
     "nameKo": "백장",
-    "nameZhHans": "白藏",
     "level80BaseStats": {
       "hp": 16604,
       "atk": 644,
@@ -56,90 +60,119 @@
       "critRatePct": 5,
       "critDamagePct": 50
     },
-    "skillCoefficients": {
-      "basic": "47.5%; 42.3%; 119%; 25.1%*3; 86.3%; glyph shots 66% + explosion 22% each; plunge 41.8%; parry 144%; cycle 29.",
-      "skill": "120%; Silent Thought 100%*3+120%; Such Guilt 280%; cycle 6.",
-      "ultimate": "field entry 400%; DoT 40% every 2s for 12s; glyphs: Silence 300%, Censure 200%, Blessing 30% explosion+15%*2 missiles; energy 120.",
-      "support": "200%."
-    },
     "awakeningEffectsKo": [
-      "A1: 궁극기 영역에서 Silence 발동 시 다음 스킬 피해 +30% 누적; Censure 발동 시 스킬 쿨다운 4초 감소 누적.",
-      "A2: 언령 생성마다 공격력 +6%, 최대 4중첩, 각 10초.",
-      "A3: 언령 최대 생성 수를 4개로 증가.",
-      "A4: 궁극기 중 언령 발동 시 최대 체력 5% 회복.",
-      "A5: 궁극기 지속시간을 16초로 연장.",
-      "A6: 궁극기 중 치명타 확률 +30%."
+      "A1: 「가을 심판」 중 「금」 발동 시 다음 바이레일 스킬 피해가 30% 증가하고, 「죄」 발동 시 바이레일 스킬 쿨타임이 4초 감소한다. 각각 중첩 가능하며, 쿨타임이 돌고 있지 않으면 다음 사용에 적용된다.",
+      "A2: 언령 문자를 생성할 때마다 백장의 공격력이 6% 증가한다. 최대 4중첩이며 중첩별 지속시간은 10초다.",
+      "A3: 언령 문자 생성 상한이 4개로 증가한다.",
+      "A4: 「가을 심판」 중 언령 문자 효과가 발동할 때마다 최대 체력의 5%를 회복한다.",
+      "A5: 「가을 심판」 지속시간이 16초로 연장된다.",
+      "A6: 「가을 심판」 중 치명 확률이 30% 증가한다."
     ],
     "resonanceKo": {
-      "3": "주요 전투 기술 레벨 +1.",
-      "6": "궁극기 영역에서 파티 공격력 +20%, 아군도 즉시 처형 효과 발동 가능."
+      "3": "「언행일치」, 「아낌없는 가르침」, 「가을 심판」 레벨이 1 상승한다.",
+      "6": "「가을 심판」 영역 안의 파티원 공격력이 20% 증가하며, 모든 파티원이 「즉결처형」을 발동할 수 있다."
     },
-    "sourceUrl": "https://wiki.mysqil.com/characters/baizang",
-    "notes": "상태/언령 조건에 따라 적용되는 계수를 분리해서 읽어야 함.",
+    "sourceUrl": "https://nte.inven.co.kr/db/esper/5",
+    "notes": "2026-10-06 국내 한국어 자료를 기준으로 스킬명·각성 효과를 대조했습니다. 국내 원문에서 확인할 수 없는 레벨별 계수는 표시하지 않습니다.",
     "awakeningNamesKo": {
-      "A1": "",
-      "A2": "",
-      "A3": "",
-      "A4": "",
-      "A5": "",
-      "A6": ""
+      "A1": "오~대장!",
+      "A2": "강령의 깃발",
+      "A3": "저주의 발언",
+      "A4": "어쩌면 축복",
+      "A5": "달빛에게",
+      "A6": "백색수렴"
     }
   },
-  "r3": {
+  "console": {
+    "characterId": "baicang",
     "nameKo": "백장",
-    "sourceUrl": "https://www.ntestation.com/%E7%99%BD%E8%97%8F",
-    "r3Raises": [
-      "기본 공격",
-      "변궤 스킬",
-      "궁극기"
-    ],
-    "tables": {
-      "basic": [
-        "普通攻击1=102.5%",
-        "普通攻击2=91.3%",
-        "普通攻击3=256.9%",
-        "普通攻击4=54.2%*3",
-        "普通攻击5=186.3%",
-        "无状之言的咒令接触伤害=142.5%",
-        "无状之言的咒令爆炸伤害=47.5%",
-        "无讳之语的咒令接触伤害=142.5%",
-        "无讳之语的咒令爆炸伤害=47.5%",
-        "下落伤害=90.2%",
-        "极限反击=310.9%"
-      ],
-      "redirectSkill": [
-        "伤害倍率=259.1%",
-        "噤念飞弹伤害倍率=215.9%*3",
-        "噤念爆炸伤害倍率=259.1%",
-        "如此罪状伤害倍率=604.5%"
-      ],
-      "ultimate": [
-        "直接伤害倍率=863.6%",
-        "持续伤害倍率=86.4%",
-        "噤字伤害倍率=647.7%",
-        "詈字伤害倍率=431.8%",
-        "祝字爆炸伤害倍率=64.8%",
-        "祝字飞弹伤害倍率=32.4%*2"
+    "nameEn": "Baicang",
+    "console": {
+      "preferredModuleShape": "III",
+      "perDriveBonusKo": "III형 드라이브 1개당 치명 확률 +8%",
+      "recommendedLayout": [
+        "II",
+        "III",
+        "III",
+        "IV"
       ]
-    }
+    },
+    "cartridge": {
+      "recommendedSetId": "crimson-twin-butterflies",
+      "alternativeSetIds": [
+        "shadow-creed"
+      ]
+    },
+    "mainStatPriorityKo": [
+      "주속성 피해%",
+      "치명 확률%"
+    ],
+    "substatPriorityKo": [
+      "치명 확률%",
+      "치명 피해%",
+      "공격력%",
+      "통상 피해%"
+    ],
+    "sourceUrls": [
+      "https://nte.inven.co.kr/db/esper/5",
+      "https://www.ntebuild.com/characters/baicang"
+    ]
   },
+  "fieldSkills": {
+    "passives": [
+      {
+        "nameKo": "적당한 악취미",
+        "unlock": "2단계",
+        "effectKo": "「스코치」 상태의 적에게 사이클의 힘 효과를 생성하면 「스코치」를 1회 추가로 부여한다.",
+        "verificationNoteKo": "사용자가 직접 제공한 한국어 문구입니다. 효과는 국내 사이트에서 별도 교차 검증되지 않았습니다."
+      }
+    ],
+    "citySkills": [
+      {
+        "nameKo": "매일 번창",
+        "categoryKo": "상점",
+        "effectKo": {
+          "Lv.1": "손님 유입이 18 증가한다.",
+          "Lv.2": "재료 소모가 1% 줄어든다.",
+          "Lv.3": "「점장 특제」 연속 보너스는 손님이 기다림을 포기하거나 방망이에 맞아도 유지된다.",
+          "Lv.4": "재료 소모가 1% 줄어든다.",
+          "Lv.5": "손님 유입이 27 증가한다."
+        },
+        "maxLevel": 5
+      }
+    ]
+  },
+  "domesticSourcesKo": [
+    {
+      "name": "이환 인벤 이능력자 DB",
+      "url": "https://nte.inven.co.kr/db/esper/5"
+    },
+    {
+      "name": "ALKAPA 한국어 스킬 DB · 우선 자료",
+      "url": "https://alkapa.gg/neverness-to-everness/characters/cang"
+    },
+    {
+      "name": "바이창 스킬 설명 대조 · GhostWeb",
+      "url": "https://ghostweb.tistory.com/2388"
+    }
+  ],
   "coefficients": {
     "url": "https://www.ntestation.com/%E7%99%BD%E8%97%8F",
     "tables": [
       {
         "g": "basic",
         "h": [
-          "普通攻击1",
-          "普通攻击2",
-          "普通攻击3",
-          "普通攻击4",
-          "普通攻击5",
-          "无状之言的咒令接触伤害",
-          "无状之言的咒令爆炸伤害",
-          "无讳之语的咒令接触伤害",
-          "无讳之语的咒令爆炸伤害",
-          "下落伤害",
-          "极限反击"
+          "일반 공격 · 1타",
+          "일반 공격 · 2타",
+          "일반 공격 · 3타",
+          "일반 공격 · 4타",
+          "일반 공격 · 5타",
+          "「무형의 말」 주문 접촉 피해",
+          "「무형의 말」 주문 폭발 피해",
+          "「무휘의 말」 주문 접촉 피해",
+          "「무휘의 말」 주문 폭발 피해",
+          "낙하 공격",
+          "회피반격"
         ],
         "r": [
           [
@@ -287,17 +320,17 @@
           ]
         ],
         "m": {
-          "普通攻击4": 3
+          "일반 공격 · 4타": 3
         },
         "f": {}
       },
       {
         "g": "skill",
         "h": [
-          "伤害倍率",
-          "噤念飞弹伤害倍率",
-          "噤念爆炸伤害倍率",
-          "如此罪状伤害倍率"
+          "피해 계수",
+          "금념 미사일 피해 계수",
+          "금념 폭발 피해 계수",
+          "「그런 죄목」 피해 계수"
         ],
         "r": [
           [
@@ -368,19 +401,19 @@
           ]
         ],
         "m": {
-          "噤念飞弹伤害倍率": 3
+          "금념 미사일 피해 계수": 3
         },
         "f": {}
       },
       {
         "g": "ultimate",
         "h": [
-          "直接伤害倍率",
-          "持续伤害倍率",
-          "噤字伤害倍率",
-          "詈字伤害倍率",
-          "祝字爆炸伤害倍率",
-          "祝字飞弹伤害倍率"
+          "직접 피해 계수",
+          "지속 피해 계수",
+          "금자 피해 계수",
+          "리자 피해 계수",
+          "축자 폭발 피해 계수",
+          "축자 미사일 피해 계수"
         ],
         "r": [
           [
@@ -473,14 +506,14 @@
           ]
         ],
         "m": {
-          "祝字飞弹伤害倍率": 2
+          "축자 미사일 피해 계수": 2
         },
         "f": {}
       },
       {
         "g": "support",
         "h": [
-          "援护技"
+          "지원 스킬"
         ],
         "r": [
           [
@@ -522,66 +555,42 @@
       }
     ]
   },
-  "crosscheck": {
-    "progression": null,
-    "isolatedLevelChecks": [],
-    "additionalRegionalChecks": []
-  },
-  "console": {
-    "characterId": "baicang",
+  "r3": {
     "nameKo": "백장",
-    "nameEn": "Baicang",
-    "console": {
-      "preferredModuleShape": "III",
-      "perDriveBonusKo": "III형 드라이브 1개당 치명 확률 +8%",
-      "recommendedLayout": [
-        "II",
-        "III",
-        "III",
-        "IV"
+    "sourceUrl": "https://www.ntestation.com/%E7%99%BD%E8%97%8F",
+    "r3Raises": [
+      "기본 공격",
+      "바이레일 스킬",
+      "울티메이트"
+    ],
+    "tables": {
+      "basic": [
+        "普通攻击1=102.5%",
+        "普通攻击2=91.3%",
+        "普通攻击3=256.9%",
+        "普通攻击4=54.2%*3",
+        "普通攻击5=186.3%",
+        "无状之言的咒令接触伤害=142.5%",
+        "无状之言的咒令爆炸伤害=47.5%",
+        "无讳之语的咒令接触伤害=142.5%",
+        "无讳之语的咒令爆炸伤害=47.5%",
+        "下落伤害=90.2%",
+        "极限反击=310.9%"
+      ],
+      "redirectSkill": [
+        "伤害倍率=259.1%",
+        "噤念飞弹伤害倍率=215.9%*3",
+        "噤念爆炸伤害倍率=259.1%",
+        "如此罪状伤害倍率=604.5%"
+      ],
+      "ultimate": [
+        "直接伤害倍率=863.6%",
+        "持续伤害倍率=86.4%",
+        "噤字伤害倍率=647.7%",
+        "詈字伤害倍率=431.8%",
+        "祝字爆炸伤害倍率=64.8%",
+        "祝字飞弹伤害倍率=32.4%*2"
       ]
-    },
-    "cartridge": {
-      "recommendedSetId": "crimson-twin-butterflies",
-      "alternativeSetIds": [
-        "shadow-creed"
-      ]
-    },
-    "mainStatPriorityKo": [
-      "주속성 피해%",
-      "치명 확률%"
-    ],
-    "substatPriorityKo": [
-      "치명 확률%",
-      "치명 피해%",
-      "공격력%",
-      "통상 피해%"
-    ],
-    "sourceUrls": [
-      "https://nte.inven.co.kr/db/esper/5",
-      "https://www.ntebuild.com/characters/baicang"
-    ]
-  },
-  "fieldSkills": {
-    "passives": [
-      {
-        "nameKo": "적당한 장난",
-        "unlock": "2단계",
-        "effectKo": "작열 상태의 적에게 사이클의 힘 효과를 생성하면 작열을 1회 추가로 부여한다."
-      },
-      {
-        "nameKo": "적당히 일하기",
-        "unlock": "4단계",
-        "effectKo": "공격력이 20% 증가한다. 에이본 제4특수수사대 동료 및 특정 동료 조합으로 추가 연계를 얻는다."
-      }
-    ],
-    "citySkills": [
-      {
-        "nameKo": "매일 번창",
-        "categoryKo": "상점",
-        "effectKo": "1단계에서 손님 유입이 18 증가하고 2·4단계에서 재료 소모가 각각 1% 줄어든다. 점주의 선택 연속 보너스는 손님이 기다림을 포기하거나 방망이에 맞아도 유지되며, 5단계에서 손님 유입이 27 증가한다."
-      }
-    ],
-    "sourceUrl": "https://neverness.app/characters/cang"
+    }
   }
 }
