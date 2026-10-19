@@ -1,4 +1,4 @@
-import { $, esc, siteFooter, state } from "./common.js";
+import { $, esc, siteFooter, state } from "./common.js?v=20261012-personal-board";
 
 const DATABASE_NAME = "nte-archive-guide-board";
 const DATABASE_VERSION = 1;
@@ -444,6 +444,7 @@ function toggleEditor(show, post = null) {
   currentPostId = post?.id || "new";
   currentPost = post;
   editorDraft = null;
+  savedSelection = null;
   stagedAttachments = post ? [...(post.attachments || [])] : [];
   const root = $("[data-guide-editor-root]");
   if (root) root.innerHTML = editorMarkup(post);
@@ -539,45 +540,13 @@ export function renderGuides() {
 function rememberSelection() {
   const editor = $("[data-guide-content]");
   const selection = getSelection();
-  if (editor && selection?.rangeCount && editor.contains(selection.anchorNode))
-    savedSelection = selection.getRangeAt(0).cloneRange();
-}
-
-function recoverEditorFocus(event) {
-  const target = event.target.closest(
-    '#guide-editor-form input[type="text"], #guide-editor-form textarea, [data-guide-content]'
-  );
-  if (!target) return;
+  if (!editor || !selection?.rangeCount) return;
+  const range = selection.getRangeAt(0);
   if (
-    event.relatedTarget &&
-    event.relatedTarget !== document.body &&
-    event.relatedTarget !== document.documentElement
+    editor.contains(range.startContainer) &&
+    editor.contains(range.endContainer)
   )
-    return;
-
-  const isRichEditor = target.matches("[data-guide-content]");
-  const selection = isRichEditor ? getSelection() : null;
-  const range =
-    selection?.rangeCount && target.contains(selection.anchorNode)
-      ? selection.getRangeAt(0).cloneRange()
-      : null;
-
-  window.setTimeout(() => {
-    if (!currentPostId || !target.isConnected) return;
-    if (
-      document.activeElement !== document.body &&
-      document.activeElement !== document.documentElement
-    )
-      return;
-
-    target.focus({ preventScroll: true });
-    if (range) {
-      const currentSelection = getSelection();
-      currentSelection.removeAllRanges();
-      currentSelection.addRange(range);
-      savedSelection = range.cloneRange();
-    }
-  }, 0);
+    savedSelection = range.cloneRange();
 }
 
 function captureDraft() {
@@ -594,10 +563,18 @@ function restoreEditorSelection() {
   const editor = $("[data-guide-content]");
   const selection = getSelection();
   if (!editor || !selection) return null;
+  const belongsToEditor = (range) =>
+    range &&
+    editor.contains(range.startContainer) &&
+    editor.contains(range.endContainer);
   let range = selection.rangeCount ? selection.getRangeAt(0) : null;
-  if (!range || !editor.contains(range.startContainer)) range = savedSelection;
-  if (!range || !editor.contains(range.startContainer)) return null;
-  editor.focus();
+  if (!belongsToEditor(range)) range = savedSelection;
+  if (!belongsToEditor(range)) {
+    range = document.createRange();
+    range.selectNodeContents(editor);
+    range.collapse(false);
+  }
+  editor.focus({ preventScroll: true });
   selection.removeAllRanges();
   selection.addRange(range);
   return range;
@@ -1024,17 +1001,17 @@ export function initializeGuides() {
     } else if (event.target.matches("#guide-media-input")) {
       handleMediaChange(event);
     }
-  });
-  root.addEventListener("mousedown", (event) => {
-    if (event.target.closest("[data-guide-format]")) event.preventDefault();
-  });
-  root.addEventListener("keyup", rememberSelection);
-  root.addEventListener("focusout", recoverEditorFocus);
-  root.addEventListener("input", (event) => {
-    if (event.target.matches("[data-guide-content]")) rememberSelection();
     if (event.target.closest("#guide-editor-form")) captureDraft();
   });
-  root.addEventListener("change", (event) => {
+  root.addEventListener("pointerdown", (event) => {
+    if (!event.target.closest(".guide-editor-toolbar")) return;
+    rememberSelection();
+    if (event.target.closest("[data-guide-format]")) event.preventDefault();
+  });
+  root.addEventListener("pointerup", rememberSelection);
+  root.addEventListener("keyup", rememberSelection);
+  root.addEventListener("input", (event) => {
+    if (event.target.matches("[data-guide-content]")) rememberSelection();
     if (event.target.closest("#guide-editor-form")) captureDraft();
   });
   root.addEventListener("dragover", (event) => {

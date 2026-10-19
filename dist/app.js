@@ -1,6 +1,9 @@
-import { registerPageModules, start } from "./common.js";
-import { renderHome } from "./home.js";
-import { initializeGuides, renderGuides } from "./guide-board.js?v=20261012-guide-board-focus-recovery";
+import { registerPageModules, start } from "./common.js?v=20261012-personal-board";
+import { renderHome } from "./home.js?v=20261012-personal-board";
+import {
+  initializeGuides,
+  renderGuides
+} from "./guide-board.js?v=20261012-personal-board";
 import {
   initializePages,
   renderNotices,
@@ -10,7 +13,7 @@ import {
   renderRoster,
   renderProfile,
   closeWallpaperLightbox
-} from "./pages.js";
+} from "./pages.js?v=20261012-personal-board";
 
 registerPageModules({
   initialize: () => {

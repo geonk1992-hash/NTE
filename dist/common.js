@@ -132,7 +132,7 @@ function init() {
   $("#roster-count").textContent = String(released.length).padStart(2, "0");
   pageModules.initialize();
   $("#primary-nav")
-    .querySelectorAll("[data-view]")
+    .querySelectorAll("button[data-view]")
     .forEach((button) => {
       button.addEventListener("click", () => setView(button.dataset.view));
     });
@@ -151,8 +151,9 @@ function init() {
       setView("notices");
       return;
     }
-    const viewButton = event.target.closest("[data-view]");
-    if (viewButton) setView(viewButton.dataset.view);
+    const viewButton = event.target.closest("button[data-view]");
+    if (viewButton && event.currentTarget.contains(viewButton))
+      setView(viewButton.dataset.view);
   });
   window.addEventListener("popstate", syncViewFromAddress);
   window.addEventListener("hashchange", syncViewFromAddress);
@@ -176,6 +177,13 @@ function syncViewFromAddress() {
 
 function setView(view, options = {}) {
   if (!VALID_VIEWS.has(view)) return;
+  // 이미 열린 메뉴를 다시 누를 때 작성 중인 화면을 교체하지 않는다.
+  if (
+    options.push !== false &&
+    state.activeView === view &&
+    state.activeNoticeId === null
+  )
+    return;
   pageModules.closeWallpaperLightbox();
   state.activeView = view;
   state.activeNoticeId = null;
@@ -202,7 +210,7 @@ function openNotice(noticeId, options = {}) {
 function syncViewChrome() {
   $("#workspace").dataset.view = state.activeView;
   $("#primary-nav")
-    .querySelectorAll("[data-view]")
+    .querySelectorAll("button[data-view]")
     .forEach((button) => {
       if (button.dataset.view === state.activeView)
         button.setAttribute("aria-current", "page");

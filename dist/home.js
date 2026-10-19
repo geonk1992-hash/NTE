@@ -1,4 +1,4 @@
-import { state, $, esc, siteFooter } from "./common.js";
+import { state, $, esc, siteFooter } from "./common.js?v=20261012-personal-board";
 
 const PORTAL_MODULES = [
   {

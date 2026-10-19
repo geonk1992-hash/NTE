@@ -6,7 +6,7 @@ import {
   NOTICE_PAGE_SIZE,
   siteFooter,
   setView
-} from "./common.js";
+} from "./common.js?v=20261012-personal-board";
 const elem = (id) => ELEMENTS[id] || { name: id || "—", color: "#aab5bf" };
 
 const ELEMENTS = {
